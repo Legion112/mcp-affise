@@ -37,16 +37,23 @@ HTML docs3.1 → affise.gen.yaml → overlays.yaml → affise.yaml → oapi-code
 ## Configuration
 
 1. Copy [`tenants.example.yaml`](tenants.example.yaml) → `tenants.yaml`
-2. Copy [`.env.example`](.env.example) → `.env` and set tokens
+2. Copy [`.env.example`](.env.example) → `.env` and set the vars referenced from YAML
+
+`host` / `token` support Symfony-style placeholders: `%env(VAR_NAME)%` (whole value). Literals work too.
+
+```yaml
+tenants:
+  - id: example
+    host: "%env(AFFISE_EXAMPLE_HOST)%"   # or: api.affise.com
+    token: "%env(AFFISE_EXAMPLE_TOKEN)%"
+    description: Example Affise tenant
+```
 
 | Variable | Meaning |
 |----------|---------|
 | `AFFISE_TENANTS_FILE` | Path to tenants YAML (default `tenants.yaml`) |
-| `AFFISE_TENANT_<ID>_HOST` | API host (overrides YAML) |
-| `AFFISE_TENANT_<ID>_TOKEN` | API-Key (required) |
-| `AFFISE_DOTENV` | Path to `.env` |
-
-`<ID>` is the tenant id uppercased with non-alnum → `_` (e.g. `my-traffgun` → `MY_TRAFFGUN`).
+| `AFFISE_DOTENV` | Path to `.env` (default `.env`) |
+| *(any)* | Only vars named inside `%env(...)%` in the YAML |
 
 ## Build
 

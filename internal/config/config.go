@@ -27,20 +27,15 @@ type tenantsFile struct {
 	Tenants []struct {
 		ID          string `yaml:"id"`
 		Host        string `yaml:"host"`
+		Token       string `yaml:"token"`
 		Description string `yaml:"description"`
 	} `yaml:"tenants"`
 }
 
-var nonAlnum = regexp.MustCompile(`[^A-Za-z0-9]+`)
+// %env(VAR_NAME)% — Symfony-style env placeholder (whole-value only).
+var envPlaceholder = regexp.MustCompile(`^%env\(([A-Za-z_][A-Za-z0-9_]*)\)%$`)
 
-// EnvKey returns AFFISE_TENANT_<ID>_TOKEN style suffix from tenant id.
-func EnvKey(tenantID string) string {
-	s := strings.ToUpper(nonAlnum.ReplaceAllString(tenantID, "_"))
-	s = strings.Trim(s, "_")
-	return s
-}
-
-// Load reads optional .env, tenants YAML, and per-tenant env credentials.
+// Load reads optional .env then tenants YAML, resolving %env(VAR)% in host/token.
 func Load() (*Config, error) {
 	dotenvPath := os.Getenv("AFFISE_DOTENV")
 	if dotenvPath == "" {
@@ -75,18 +70,21 @@ func Load() (*Config, error) {
 		if id == "" {
 			return nil, fmt.Errorf("%s: tenant with empty id", path)
 		}
-		key := EnvKey(id)
-		host := strings.TrimSpace(os.Getenv("AFFISE_TENANT_" + key + "_HOST"))
-		if host == "" {
-			host = strings.TrimSpace(t.Host)
+		host, err := resolveEnv(t.Host)
+		if err != nil {
+			return nil, fmt.Errorf("tenant %s host: %w", id, err)
 		}
 		host = normalizeHost(host)
-		token := strings.TrimSpace(os.Getenv("AFFISE_TENANT_" + key + "_TOKEN"))
+		token, err := resolveEnv(t.Token)
+		if err != nil {
+			return nil, fmt.Errorf("tenant %s token: %w", id, err)
+		}
+		token = strings.TrimSpace(token)
 		if host == "" {
-			return nil, fmt.Errorf("tenant %s: host missing (YAML or AFFISE_TENANT_%s_HOST)", id, key)
+			return nil, fmt.Errorf("tenant %s: host is empty", id)
 		}
 		if token == "" {
-			return nil, fmt.Errorf("tenant %s: missing AFFISE_TENANT_%s_TOKEN", id, key)
+			return nil, fmt.Errorf("tenant %s: token is empty", id)
 		}
 		cfg.Tenants = append(cfg.Tenants, Tenant{
 			ID:          id,
@@ -96,6 +94,21 @@ func Load() (*Config, error) {
 		})
 	}
 	return cfg, nil
+}
+
+// resolveEnv expands a whole-value %env(VAR)% placeholder, or returns the literal.
+func resolveEnv(s string) (string, error) {
+	s = strings.TrimSpace(s)
+	m := envPlaceholder.FindStringSubmatch(s)
+	if m == nil {
+		return s, nil
+	}
+	name := m[1]
+	val := strings.TrimSpace(os.Getenv(name))
+	if val == "" {
+		return "", fmt.Errorf("environment variable %s is not set or empty", name)
+	}
+	return val, nil
 }
 
 // Tenant returns a tenant by id.

@@ -1,11 +1,9 @@
-# Copy to tenants.yaml (gitignored) and set tokens via env:
-#   AFFISE_TENANT_<ID>_TOKEN / AFFISE_TENANT_<ID>_HOST
-#
-# Host in this file is a default; env HOST overrides it.
-# Token must come from env (never commit tokens).
+# Copy to tenants.yaml (gitignored).
+# Use Symfony-style %env(VAR)% to pull secrets/hosts from the environment.
+# Literals are also fine for non-secret fields (e.g. host: api.affise.com).
 
 tenants:
   - id: example
-    host: api.affise.com
-    # description is shown by list_tenants
+    host: "%env(AFFISE_EXAMPLE_HOST)%"
+    token: "%env(AFFISE_EXAMPLE_TOKEN)%"
     description: Example Affise tenant
