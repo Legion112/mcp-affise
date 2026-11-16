@@ -14,24 +14,39 @@ func EmitOpenAPI(ops []Operation, title string) ([]byte, error) {
 		title = "Affise API"
 	}
 
-	byPath := map[string][]Operation{}
+	// One operation per path+method (Affise HTML sometimes repeats the same endpoint).
+	byPathMethod := map[string]map[string]Operation{}
 	for _, op := range ops {
-		byPath[op.Path] = append(byPath[op.Path], op)
+		method := strings.ToUpper(op.Method)
+		if byPathMethod[op.Path] == nil {
+			byPathMethod[op.Path] = map[string]Operation{}
+		}
+		if prev, ok := byPathMethod[op.Path][method]; ok {
+			// Prefer the richer parameter list when docs duplicate an endpoint.
+			if len(op.Parameters) > len(prev.Parameters) {
+				byPathMethod[op.Path][method] = op
+			}
+			continue
+		}
+		byPathMethod[op.Path][method] = op
 	}
-	pathKeys := make([]string, 0, len(byPath))
-	for k := range byPath {
+	pathKeys := make([]string, 0, len(byPathMethod))
+	for k := range byPathMethod {
 		pathKeys = append(pathKeys, k)
 	}
 	sort.Strings(pathKeys)
 
 	paths := &yaml.Node{Kind: yaml.MappingNode}
 	for _, path := range pathKeys {
-		methods := byPath[path]
-		sort.Slice(methods, func(i, j int) bool {
-			return methods[i].Method < methods[j].Method
-		})
+		methodMap := byPathMethod[path]
+		methodKeys := make([]string, 0, len(methodMap))
+		for m := range methodMap {
+			methodKeys = append(methodKeys, m)
+		}
+		sort.Strings(methodKeys)
 		item := &yaml.Node{Kind: yaml.MappingNode}
-		for _, op := range methods {
+		for _, method := range methodKeys {
+			op := methodMap[method]
 			item.Content = append(item.Content,
 				scalar(strings.ToLower(op.Method)),
 				mustYAMLNode(operationObject(op)),

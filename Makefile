@@ -6,7 +6,9 @@ GEN_BINARY := bin/affise-gen
 OAPI_CODEGEN ?= $(shell $(GO) env GOPATH)/bin/oapi-codegen
 DOCS_HTML ?= internal/docsgen/testdata/docs3.1.html
 DOCS_URL ?= https://api.affise.com/docs3.1/
-PATHS ?= /3.0/offers,/3.0/offer/{ID}
+# Empty PATHS = all paths. METHODS defaults to GET (read-only; no POST/PUT/DELETE).
+PATHS ?=
+METHODS ?= GET
 COVERPROFILE := coverage.out
 
 .PHONY: build build-gen test vet fmt lint clean \
@@ -30,17 +32,19 @@ openapi: build-gen
 		-o openapi/affise.gen.yaml \
 		--overlay openapi/overlays.yaml \
 		--final openapi/affise.yaml \
+		--methods "$(METHODS)" \
 		--paths "$(PATHS)"
 
 $(OAPI_CODEGEN):
 	$(GO) install github.com/oapi-codegen/oapi-codegen/v2/cmd/oapi-codegen@v2.5.0
 
 generate: openapi $(OAPI_CODEGEN)
-	mkdir -p internal/affiseapi
+	mkdir -p internal/affiseapi internal/apispec
 	$(OAPI_CODEGEN) -generate types,client -package affiseapi -o internal/affiseapi/client.gen.go openapi/affise.yaml
+	cp openapi/affise.yaml internal/apispec/affise.yaml
 
 generate-check: generate
-	git diff --exit-code -- openapi/affise.gen.yaml openapi/affise.yaml internal/affiseapi/client.gen.go
+	git diff --exit-code -- openapi/affise.gen.yaml openapi/affise.yaml internal/affiseapi/client.gen.go internal/apispec/affise.yaml
 
 capture-sample: build-gen
 	@test -n "$(TENANT)" || (echo "TENANT= required" >&2; exit 1)

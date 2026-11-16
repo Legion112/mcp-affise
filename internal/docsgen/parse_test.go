@@ -104,3 +104,15 @@ func TestMapAffiseType(t *testing.T) {
 		t.Fatalf("got %s %s", typ, format)
 	}
 }
+
+func TestFilterMethods(t *testing.T) {
+	ops := []Operation{
+		{Method: "GET", Path: "/a"},
+		{Method: "POST", Path: "/b"},
+		{Method: "DELETE", Path: "/c"},
+	}
+	got := FilterMethods(ops, []string{"GET"})
+	if len(got) != 1 || got[0].Path != "/a" {
+		t.Fatalf("%+v", got)
+	}
+}

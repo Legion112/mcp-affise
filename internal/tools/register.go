@@ -11,7 +11,7 @@ type Deps struct {
 	Clients *tenant.Clients
 }
 
-// Register adds Affise MCP tools.
+// Register adds Affise MCP tools (read-only).
 func Register(server *mcp.Server, deps *Deps) {
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "list_tenants",
@@ -19,17 +19,27 @@ func Register(server *mcp.Server, deps *Deps) {
 	}, deps.listTenants)
 
 	mcp.AddTool(server, &mcp.Tool{
+		Name:        "list_read_endpoints",
+		Description: "List all read-only Affise GET endpoints from the generated OpenAPI catalog (optional q filter).",
+	}, deps.listReadEndpoints)
+
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "affise_get",
+		Description: "Call any Affise GET endpoint (read-only). Path may be concrete (/3.0/offer/123) or a template with path_params. Rejects unknown/non-GET paths.",
+	}, deps.affiseGet)
+
+	mcp.AddTool(server, &mcp.Tool{
 		Name:        "list_offers",
-		Description: "List Affise offers for a tenant (GET /3.0/offers). Includes logo URL when present.",
+		Description: "Convenience: list Affise offers (GET /3.0/offers). Includes logo URL when present.",
 	}, deps.listOffers)
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "get_offer",
-		Description: "Get one Affise offer by numeric id (GET /3.0/offer/{ID}).",
+		Description: "Convenience: get one Affise offer by numeric id (GET /3.0/offer/{ID}).",
 	}, deps.getOffer)
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "get_offers_by_ids",
-		Description: "Fetch multiple Affise offers by int ids (uses int_id filter on GET /3.0/offers).",
+		Description: "Convenience: fetch multiple Affise offers by int ids (int_id on GET /3.0/offers).",
 	}, deps.getOffersByIDs)
 }

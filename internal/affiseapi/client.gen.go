@@ -19,6 +19,735 @@ const (
 	ApiKeyAuthScopes = "ApiKeyAuth.Scopes"
 )
 
+// Defines values for Get30AdminAdvertiserInvoicesParamsStatus.
+const (
+	Paid   Get30AdminAdvertiserInvoicesParamsStatus = "paid"
+	Unpaid Get30AdminAdvertiserInvoicesParamsStatus = "unpaid"
+)
+
+// Defines values for Get30AdminAdvertisersParamsOrder.
+const (
+	Get30AdminAdvertisersParamsOrderCreatedAt Get30AdminAdvertisersParamsOrder = "created_at"
+	Get30AdminAdvertisersParamsOrderEmail     Get30AdminAdvertisersParamsOrder = "email"
+	Get30AdminAdvertisersParamsOrderId        Get30AdminAdvertisersParamsOrder = "id"
+	Get30AdminAdvertisersParamsOrderTitle     Get30AdminAdvertisersParamsOrder = "title"
+	Get30AdminAdvertisersParamsOrderUpdatedAt Get30AdminAdvertisersParamsOrder = "updated_at"
+)
+
+// Defines values for Get30AdminAdvertisersParamsOrderType.
+const (
+	Get30AdminAdvertisersParamsOrderTypeAsc  Get30AdminAdvertisersParamsOrderType = "asc"
+	Get30AdminAdvertisersParamsOrderTypeDesc Get30AdminAdvertisersParamsOrderType = "desc"
+)
+
+// Defines values for Get30AdminTicketsParamsStatus.
+const (
+	Get30AdminTicketsParamsStatusClosed Get30AdminTicketsParamsStatus = "closed"
+	Get30AdminTicketsParamsStatusOpen   Get30AdminTicketsParamsStatus = "open"
+)
+
+// Defines values for Get30OfferCategoriesParamsOrderType.
+const (
+	Get30OfferCategoriesParamsOrderTypeAsc  Get30OfferCategoriesParamsOrderType = "asc"
+	Get30OfferCategoriesParamsOrderTypeDesc Get30OfferCategoriesParamsOrderType = "desc"
+)
+
+// Defines values for Get30OfferCategoriesParamsOrder.
+const (
+	Get30OfferCategoriesParamsOrderId    Get30OfferCategoriesParamsOrder = "id"
+	Get30OfferCategoriesParamsOrderTitle Get30OfferCategoriesParamsOrder = "title"
+)
+
+// Defines values for Get30StatsAffiliatepostbacksParamsDateFrom.
+const (
+	Get30StatsAffiliatepostbacksParamsDateFromYYYYMMDD Get30StatsAffiliatepostbacksParamsDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsAffiliatepostbacksParamsDateTo.
+const (
+	Get30StatsAffiliatepostbacksParamsDateToYYYYMMDD Get30StatsAffiliatepostbacksParamsDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsClicksParamsDateFrom.
+const (
+	Get30StatsClicksParamsDateFromYYYYMMDD Get30StatsClicksParamsDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsClicksParamsDateTo.
+const (
+	Get30StatsClicksParamsDateToYYYYMMDD Get30StatsClicksParamsDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsConversionsParamsDateFrom.
+const (
+	YYYYMMDDDefaultDayOneWeekAgo Get30StatsConversionsParamsDateFrom = "YYYY-MM-DD Default: day one week ago"
+)
+
+// Defines values for Get30StatsConversionsParamsDateTo.
+const (
+	YYYYMMDDDefaultDateNow Get30StatsConversionsParamsDateTo = "YYYY-MM-DD Default: date now"
+)
+
+// Defines values for Get30StatsConversionsParamsUpdateFromDate.
+const (
+	Get30StatsConversionsParamsUpdateFromDateYYYYMMDD Get30StatsConversionsParamsUpdateFromDate = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsConversionsParamsUpdateToDate.
+const (
+	Get30StatsConversionsParamsUpdateToDateYYYYMMDD Get30StatsConversionsParamsUpdateToDate = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsConversionsParamsDevice.
+const (
+	Desktop Get30StatsConversionsParamsDevice = "desktop"
+	Mobile  Get30StatsConversionsParamsDevice = "mobile"
+	Tablet  Get30StatsConversionsParamsDevice = "tablet"
+)
+
+// Defines values for Get30StatsCustomParamsFilterDateFrom.
+const (
+	Get30StatsCustomParamsFilterDateFromYYYYMMDD Get30StatsCustomParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsCustomParamsFilterDateTo.
+const (
+	Get30StatsCustomParamsFilterDateToYYYYMMDD Get30StatsCustomParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsCustomParamsFilterPaymentStatus.
+const (
+	Get30StatsCustomParamsFilterPaymentStatusClosed  Get30StatsCustomParamsFilterPaymentStatus = "closed"
+	Get30StatsCustomParamsFilterPaymentStatusOpened  Get30StatsCustomParamsFilterPaymentStatus = "opened"
+	Get30StatsCustomParamsFilterPaymentStatusPending Get30StatsCustomParamsFilterPaymentStatus = "pending"
+)
+
+// Defines values for Get30StatsCustomParamsLocale.
+const (
+	Get30StatsCustomParamsLocaleEn Get30StatsCustomParamsLocale = "en"
+	Get30StatsCustomParamsLocaleEs Get30StatsCustomParamsLocale = "es"
+	Get30StatsCustomParamsLocaleRu Get30StatsCustomParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsCustomParamsOrderType.
+const (
+	Get30StatsCustomParamsOrderTypeAsc  Get30StatsCustomParamsOrderType = "asc"
+	Get30StatsCustomParamsOrderTypeDesc Get30StatsCustomParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyaccountmanagerParamsLocale.
+const (
+	Get30StatsGetbyaccountmanagerParamsLocaleEn Get30StatsGetbyaccountmanagerParamsLocale = "en"
+	Get30StatsGetbyaccountmanagerParamsLocaleEs Get30StatsGetbyaccountmanagerParamsLocale = "es"
+	Get30StatsGetbyaccountmanagerParamsLocaleRu Get30StatsGetbyaccountmanagerParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyaccountmanagerParamsOrderType.
+const (
+	Get30StatsGetbyaccountmanagerParamsOrderTypeAsc  Get30StatsGetbyaccountmanagerParamsOrderType = "asc"
+	Get30StatsGetbyaccountmanagerParamsOrderTypeDesc Get30StatsGetbyaccountmanagerParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyaccountmanagerParamsFilterDateFrom.
+const (
+	Get30StatsGetbyaccountmanagerParamsFilterDateFromYYYYMMDD Get30StatsGetbyaccountmanagerParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyaccountmanagerParamsFilterDateTo.
+const (
+	Get30StatsGetbyaccountmanagerParamsFilterDateToYYYYMMDD Get30StatsGetbyaccountmanagerParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyadvertiserParamsLocale.
+const (
+	Get30StatsGetbyadvertiserParamsLocaleEn Get30StatsGetbyadvertiserParamsLocale = "en"
+	Get30StatsGetbyadvertiserParamsLocaleEs Get30StatsGetbyadvertiserParamsLocale = "es"
+	Get30StatsGetbyadvertiserParamsLocaleRu Get30StatsGetbyadvertiserParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyadvertiserParamsOrderType.
+const (
+	Get30StatsGetbyadvertiserParamsOrderTypeAsc  Get30StatsGetbyadvertiserParamsOrderType = "asc"
+	Get30StatsGetbyadvertiserParamsOrderTypeDesc Get30StatsGetbyadvertiserParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyadvertiserParamsFilterDateFrom.
+const (
+	Get30StatsGetbyadvertiserParamsFilterDateFromYYYYMMDD Get30StatsGetbyadvertiserParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyadvertiserParamsFilterDateTo.
+const (
+	Get30StatsGetbyadvertiserParamsFilterDateToYYYYMMDD Get30StatsGetbyadvertiserParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyaffiliatemanagerParamsLocale.
+const (
+	Get30StatsGetbyaffiliatemanagerParamsLocaleEn Get30StatsGetbyaffiliatemanagerParamsLocale = "en"
+	Get30StatsGetbyaffiliatemanagerParamsLocaleEs Get30StatsGetbyaffiliatemanagerParamsLocale = "es"
+	Get30StatsGetbyaffiliatemanagerParamsLocaleRu Get30StatsGetbyaffiliatemanagerParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyaffiliatemanagerParamsOrderType.
+const (
+	Get30StatsGetbyaffiliatemanagerParamsOrderTypeAsc  Get30StatsGetbyaffiliatemanagerParamsOrderType = "asc"
+	Get30StatsGetbyaffiliatemanagerParamsOrderTypeDesc Get30StatsGetbyaffiliatemanagerParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyaffiliatemanagerParamsFilterDateFrom.
+const (
+	Get30StatsGetbyaffiliatemanagerParamsFilterDateFromYYYYMMDD Get30StatsGetbyaffiliatemanagerParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyaffiliatemanagerParamsFilterDateTo.
+const (
+	Get30StatsGetbyaffiliatemanagerParamsFilterDateToYYYYMMDD Get30StatsGetbyaffiliatemanagerParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbybrowsersParamsLocale.
+const (
+	Get30StatsGetbybrowsersParamsLocaleEn Get30StatsGetbybrowsersParamsLocale = "en"
+	Get30StatsGetbybrowsersParamsLocaleEs Get30StatsGetbybrowsersParamsLocale = "es"
+	Get30StatsGetbybrowsersParamsLocaleRu Get30StatsGetbybrowsersParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbybrowsersParamsOrderType.
+const (
+	Get30StatsGetbybrowsersParamsOrderTypeAsc  Get30StatsGetbybrowsersParamsOrderType = "asc"
+	Get30StatsGetbybrowsersParamsOrderTypeDesc Get30StatsGetbybrowsersParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbybrowsersParamsFilterDateFrom.
+const (
+	Get30StatsGetbybrowsersParamsFilterDateFromYYYYMMDD Get30StatsGetbybrowsersParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbybrowsersParamsFilterDateTo.
+const (
+	Get30StatsGetbybrowsersParamsFilterDateToYYYYMMDD Get30StatsGetbybrowsersParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbybrowsersversionParamsLocale.
+const (
+	Get30StatsGetbybrowsersversionParamsLocaleEn Get30StatsGetbybrowsersversionParamsLocale = "en"
+	Get30StatsGetbybrowsersversionParamsLocaleEs Get30StatsGetbybrowsersversionParamsLocale = "es"
+	Get30StatsGetbybrowsersversionParamsLocaleRu Get30StatsGetbybrowsersversionParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbybrowsersversionParamsOrderType.
+const (
+	Get30StatsGetbybrowsersversionParamsOrderTypeAsc  Get30StatsGetbybrowsersversionParamsOrderType = "asc"
+	Get30StatsGetbybrowsersversionParamsOrderTypeDesc Get30StatsGetbybrowsersversionParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbybrowsersversionParamsFilterDateFrom.
+const (
+	Get30StatsGetbybrowsersversionParamsFilterDateFromYYYYMMDD Get30StatsGetbybrowsersversionParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbybrowsersversionParamsFilterDateTo.
+const (
+	Get30StatsGetbybrowsersversionParamsFilterDateToYYYYMMDD Get30StatsGetbybrowsersversionParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbycitiesParamsLocale.
+const (
+	Get30StatsGetbycitiesParamsLocaleEn Get30StatsGetbycitiesParamsLocale = "en"
+	Get30StatsGetbycitiesParamsLocaleEs Get30StatsGetbycitiesParamsLocale = "es"
+	Get30StatsGetbycitiesParamsLocaleRu Get30StatsGetbycitiesParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbycitiesParamsOrderType.
+const (
+	Get30StatsGetbycitiesParamsOrderTypeAsc  Get30StatsGetbycitiesParamsOrderType = "asc"
+	Get30StatsGetbycitiesParamsOrderTypeDesc Get30StatsGetbycitiesParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbycitiesParamsFilterDateFrom.
+const (
+	Get30StatsGetbycitiesParamsFilterDateFromYYYYMMDD Get30StatsGetbycitiesParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbycitiesParamsFilterDateTo.
+const (
+	Get30StatsGetbycitiesParamsFilterDateToYYYYMMDD Get30StatsGetbycitiesParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyconnectiontypeParamsLocale.
+const (
+	Get30StatsGetbyconnectiontypeParamsLocaleEn Get30StatsGetbyconnectiontypeParamsLocale = "en"
+	Get30StatsGetbyconnectiontypeParamsLocaleEs Get30StatsGetbyconnectiontypeParamsLocale = "es"
+	Get30StatsGetbyconnectiontypeParamsLocaleRu Get30StatsGetbyconnectiontypeParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyconnectiontypeParamsOrderType.
+const (
+	Get30StatsGetbyconnectiontypeParamsOrderTypeAsc  Get30StatsGetbyconnectiontypeParamsOrderType = "asc"
+	Get30StatsGetbyconnectiontypeParamsOrderTypeDesc Get30StatsGetbyconnectiontypeParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyconnectiontypeParamsFilterDateFrom.
+const (
+	Get30StatsGetbyconnectiontypeParamsFilterDateFromYYYYMMDD Get30StatsGetbyconnectiontypeParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyconnectiontypeParamsFilterDateTo.
+const (
+	Get30StatsGetbyconnectiontypeParamsFilterDateToYYYYMMDD Get30StatsGetbyconnectiontypeParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbycountriesParamsLocale.
+const (
+	Get30StatsGetbycountriesParamsLocaleEn Get30StatsGetbycountriesParamsLocale = "en"
+	Get30StatsGetbycountriesParamsLocaleEs Get30StatsGetbycountriesParamsLocale = "es"
+	Get30StatsGetbycountriesParamsLocaleRu Get30StatsGetbycountriesParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbycountriesParamsOrderType.
+const (
+	Get30StatsGetbycountriesParamsOrderTypeAsc  Get30StatsGetbycountriesParamsOrderType = "asc"
+	Get30StatsGetbycountriesParamsOrderTypeDesc Get30StatsGetbycountriesParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbycountriesParamsFilterDateFrom.
+const (
+	Get30StatsGetbycountriesParamsFilterDateFromYYYYMMDD Get30StatsGetbycountriesParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbycountriesParamsFilterDateTo.
+const (
+	Get30StatsGetbycountriesParamsFilterDateToYYYYMMDD Get30StatsGetbycountriesParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydateParamsLocale.
+const (
+	Get30StatsGetbydateParamsLocaleEn Get30StatsGetbydateParamsLocale = "en"
+	Get30StatsGetbydateParamsLocaleEs Get30StatsGetbydateParamsLocale = "es"
+	Get30StatsGetbydateParamsLocaleRu Get30StatsGetbydateParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbydateParamsOrderType.
+const (
+	Get30StatsGetbydateParamsOrderTypeAsc  Get30StatsGetbydateParamsOrderType = "asc"
+	Get30StatsGetbydateParamsOrderTypeDesc Get30StatsGetbydateParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbydateParamsFilterDateFrom.
+const (
+	Get30StatsGetbydateParamsFilterDateFromYYYYMMDD Get30StatsGetbydateParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydateParamsFilterDateTo.
+const (
+	Get30StatsGetbydateParamsFilterDateToYYYYMMDD Get30StatsGetbydateParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydevicemodelsParamsLocale.
+const (
+	Get30StatsGetbydevicemodelsParamsLocaleEn Get30StatsGetbydevicemodelsParamsLocale = "en"
+	Get30StatsGetbydevicemodelsParamsLocaleEs Get30StatsGetbydevicemodelsParamsLocale = "es"
+	Get30StatsGetbydevicemodelsParamsLocaleRu Get30StatsGetbydevicemodelsParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbydevicemodelsParamsOrderType.
+const (
+	Get30StatsGetbydevicemodelsParamsOrderTypeAsc  Get30StatsGetbydevicemodelsParamsOrderType = "asc"
+	Get30StatsGetbydevicemodelsParamsOrderTypeDesc Get30StatsGetbydevicemodelsParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbydevicemodelsParamsFilterDateFrom.
+const (
+	Get30StatsGetbydevicemodelsParamsFilterDateFromYYYYMMDD Get30StatsGetbydevicemodelsParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydevicemodelsParamsFilterDateTo.
+const (
+	Get30StatsGetbydevicemodelsParamsFilterDateToYYYYMMDD Get30StatsGetbydevicemodelsParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydevicesParamsLocale.
+const (
+	Get30StatsGetbydevicesParamsLocaleEn Get30StatsGetbydevicesParamsLocale = "en"
+	Get30StatsGetbydevicesParamsLocaleEs Get30StatsGetbydevicesParamsLocale = "es"
+	Get30StatsGetbydevicesParamsLocaleRu Get30StatsGetbydevicesParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbydevicesParamsOrderType.
+const (
+	Get30StatsGetbydevicesParamsOrderTypeAsc  Get30StatsGetbydevicesParamsOrderType = "asc"
+	Get30StatsGetbydevicesParamsOrderTypeDesc Get30StatsGetbydevicesParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbydevicesParamsFilterDateFrom.
+const (
+	Get30StatsGetbydevicesParamsFilterDateFromYYYYMMDD Get30StatsGetbydevicesParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbydevicesParamsFilterDateTo.
+const (
+	Get30StatsGetbydevicesParamsFilterDateToYYYYMMDD Get30StatsGetbydevicesParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbygoalParamsLocale.
+const (
+	Get30StatsGetbygoalParamsLocaleEn Get30StatsGetbygoalParamsLocale = "en"
+	Get30StatsGetbygoalParamsLocaleEs Get30StatsGetbygoalParamsLocale = "es"
+	Get30StatsGetbygoalParamsLocaleRu Get30StatsGetbygoalParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbygoalParamsOrderType.
+const (
+	Get30StatsGetbygoalParamsOrderTypeAsc  Get30StatsGetbygoalParamsOrderType = "asc"
+	Get30StatsGetbygoalParamsOrderTypeDesc Get30StatsGetbygoalParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbygoalParamsFilterDateFrom.
+const (
+	Get30StatsGetbygoalParamsFilterDateFromYYYYMMDD Get30StatsGetbygoalParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbygoalParamsFilterDateTo.
+const (
+	Get30StatsGetbygoalParamsFilterDateToYYYYMMDD Get30StatsGetbygoalParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyhourParamsLocale.
+const (
+	Get30StatsGetbyhourParamsLocaleEn Get30StatsGetbyhourParamsLocale = "en"
+	Get30StatsGetbyhourParamsLocaleEs Get30StatsGetbyhourParamsLocale = "es"
+	Get30StatsGetbyhourParamsLocaleRu Get30StatsGetbyhourParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyhourParamsOrderType.
+const (
+	Get30StatsGetbyhourParamsOrderTypeAsc  Get30StatsGetbyhourParamsOrderType = "asc"
+	Get30StatsGetbyhourParamsOrderTypeDesc Get30StatsGetbyhourParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyhourParamsFilterDateFrom.
+const (
+	Get30StatsGetbyhourParamsFilterDateFromYYYYMMDD Get30StatsGetbyhourParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyhourParamsFilterDateTo.
+const (
+	Get30StatsGetbyhourParamsFilterDateToYYYYMMDD Get30StatsGetbyhourParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbylandingParamsLocale.
+const (
+	Get30StatsGetbylandingParamsLocaleEn Get30StatsGetbylandingParamsLocale = "en"
+	Get30StatsGetbylandingParamsLocaleEs Get30StatsGetbylandingParamsLocale = "es"
+	Get30StatsGetbylandingParamsLocaleRu Get30StatsGetbylandingParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbylandingParamsOrderType.
+const (
+	Get30StatsGetbylandingParamsOrderTypeAsc  Get30StatsGetbylandingParamsOrderType = "asc"
+	Get30StatsGetbylandingParamsOrderTypeDesc Get30StatsGetbylandingParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbylandingParamsFilterDateFrom.
+const (
+	Get30StatsGetbylandingParamsFilterDateFromYYYYMMDD Get30StatsGetbylandingParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbylandingParamsFilterDateTo.
+const (
+	Get30StatsGetbylandingParamsFilterDateToYYYYMMDD Get30StatsGetbylandingParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbymobilecarrierParamsLocale.
+const (
+	Get30StatsGetbymobilecarrierParamsLocaleEn Get30StatsGetbymobilecarrierParamsLocale = "en"
+	Get30StatsGetbymobilecarrierParamsLocaleEs Get30StatsGetbymobilecarrierParamsLocale = "es"
+	Get30StatsGetbymobilecarrierParamsLocaleRu Get30StatsGetbymobilecarrierParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbymobilecarrierParamsOrderType.
+const (
+	Get30StatsGetbymobilecarrierParamsOrderTypeAsc  Get30StatsGetbymobilecarrierParamsOrderType = "asc"
+	Get30StatsGetbymobilecarrierParamsOrderTypeDesc Get30StatsGetbymobilecarrierParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbymobilecarrierParamsFilterDateFrom.
+const (
+	Get30StatsGetbymobilecarrierParamsFilterDateFromYYYYMMDD Get30StatsGetbymobilecarrierParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbymobilecarrierParamsFilterDateTo.
+const (
+	Get30StatsGetbymobilecarrierParamsFilterDateToYYYYMMDD Get30StatsGetbymobilecarrierParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyosParamsLocale.
+const (
+	Get30StatsGetbyosParamsLocaleEn Get30StatsGetbyosParamsLocale = "en"
+	Get30StatsGetbyosParamsLocaleEs Get30StatsGetbyosParamsLocale = "es"
+	Get30StatsGetbyosParamsLocaleRu Get30StatsGetbyosParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyosParamsOrderType.
+const (
+	Get30StatsGetbyosParamsOrderTypeAsc  Get30StatsGetbyosParamsOrderType = "asc"
+	Get30StatsGetbyosParamsOrderTypeDesc Get30StatsGetbyosParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyosParamsFilterDateFrom.
+const (
+	Get30StatsGetbyosParamsFilterDateFromYYYYMMDD Get30StatsGetbyosParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyosParamsFilterDateTo.
+const (
+	Get30StatsGetbyosParamsFilterDateToYYYYMMDD Get30StatsGetbyosParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbypartnerParamsLocale.
+const (
+	Get30StatsGetbypartnerParamsLocaleEn Get30StatsGetbypartnerParamsLocale = "en"
+	Get30StatsGetbypartnerParamsLocaleEs Get30StatsGetbypartnerParamsLocale = "es"
+	Get30StatsGetbypartnerParamsLocaleRu Get30StatsGetbypartnerParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbypartnerParamsOrderType.
+const (
+	Get30StatsGetbypartnerParamsOrderTypeAsc  Get30StatsGetbypartnerParamsOrderType = "asc"
+	Get30StatsGetbypartnerParamsOrderTypeDesc Get30StatsGetbypartnerParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbypartnerParamsFilterDateFrom.
+const (
+	Get30StatsGetbypartnerParamsFilterDateFromYYYYMMDD Get30StatsGetbypartnerParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbypartnerParamsFilterDateTo.
+const (
+	Get30StatsGetbypartnerParamsFilterDateToYYYYMMDD Get30StatsGetbypartnerParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbypartnerbydateParamsLocale.
+const (
+	Get30StatsGetbypartnerbydateParamsLocaleEn Get30StatsGetbypartnerbydateParamsLocale = "en"
+	Get30StatsGetbypartnerbydateParamsLocaleEs Get30StatsGetbypartnerbydateParamsLocale = "es"
+	Get30StatsGetbypartnerbydateParamsLocaleRu Get30StatsGetbypartnerbydateParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbypartnerbydateParamsOrderType.
+const (
+	Get30StatsGetbypartnerbydateParamsOrderTypeAsc  Get30StatsGetbypartnerbydateParamsOrderType = "asc"
+	Get30StatsGetbypartnerbydateParamsOrderTypeDesc Get30StatsGetbypartnerbydateParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbypartnerbydateParamsFilterDateFrom.
+const (
+	Get30StatsGetbypartnerbydateParamsFilterDateFromYYYYMMDD Get30StatsGetbypartnerbydateParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbypartnerbydateParamsFilterDateTo.
+const (
+	Get30StatsGetbypartnerbydateParamsFilterDateToYYYYMMDD Get30StatsGetbypartnerbydateParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyprelandingParamsLocale.
+const (
+	Get30StatsGetbyprelandingParamsLocaleEn Get30StatsGetbyprelandingParamsLocale = "en"
+	Get30StatsGetbyprelandingParamsLocaleEs Get30StatsGetbyprelandingParamsLocale = "es"
+	Get30StatsGetbyprelandingParamsLocaleRu Get30StatsGetbyprelandingParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyprelandingParamsOrderType.
+const (
+	Get30StatsGetbyprelandingParamsOrderTypeAsc  Get30StatsGetbyprelandingParamsOrderType = "asc"
+	Get30StatsGetbyprelandingParamsOrderTypeDesc Get30StatsGetbyprelandingParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyprelandingParamsFilterDateFrom.
+const (
+	Get30StatsGetbyprelandingParamsFilterDateFromYYYYMMDD Get30StatsGetbyprelandingParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyprelandingParamsFilterDateTo.
+const (
+	Get30StatsGetbyprelandingParamsFilterDateToYYYYMMDD Get30StatsGetbyprelandingParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyprogramParamsLocale.
+const (
+	Get30StatsGetbyprogramParamsLocaleEn Get30StatsGetbyprogramParamsLocale = "en"
+	Get30StatsGetbyprogramParamsLocaleEs Get30StatsGetbyprogramParamsLocale = "es"
+	Get30StatsGetbyprogramParamsLocaleRu Get30StatsGetbyprogramParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyprogramParamsOrderType.
+const (
+	Get30StatsGetbyprogramParamsOrderTypeAsc  Get30StatsGetbyprogramParamsOrderType = "asc"
+	Get30StatsGetbyprogramParamsOrderTypeDesc Get30StatsGetbyprogramParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyprogramParamsFilterDateFrom.
+const (
+	Get30StatsGetbyprogramParamsFilterDateFromYYYYMMDD Get30StatsGetbyprogramParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyprogramParamsFilterDateTo.
+const (
+	Get30StatsGetbyprogramParamsFilterDateToYYYYMMDD Get30StatsGetbyprogramParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbysubParamsLocale.
+const (
+	Get30StatsGetbysubParamsLocaleEn Get30StatsGetbysubParamsLocale = "en"
+	Get30StatsGetbysubParamsLocaleEs Get30StatsGetbysubParamsLocale = "es"
+	Get30StatsGetbysubParamsLocaleRu Get30StatsGetbysubParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbysubParamsOrderType.
+const (
+	Get30StatsGetbysubParamsOrderTypeAsc  Get30StatsGetbysubParamsOrderType = "asc"
+	Get30StatsGetbysubParamsOrderTypeDesc Get30StatsGetbysubParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbysubParamsFilterDateFrom.
+const (
+	Get30StatsGetbysubParamsFilterDateFromYYYYMMDD Get30StatsGetbysubParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbysubParamsFilterDateTo.
+const (
+	Get30StatsGetbysubParamsFilterDateToYYYYMMDD Get30StatsGetbysubParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbytrafficbackParamsLocale.
+const (
+	Get30StatsGetbytrafficbackParamsLocaleEn Get30StatsGetbytrafficbackParamsLocale = "en"
+	Get30StatsGetbytrafficbackParamsLocaleEs Get30StatsGetbytrafficbackParamsLocale = "es"
+	Get30StatsGetbytrafficbackParamsLocaleRu Get30StatsGetbytrafficbackParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbytrafficbackParamsOrderType.
+const (
+	Get30StatsGetbytrafficbackParamsOrderTypeAsc  Get30StatsGetbytrafficbackParamsOrderType = "asc"
+	Get30StatsGetbytrafficbackParamsOrderTypeDesc Get30StatsGetbytrafficbackParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbytrafficbackParamsFilterDateFrom.
+const (
+	Get30StatsGetbytrafficbackParamsFilterDateFromYYYYMMDD Get30StatsGetbytrafficbackParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbytrafficbackParamsFilterDateTo.
+const (
+	Get30StatsGetbytrafficbackParamsFilterDateToYYYYMMDD Get30StatsGetbytrafficbackParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyversionsParamsLocale.
+const (
+	Get30StatsGetbyversionsParamsLocaleEn Get30StatsGetbyversionsParamsLocale = "en"
+	Get30StatsGetbyversionsParamsLocaleEs Get30StatsGetbyversionsParamsLocale = "es"
+	Get30StatsGetbyversionsParamsLocaleRu Get30StatsGetbyversionsParamsLocale = "ru"
+)
+
+// Defines values for Get30StatsGetbyversionsParamsOrderType.
+const (
+	Get30StatsGetbyversionsParamsOrderTypeAsc  Get30StatsGetbyversionsParamsOrderType = "asc"
+	Get30StatsGetbyversionsParamsOrderTypeDesc Get30StatsGetbyversionsParamsOrderType = "desc"
+)
+
+// Defines values for Get30StatsGetbyversionsParamsFilterDateFrom.
+const (
+	Get30StatsGetbyversionsParamsFilterDateFromYYYYMMDD Get30StatsGetbyversionsParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetbyversionsParamsFilterDateTo.
+const (
+	Get30StatsGetbyversionsParamsFilterDateToYYYYMMDD Get30StatsGetbyversionsParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsGetreferralpaymentsParamsDateFrom.
+const (
+	Get30StatsGetreferralpaymentsParamsDateFromDDMMYYYY Get30StatsGetreferralpaymentsParamsDateFrom = "DD-MM-YYYY"
+)
+
+// Defines values for Get30StatsGetreferralpaymentsParamsDateTo.
+const (
+	Get30StatsGetreferralpaymentsParamsDateToDDMMYYYY Get30StatsGetreferralpaymentsParamsDateTo = "DD-MM-YYYY"
+)
+
+// Defines values for Get30StatsRetentionrateParamsDateFrom.
+const (
+	Get30StatsRetentionrateParamsDateFromYYYYMMDD Get30StatsRetentionrateParamsDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsRetentionrateParamsDateTo.
+const (
+	Get30StatsRetentionrateParamsDateToYYYYMMDD Get30StatsRetentionrateParamsDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsRetentionrateParamsBaseEvent.
+const (
+	CaretAZAZ Get30StatsRetentionrateParamsBaseEvent = "^[a-zA-Z]"
+)
+
+// Defines values for Get30StatsServerpostbacksParamsDateFrom.
+const (
+	Get30StatsServerpostbacksParamsDateFromYYYYMMDD Get30StatsServerpostbacksParamsDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsServerpostbacksParamsDateTo.
+const (
+	Get30StatsServerpostbacksParamsDateToYYYYMMDD Get30StatsServerpostbacksParamsDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsServerpostbacksParamsIsSuccess.
+const (
+	N0 Get30StatsServerpostbacksParamsIsSuccess = "0"
+	N1 Get30StatsServerpostbacksParamsIsSuccess = "1"
+)
+
+// Defines values for Get30StatsTimeToActionParamsDateFrom.
+const (
+	Get30StatsTimeToActionParamsDateFromYYYYMMDD Get30StatsTimeToActionParamsDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get30StatsTimeToActionParamsDateTo.
+const (
+	Get30StatsTimeToActionParamsDateToYYYYMMDD Get30StatsTimeToActionParamsDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationCrAndSubBlockLogsParamsFilterDateFrom.
+const (
+	Get31AutomationCrAndSubBlockLogsParamsFilterDateFromYYYYMMDD Get31AutomationCrAndSubBlockLogsParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationCrAndSubBlockLogsParamsFilterDateTo.
+const (
+	Get31AutomationCrAndSubBlockLogsParamsFilterDateToYYYYMMDD Get31AutomationCrAndSubBlockLogsParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationKpiBlockLogsParamsFilterDateFrom.
+const (
+	Get31AutomationKpiBlockLogsParamsFilterDateFromYYYYMMDD Get31AutomationKpiBlockLogsParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationKpiBlockLogsParamsFilterDateTo.
+const (
+	Get31AutomationKpiBlockLogsParamsFilterDateToYYYYMMDD Get31AutomationKpiBlockLogsParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationKpiChangeLogsParamsFilterDateFrom.
+const (
+	Get31AutomationKpiChangeLogsParamsFilterDateFromYYYYMMDD Get31AutomationKpiChangeLogsParamsFilterDateFrom = "YYYY-MM-DD"
+)
+
+// Defines values for Get31AutomationKpiChangeLogsParamsFilterDateTo.
+const (
+	Get31AutomationKpiChangeLogsParamsFilterDateToYYYYMMDD Get31AutomationKpiChangeLogsParamsFilterDateTo = "YYYY-MM-DD"
+)
+
+// AffiseObject defines model for AffiseObject.
+type AffiseObject map[string]interface{}
+
 // Offer defines model for Offer.
 type Offer struct {
 	Advertiser *string `json:"advertiser,omitempty"`
@@ -48,6 +777,182 @@ type OffersListResponse struct {
 	Status               *int                    `json:"status,omitempty"`
 	AdditionalProperties map[string]interface{}  `json:"-"`
 }
+
+// Get30AdminAdvertiserInvoicesParams defines parameters for Get30AdminAdvertiserInvoices.
+type Get30AdminAdvertiserInvoicesParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Status Status of invoice
+	Status *Get30AdminAdvertiserInvoicesParamsStatus `form:"status,omitempty" json:"status,omitempty"`
+
+	// StartDate Start date of period
+	StartDate *string `form:"start_date,omitempty" json:"start_date,omitempty"`
+
+	// EndDate End date of period
+	EndDate *string `form:"end_date,omitempty" json:"end_date,omitempty"`
+}
+
+// Get30AdminAdvertiserInvoicesParamsStatus defines parameters for Get30AdminAdvertiserInvoices.
+type Get30AdminAdvertiserInvoicesParamsStatus string
+
+// Get30AdminAdvertisersParams defines parameters for Get30AdminAdvertisers.
+type Get30AdminAdvertisersParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Order Sort by field
+	Order *Get30AdminAdvertisersParamsOrder `form:"order,omitempty" json:"order,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30AdminAdvertisersParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// UpdatedAt Get advertisers that have been updated from this date (format YYYY-MM-DD)
+	UpdatedAt *string `form:"updated_at,omitempty" json:"updated_at,omitempty"`
+
+	// WithOffers Show advertisers with offers
+	WithOffers *int64 `form:"with_offers,omitempty" json:"with_offers,omitempty"`
+
+	// Id Filter by advertiser id
+	Id *string `form:"id,omitempty" json:"id,omitempty"`
+
+	// Name Filter by advertiser name
+	Name *string `form:"name,omitempty" json:"name,omitempty"`
+
+	// Tags Filter by tags
+	Tags *string `form:"tags,omitempty" json:"tags,omitempty"`
+}
+
+// Get30AdminAdvertisersParamsOrder defines parameters for Get30AdminAdvertisers.
+type Get30AdminAdvertisersParamsOrder string
+
+// Get30AdminAdvertisersParamsOrderType defines parameters for Get30AdminAdvertisers.
+type Get30AdminAdvertisersParamsOrderType string
+
+// Get30AdminCurrencyParams defines parameters for Get30AdminCurrency.
+type Get30AdminCurrencyParams struct {
+	// GetOnlyActive Ignore inactive currencies
+	GetOnlyActive *int64 `form:"get_only_active,omitempty" json:"get_only_active,omitempty"`
+
+	// Extended Extended currencies information
+	Extended *int64 `form:"extended,omitempty" json:"extended,omitempty"`
+}
+
+// Get30AdminCurrencyExtended1Params defines parameters for Get30AdminCurrencyExtended1.
+type Get30AdminCurrencyExtended1Params struct {
+	// GetOnlyActive Ignore inactive currencies
+	GetOnlyActive *int64 `form:"get_only_active,omitempty" json:"get_only_active,omitempty"`
+
+	// Extended Extended currencies information
+	Extended *int64 `form:"extended,omitempty" json:"extended,omitempty"`
+}
+
+// Get30AdminPartnersParams defines parameters for Get30AdminPartners.
+type Get30AdminPartnersParams struct {
+	// Id Search by affiliate IDs
+	Id *[]int `form:"id,omitempty" json:"id,omitempty"`
+
+	// WithBalance Show partners with balance
+	WithBalance *int64 `form:"with_balance,omitempty" json:"with_balance,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// UpdatedAt Get partners that have been updated from this date (format YYYY-MM-DD)
+	UpdatedAt *string `form:"updated_at,omitempty" json:"updated_at,omitempty"`
+
+	// Status Filter
+	Status *string `form:"status,omitempty" json:"status,omitempty"`
+}
+
+// Get30AdminPostbacksParams defines parameters for Get30AdminPostbacks.
+type Get30AdminPostbacksParams struct {
+	// PartnerId REQUIRED
+	PartnerId *int64 `form:"partner_id,omitempty" json:"partner_id,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+}
+
+// Get30AdminSmartlinkCategoriesParams defines parameters for Get30AdminSmartlinkCategories.
+type Get30AdminSmartlinkCategoriesParams struct {
+	// Id SmartLink categories ID
+	Id *[]string `form:"id,omitempty" json:"id,omitempty"`
+
+	// Name SmartLink title
+	Name *string `form:"name,omitempty" json:"name,omitempty"`
+}
+
+// Get30AdminTicketsParams defines parameters for Get30AdminTickets.
+type Get30AdminTicketsParams struct {
+	// Page REQUIRED Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit  *int64                         `form:"limit,omitempty" json:"limit,omitempty"`
+	Status *Get30AdminTicketsParamsStatus `form:"status,omitempty" json:"status,omitempty"`
+}
+
+// Get30AdminTicketsParamsStatus defines parameters for Get30AdminTickets.
+type Get30AdminTicketsParamsStatus string
+
+// Get30AdminUsersParams defines parameters for Get30AdminUsers.
+type Get30AdminUsersParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// UpdatedAt Get users that have been updated from this date (format YYYY-MM-DD)
+	UpdatedAt *string `form:"updated_at,omitempty" json:"updated_at,omitempty"`
+
+	// Q Search query
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
+}
+
+// Get30NewsParams defines parameters for Get30News.
+type Get30NewsParams struct {
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Skip Offset
+	Skip *int64 `form:"skip,omitempty" json:"skip,omitempty"`
+
+	// Fixed 1 - pinned, 0 - not pinned
+	Fixed *int64 `form:"fixed,omitempty" json:"fixed,omitempty"`
+}
+
+// Get30OfferCategoriesParams defines parameters for Get30OfferCategories.
+type Get30OfferCategoriesParams struct {
+	// Ids Search by IDs
+	Ids *[]string `form:"ids,omitempty" json:"ids,omitempty"`
+
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit     *int64                               `form:"limit,omitempty" json:"limit,omitempty"`
+	OrderType *Get30OfferCategoriesParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+	Order     *Get30OfferCategoriesParamsOrder     `form:"order,omitempty" json:"order,omitempty"`
+}
+
+// Get30OfferCategoriesParamsOrderType defines parameters for Get30OfferCategories.
+type Get30OfferCategoriesParamsOrderType string
+
+// Get30OfferCategoriesParamsOrder defines parameters for Get30OfferCategories.
+type Get30OfferCategoriesParamsOrder string
 
 // Get30OffersParams defines parameters for Get30Offers.
 type Get30OffersParams struct {
@@ -110,6 +1015,3072 @@ type Get30OffersParams struct {
 
 	// AdditionalFields ONLY FOR ADMIN Sample: additional_fields=enabled_affiliates
 	AdditionalFields *string `form:"additional_fields,omitempty" json:"additional_fields,omitempty"`
+}
+
+// Get30PartnerLiveOffersParams defines parameters for Get30PartnerLiveOffers.
+type Get30PartnerLiveOffersParams struct {
+	// Q Search by title and id
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
+
+	// IntId Search by int offer ID
+	IntId *[]int `form:"int_id,omitempty" json:"int_id,omitempty"`
+
+	// Countries Array of offers countries(ISO)
+	Countries *[]string `form:"countries,omitempty" json:"countries,omitempty"`
+
+	// Categories Array of offers categories
+	Categories *[]string `form:"categories,omitempty" json:"categories,omitempty"`
+
+	// CapsCountry Comma separated array of strings. Example: US,DE. If one or more cap filters are set (caps_country, caps_type), other filters are ignored
+	CapsCountry *string `form:"caps_country,omitempty" json:"caps_country,omitempty"`
+
+	// CapsType Comma separated array of strings. Example: clicks,conversions,budget,impressions. If one or more cap filters are set (caps_country, caps_type), other filters are ignored
+	CapsType *string `form:"caps_type,omitempty" json:"caps_type,omitempty"`
+
+	// Sort Sort offers. Sample sort[id]=asc, sort[title]=desc. You can sort offers by one of (id, title, cr, epc)
+	Sort *[]string `form:"sort,omitempty" json:"sort,omitempty"`
+
+	// Page Page of offers
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Count offers by page
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30PartnerOffersParams defines parameters for Get30PartnerOffers.
+type Get30PartnerOffersParams struct {
+	// Q Search by title and id
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
+
+	// IntId Search by int offer ID
+	IntId *[]int `form:"int_id,omitempty" json:"int_id,omitempty"`
+
+	// Countries Array of offers countries(ISO)
+	Countries *[]string `form:"countries,omitempty" json:"countries,omitempty"`
+
+	// Categories Array of offers categories
+	Categories *[]string `form:"categories,omitempty" json:"categories,omitempty"`
+
+	// CapsCountry Comma separated array of strings. Example: US,DE. If one or more cap filters are set (caps_country, caps_type), other filters are ignored
+	CapsCountry *string `form:"caps_country,omitempty" json:"caps_country,omitempty"`
+
+	// CapsType Comma separated array of strings. Example: clicks,conversions,budget,impressions. If one or more cap filters are set (caps_country, caps_type), other filters are ignored. This filter will not show offers for the selected cap type if the cap is full
+	CapsType *string `form:"caps_type,omitempty" json:"caps_type,omitempty"`
+
+	// Sort Sort offers. Sample sort[id]=asc, sort[title]=desc. You can sort offers by one of (id, title, cr, epc)
+	Sort *[]string `form:"sort,omitempty" json:"sort,omitempty"`
+
+	// Page Page of offers
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Count offers by page
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30PartnerPixelsParams defines parameters for Get30PartnerPixels.
+type Get30PartnerPixelsParams struct {
+	// Pid affiliate’s ID
+	Pid *int64 `form:"pid[],omitempty" json:"pid[],omitempty"`
+
+	// ModerationStatus Moderation status
+	ModerationStatus *int64 `form:"moderation_status,omitempty" json:"moderation_status,omitempty"`
+}
+
+// Get30PartnerSmartlinkCategoriesParams defines parameters for Get30PartnerSmartlinkCategories.
+type Get30PartnerSmartlinkCategoriesParams struct {
+	// Id SmartLink categories ID collections
+	Id *[]string `form:"id,omitempty" json:"id,omitempty"`
+}
+
+// Get30StatsAffiliatepostbacksParams defines parameters for Get30StatsAffiliatepostbacks.
+type Get30StatsAffiliatepostbacksParams struct {
+	// DateFrom REQUIRED
+	DateFrom *Get30StatsAffiliatepostbacksParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED
+	DateTo *Get30StatsAffiliatepostbacksParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// Offer Offers ID’s
+	Offer *[]int `form:"offer,omitempty" json:"offer,omitempty"`
+
+	// Partner Partners ID’s.
+	Partner *[]int `form:"partner,omitempty" json:"partner,omitempty"`
+
+	// Goal Goal
+	Goal *string `form:"goal,omitempty" json:"goal,omitempty"`
+
+	// Status Status
+	Status *int64 `form:"status,omitempty" json:"status,omitempty"`
+
+	// HttpCode Http code
+	HttpCode *int64 `form:"http_code,omitempty" json:"http_code,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30StatsAffiliatepostbacksParamsDateFrom defines parameters for Get30StatsAffiliatepostbacks.
+type Get30StatsAffiliatepostbacksParamsDateFrom string
+
+// Get30StatsAffiliatepostbacksParamsDateTo defines parameters for Get30StatsAffiliatepostbacks.
+type Get30StatsAffiliatepostbacksParamsDateTo string
+
+// Get30StatsClicksParams defines parameters for Get30StatsClicks.
+type Get30StatsClicksParams struct {
+	// DateFrom REQUIRED
+	DateFrom *Get30StatsClicksParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED
+	DateTo *Get30StatsClicksParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// Hour Hour point  Allows only for one day period
+	Hour *int64 `form:"hour,omitempty" json:"hour,omitempty"`
+
+	// Offer Offer ID’s
+	Offer *[]int `form:"offer,omitempty" json:"offer,omitempty"`
+
+	// Partner Affiliates ID’s
+	Partner *[]int `form:"partner,omitempty" json:"partner,omitempty"`
+
+	// Country Countries codes. Example: “US”
+	Country *[]string `form:"country,omitempty" json:"country,omitempty"`
+
+	// Advertisers ONLY FOR ADMIN Advertiser ID collection
+	Advertisers *[]string `form:"advertisers,omitempty" json:"advertisers,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30StatsClicksParamsDateFrom defines parameters for Get30StatsClicks.
+type Get30StatsClicksParamsDateFrom string
+
+// Get30StatsClicksParamsDateTo defines parameters for Get30StatsClicks.
+type Get30StatsClicksParamsDateTo string
+
+// Get30StatsConversionsParams defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParams struct {
+	// DateFrom Date from
+	DateFrom *Get30StatsConversionsParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo Date to
+	DateTo *Get30StatsConversionsParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// UpdateFromDate ONLY FOR ADMIN Last update date point
+	UpdateFromDate *Get30StatsConversionsParamsUpdateFromDate `form:"update_from_date,omitempty" json:"update_from_date,omitempty"`
+
+	// UpdateFromHour ONLY FOR ADMIN Last update hour point. Available only when update_from_date and update_to_date filters are used
+	UpdateFromHour *string `form:"update_from_hour,omitempty" json:"update_from_hour,omitempty"`
+
+	// UpdateToDate ONLY FOR ADMIN End date of last update
+	UpdateToDate *Get30StatsConversionsParamsUpdateToDate `form:"update_to_date,omitempty" json:"update_to_date,omitempty"`
+
+	// UpdateToHour ONLY FOR ADMIN End hour of last update. Available only when update_from_date and update_to_date filters are used
+	UpdateToHour *string `form:"update_to_hour,omitempty" json:"update_to_hour,omitempty"`
+
+	// Status Status conversions. 1 = confirmed, 2 = pending, 3 = declined, 5 = hold
+	Status *[]int `form:"status,omitempty" json:"status,omitempty"`
+
+	// Offer Offer ID collection
+	Offer *[]int `form:"offer,omitempty" json:"offer,omitempty"`
+
+	// Advertiser Advertiser ID collection
+	Advertiser *[]string `form:"advertiser,omitempty" json:"advertiser,omitempty"`
+
+	// Country Countries codes. Example: “US”
+	Country *[]string `form:"country,omitempty" json:"country,omitempty"`
+
+	// Browser Browser
+	Browser *string `form:"browser,omitempty" json:"browser,omitempty"`
+
+	// ActionId Cbid
+	ActionId *string `form:"action_id,omitempty" json:"action_id,omitempty"`
+
+	// Clickid Click ID
+	Clickid *string `form:"clickid,omitempty" json:"clickid,omitempty"`
+
+	// Os Os
+	Os *string `form:"os,omitempty" json:"os,omitempty"`
+
+	// Goal Goal
+	Goal *string `form:"goal,omitempty" json:"goal,omitempty"`
+
+	// GoalId Goal ID collection
+	GoalId *[]int `form:"goal_id,omitempty" json:"goal_id,omitempty"`
+
+	// Device Device
+	Device *Get30StatsConversionsParamsDevice `form:"device,omitempty" json:"device,omitempty"`
+
+	// Payouts Payout for affiliate
+	Payouts *float64 `form:"payouts,omitempty" json:"payouts,omitempty"`
+
+	// PayoutsFrom Payout for affiliate must be greater than this value
+	PayoutsFrom *float64 `form:"payouts_from,omitempty" json:"payouts_from,omitempty"`
+
+	// PayoutsTo Payout for affiliate must be less than this value
+	PayoutsTo *float64 `form:"payouts_to,omitempty" json:"payouts_to,omitempty"`
+
+	// Currency ID currency
+	Currency *int64 `form:"currency,omitempty" json:"currency,omitempty"`
+
+	// Hour Hour point  Allows only for one day period
+	Hour *int64 `form:"hour,omitempty" json:"hour,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// CustomField1 Custom field 1
+	CustomField1 *string `form:"custom_field_1,omitempty" json:"custom_field_1,omitempty"`
+
+	// CustomField2 Custom field 2
+	CustomField2 *string `form:"custom_field_2,omitempty" json:"custom_field_2,omitempty"`
+
+	// CustomField3 Custom field 3
+	CustomField3 *string `form:"custom_field_3,omitempty" json:"custom_field_3,omitempty"`
+
+	// CustomField4 Custom field 4
+	CustomField4 *string `form:"custom_field_4,omitempty" json:"custom_field_4,omitempty"`
+
+	// CustomField5 Custom field 5
+	CustomField5 *string `form:"custom_field_5,omitempty" json:"custom_field_5,omitempty"`
+
+	// CustomField6 Custom field 6
+	CustomField6 *string `form:"custom_field_6,omitempty" json:"custom_field_6,omitempty"`
+
+	// CustomField7 Custom field 7
+	CustomField7 *string `form:"custom_field_7,omitempty" json:"custom_field_7,omitempty"`
+
+	// Subid1 Sub 1
+	Subid1 *string `form:"subid1,omitempty" json:"subid1,omitempty"`
+
+	// Subid2 Sub 2
+	Subid2 *string `form:"subid2,omitempty" json:"subid2,omitempty"`
+
+	// Subid3 Sub 3
+	Subid3 *string `form:"subid3,omitempty" json:"subid3,omitempty"`
+
+	// Subid4 Sub 4
+	Subid4 *string `form:"subid4,omitempty" json:"subid4,omitempty"`
+
+	// Subid5 Sub 5
+	Subid5 *string `form:"subid5,omitempty" json:"subid5,omitempty"`
+
+	// SmartId Smartlink Id
+	SmartId *string `form:"smart_id,omitempty" json:"smart_id,omitempty"`
+
+	// Promocode Promocode
+	Promocode *string `form:"promocode,omitempty" json:"promocode,omitempty"`
+
+	// ImpId Impression Id
+	ImpId *string `form:"imp_id,omitempty" json:"imp_id,omitempty"`
+
+	// PaymentStatus Available: opened, pending, closed
+	PaymentStatus *string `form:"payment_status,omitempty" json:"payment_status,omitempty"`
+
+	// Partner ONLY FOR ADMIN  Affiliates
+	Partner *[]int `form:"partner,omitempty" json:"partner,omitempty"`
+
+	// Revenue ONLY FOR ADMIN Revenue
+	Revenue *float64 `form:"revenue,omitempty" json:"revenue,omitempty"`
+
+	// RevenueFrom ONLY FOR ADMIN Revenue must be greater than this value
+	RevenueFrom *float64 `form:"revenue_from,omitempty" json:"revenue_from,omitempty"`
+
+	// RevenueTo ONLY FOR ADMIN Revenue must be less than this value
+	RevenueTo *float64 `form:"revenue_to,omitempty" json:"revenue_to,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// RawExport Without mapping related entities (For huge exports)
+	RawExport *int64 `form:"raw_export,omitempty" json:"raw_export,omitempty"`
+
+	// DeclineReason Filter by decline reason. Available: anti_fraud, cap_reached, by_manager, payment_not_found, ip_duplicate, by_server_postback, partner_banned, partner_disabled, min_click_time_not_reached, click_time_expire, by_import, promocode_expired, promocode_not_available
+	DeclineReason *[]string `form:"decline_reason,omitempty" json:"decline_reason,omitempty"`
+
+	// FraudRiskLevel Filter by fraud risk level. Available: not_analyzed, low, medium, high, no_risk
+	FraudRiskLevel *[]string `form:"fraud_risk_level,omitempty" json:"fraud_risk_level,omitempty"`
+
+	// FraudType Filter by fraud type.
+	FraudType *[]string `form:"fraud_type,omitempty" json:"fraud_type,omitempty"`
+
+	// Comment Comment
+	Comment *string `form:"comment,omitempty" json:"comment,omitempty"`
+}
+
+// Get30StatsConversionsParamsDateFrom defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParamsDateFrom string
+
+// Get30StatsConversionsParamsDateTo defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParamsDateTo string
+
+// Get30StatsConversionsParamsUpdateFromDate defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParamsUpdateFromDate string
+
+// Get30StatsConversionsParamsUpdateToDate defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParamsUpdateToDate string
+
+// Get30StatsConversionsParamsDevice defines parameters for Get30StatsConversions.
+type Get30StatsConversionsParamsDevice string
+
+// Get30StatsCustomParams defines parameters for Get30StatsCustom.
+type Get30StatsCustomParams struct {
+	// Slice REQUIRED Custom stats slice
+	Slice *[]string `form:"slice,omitempty" json:"slice,omitempty"`
+
+	// FilterDateFrom REQUIRED Date from
+	FilterDateFrom *Get30StatsCustomParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED Date to
+	FilterDateTo *Get30StatsCustomParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub number 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub number 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub number 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub number 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub number 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterSmartId Allowed only when the smart slice selected SmartLink categories ID’s
+	FilterSmartId *string `form:"filter[smart_id],omitempty" json:"filter[smart_id],omitempty"`
+
+	// FilterNonzero Non-zero conversions
+	FilterNonzero *int64 `form:"filter[nonzero],omitempty" json:"filter[nonzero],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+
+	// FilterPaymentStatus Filter by payment status
+	FilterPaymentStatus *Get30StatsCustomParamsFilterPaymentStatus `form:"filter[payment_status],omitempty" json:"filter[payment_status],omitempty"`
+
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsCustomParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// ConversionTypes Only this conversion types will be output
+	ConversionTypes *[]string `form:"conversionTypes,omitempty" json:"conversionTypes,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsCustomParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// Order Sort by field
+	Order *[]string `form:"order,omitempty" json:"order,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Fields Custom stats fields
+	Fields *[]string `form:"fields,omitempty" json:"fields,omitempty"`
+}
+
+// Get30StatsCustomParamsFilterDateFrom defines parameters for Get30StatsCustom.
+type Get30StatsCustomParamsFilterDateFrom string
+
+// Get30StatsCustomParamsFilterDateTo defines parameters for Get30StatsCustom.
+type Get30StatsCustomParamsFilterDateTo string
+
+// Get30StatsCustomParamsFilterPaymentStatus defines parameters for Get30StatsCustom.
+type Get30StatsCustomParamsFilterPaymentStatus string
+
+// Get30StatsCustomParamsLocale defines parameters for Get30StatsCustom.
+type Get30StatsCustomParamsLocale string
+
+// Get30StatsCustomParamsOrderType defines parameters for Get30StatsCustom.
+type Get30StatsCustomParamsOrderType string
+
+// Get30StatsFindSubsParams defines parameters for Get30StatsFindSubs.
+type Get30StatsFindSubsParams struct {
+	// Sub1 Sub 1
+	Sub1 *string `form:"sub1,omitempty" json:"sub1,omitempty"`
+
+	// Sub2 Sub 2
+	Sub2 *string `form:"sub2,omitempty" json:"sub2,omitempty"`
+
+	// Sub3 Sub 3
+	Sub3 *string `form:"sub3,omitempty" json:"sub3,omitempty"`
+
+	// Sub4 Sub 4
+	Sub4 *string `form:"sub4,omitempty" json:"sub4,omitempty"`
+
+	// Sub5 Sub 5
+	Sub5 *string `form:"sub5,omitempty" json:"sub5,omitempty"`
+
+	// Page Page of sub entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of sub entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30StatsGetbyaccountmanagerParams defines parameters for Get30StatsGetbyaccountmanager.
+type Get30StatsGetbyaccountmanagerParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyaccountmanagerParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyaccountmanagerParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyaccountmanagerParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyaccountmanagerParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyaccountmanagerParamsLocale defines parameters for Get30StatsGetbyaccountmanager.
+type Get30StatsGetbyaccountmanagerParamsLocale string
+
+// Get30StatsGetbyaccountmanagerParamsOrderType defines parameters for Get30StatsGetbyaccountmanager.
+type Get30StatsGetbyaccountmanagerParamsOrderType string
+
+// Get30StatsGetbyaccountmanagerParamsFilterDateFrom defines parameters for Get30StatsGetbyaccountmanager.
+type Get30StatsGetbyaccountmanagerParamsFilterDateFrom string
+
+// Get30StatsGetbyaccountmanagerParamsFilterDateTo defines parameters for Get30StatsGetbyaccountmanager.
+type Get30StatsGetbyaccountmanagerParamsFilterDateTo string
+
+// Get30StatsGetbyadvertiserParams defines parameters for Get30StatsGetbyadvertiser.
+type Get30StatsGetbyadvertiserParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyadvertiserParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyadvertiserParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyadvertiserParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyadvertiserParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyadvertiserParamsLocale defines parameters for Get30StatsGetbyadvertiser.
+type Get30StatsGetbyadvertiserParamsLocale string
+
+// Get30StatsGetbyadvertiserParamsOrderType defines parameters for Get30StatsGetbyadvertiser.
+type Get30StatsGetbyadvertiserParamsOrderType string
+
+// Get30StatsGetbyadvertiserParamsFilterDateFrom defines parameters for Get30StatsGetbyadvertiser.
+type Get30StatsGetbyadvertiserParamsFilterDateFrom string
+
+// Get30StatsGetbyadvertiserParamsFilterDateTo defines parameters for Get30StatsGetbyadvertiser.
+type Get30StatsGetbyadvertiserParamsFilterDateTo string
+
+// Get30StatsGetbyaffiliatemanagerParams defines parameters for Get30StatsGetbyaffiliatemanager.
+type Get30StatsGetbyaffiliatemanagerParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyaffiliatemanagerParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyaffiliatemanagerParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyaffiliatemanagerParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyaffiliatemanagerParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currencies
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyaffiliatemanagerParamsLocale defines parameters for Get30StatsGetbyaffiliatemanager.
+type Get30StatsGetbyaffiliatemanagerParamsLocale string
+
+// Get30StatsGetbyaffiliatemanagerParamsOrderType defines parameters for Get30StatsGetbyaffiliatemanager.
+type Get30StatsGetbyaffiliatemanagerParamsOrderType string
+
+// Get30StatsGetbyaffiliatemanagerParamsFilterDateFrom defines parameters for Get30StatsGetbyaffiliatemanager.
+type Get30StatsGetbyaffiliatemanagerParamsFilterDateFrom string
+
+// Get30StatsGetbyaffiliatemanagerParamsFilterDateTo defines parameters for Get30StatsGetbyaffiliatemanager.
+type Get30StatsGetbyaffiliatemanagerParamsFilterDateTo string
+
+// Get30StatsGetbybrowsersParams defines parameters for Get30StatsGetbybrowsers.
+type Get30StatsGetbybrowsersParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbybrowsersParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbybrowsersParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbybrowsersParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbybrowsersParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbybrowsersParamsLocale defines parameters for Get30StatsGetbybrowsers.
+type Get30StatsGetbybrowsersParamsLocale string
+
+// Get30StatsGetbybrowsersParamsOrderType defines parameters for Get30StatsGetbybrowsers.
+type Get30StatsGetbybrowsersParamsOrderType string
+
+// Get30StatsGetbybrowsersParamsFilterDateFrom defines parameters for Get30StatsGetbybrowsers.
+type Get30StatsGetbybrowsersParamsFilterDateFrom string
+
+// Get30StatsGetbybrowsersParamsFilterDateTo defines parameters for Get30StatsGetbybrowsers.
+type Get30StatsGetbybrowsersParamsFilterDateTo string
+
+// Get30StatsGetbybrowsersversionParams defines parameters for Get30StatsGetbybrowsersversion.
+type Get30StatsGetbybrowsersversionParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbybrowsersversionParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbybrowsersversionParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbybrowsersversionParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbybrowsersversionParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbybrowsersversionParamsLocale defines parameters for Get30StatsGetbybrowsersversion.
+type Get30StatsGetbybrowsersversionParamsLocale string
+
+// Get30StatsGetbybrowsersversionParamsOrderType defines parameters for Get30StatsGetbybrowsersversion.
+type Get30StatsGetbybrowsersversionParamsOrderType string
+
+// Get30StatsGetbybrowsersversionParamsFilterDateFrom defines parameters for Get30StatsGetbybrowsersversion.
+type Get30StatsGetbybrowsersversionParamsFilterDateFrom string
+
+// Get30StatsGetbybrowsersversionParamsFilterDateTo defines parameters for Get30StatsGetbybrowsersversion.
+type Get30StatsGetbybrowsersversionParamsFilterDateTo string
+
+// Get30StatsGetbycitiesParams defines parameters for Get30StatsGetbycities.
+type Get30StatsGetbycitiesParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbycitiesParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbycitiesParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbycitiesParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbycitiesParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbycitiesParamsLocale defines parameters for Get30StatsGetbycities.
+type Get30StatsGetbycitiesParamsLocale string
+
+// Get30StatsGetbycitiesParamsOrderType defines parameters for Get30StatsGetbycities.
+type Get30StatsGetbycitiesParamsOrderType string
+
+// Get30StatsGetbycitiesParamsFilterDateFrom defines parameters for Get30StatsGetbycities.
+type Get30StatsGetbycitiesParamsFilterDateFrom string
+
+// Get30StatsGetbycitiesParamsFilterDateTo defines parameters for Get30StatsGetbycities.
+type Get30StatsGetbycitiesParamsFilterDateTo string
+
+// Get30StatsGetbyconnectiontypeParams defines parameters for Get30StatsGetbyconnectiontype.
+type Get30StatsGetbyconnectiontypeParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyconnectiontypeParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyconnectiontypeParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyconnectiontypeParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyconnectiontypeParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyconnectiontypeParamsLocale defines parameters for Get30StatsGetbyconnectiontype.
+type Get30StatsGetbyconnectiontypeParamsLocale string
+
+// Get30StatsGetbyconnectiontypeParamsOrderType defines parameters for Get30StatsGetbyconnectiontype.
+type Get30StatsGetbyconnectiontypeParamsOrderType string
+
+// Get30StatsGetbyconnectiontypeParamsFilterDateFrom defines parameters for Get30StatsGetbyconnectiontype.
+type Get30StatsGetbyconnectiontypeParamsFilterDateFrom string
+
+// Get30StatsGetbyconnectiontypeParamsFilterDateTo defines parameters for Get30StatsGetbyconnectiontype.
+type Get30StatsGetbyconnectiontypeParamsFilterDateTo string
+
+// Get30StatsGetbycountriesParams defines parameters for Get30StatsGetbycountries.
+type Get30StatsGetbycountriesParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbycountriesParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbycountriesParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbycountriesParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbycountriesParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbycountriesParamsLocale defines parameters for Get30StatsGetbycountries.
+type Get30StatsGetbycountriesParamsLocale string
+
+// Get30StatsGetbycountriesParamsOrderType defines parameters for Get30StatsGetbycountries.
+type Get30StatsGetbycountriesParamsOrderType string
+
+// Get30StatsGetbycountriesParamsFilterDateFrom defines parameters for Get30StatsGetbycountries.
+type Get30StatsGetbycountriesParamsFilterDateFrom string
+
+// Get30StatsGetbycountriesParamsFilterDateTo defines parameters for Get30StatsGetbycountries.
+type Get30StatsGetbycountriesParamsFilterDateTo string
+
+// Get30StatsGetbydateParams defines parameters for Get30StatsGetbydate.
+type Get30StatsGetbydateParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbydateParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbydateParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbydateParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbydateParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbydateParamsLocale defines parameters for Get30StatsGetbydate.
+type Get30StatsGetbydateParamsLocale string
+
+// Get30StatsGetbydateParamsOrderType defines parameters for Get30StatsGetbydate.
+type Get30StatsGetbydateParamsOrderType string
+
+// Get30StatsGetbydateParamsFilterDateFrom defines parameters for Get30StatsGetbydate.
+type Get30StatsGetbydateParamsFilterDateFrom string
+
+// Get30StatsGetbydateParamsFilterDateTo defines parameters for Get30StatsGetbydate.
+type Get30StatsGetbydateParamsFilterDateTo string
+
+// Get30StatsGetbydevicemodelsParams defines parameters for Get30StatsGetbydevicemodels.
+type Get30StatsGetbydevicemodelsParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbydevicemodelsParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbydevicemodelsParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbydevicemodelsParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbydevicemodelsParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbydevicemodelsParamsLocale defines parameters for Get30StatsGetbydevicemodels.
+type Get30StatsGetbydevicemodelsParamsLocale string
+
+// Get30StatsGetbydevicemodelsParamsOrderType defines parameters for Get30StatsGetbydevicemodels.
+type Get30StatsGetbydevicemodelsParamsOrderType string
+
+// Get30StatsGetbydevicemodelsParamsFilterDateFrom defines parameters for Get30StatsGetbydevicemodels.
+type Get30StatsGetbydevicemodelsParamsFilterDateFrom string
+
+// Get30StatsGetbydevicemodelsParamsFilterDateTo defines parameters for Get30StatsGetbydevicemodels.
+type Get30StatsGetbydevicemodelsParamsFilterDateTo string
+
+// Get30StatsGetbydevicesParams defines parameters for Get30StatsGetbydevices.
+type Get30StatsGetbydevicesParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbydevicesParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbydevicesParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbydevicesParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbydevicesParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbydevicesParamsLocale defines parameters for Get30StatsGetbydevices.
+type Get30StatsGetbydevicesParamsLocale string
+
+// Get30StatsGetbydevicesParamsOrderType defines parameters for Get30StatsGetbydevices.
+type Get30StatsGetbydevicesParamsOrderType string
+
+// Get30StatsGetbydevicesParamsFilterDateFrom defines parameters for Get30StatsGetbydevices.
+type Get30StatsGetbydevicesParamsFilterDateFrom string
+
+// Get30StatsGetbydevicesParamsFilterDateTo defines parameters for Get30StatsGetbydevices.
+type Get30StatsGetbydevicesParamsFilterDateTo string
+
+// Get30StatsGetbygoalParams defines parameters for Get30StatsGetbygoal.
+type Get30StatsGetbygoalParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbygoalParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbygoalParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbygoalParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbygoalParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbygoalParamsLocale defines parameters for Get30StatsGetbygoal.
+type Get30StatsGetbygoalParamsLocale string
+
+// Get30StatsGetbygoalParamsOrderType defines parameters for Get30StatsGetbygoal.
+type Get30StatsGetbygoalParamsOrderType string
+
+// Get30StatsGetbygoalParamsFilterDateFrom defines parameters for Get30StatsGetbygoal.
+type Get30StatsGetbygoalParamsFilterDateFrom string
+
+// Get30StatsGetbygoalParamsFilterDateTo defines parameters for Get30StatsGetbygoal.
+type Get30StatsGetbygoalParamsFilterDateTo string
+
+// Get30StatsGetbyhourParams defines parameters for Get30StatsGetbyhour.
+type Get30StatsGetbyhourParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyhourParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyhourParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyhourParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED
+	FilterDateTo *Get30StatsGetbyhourParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyhourParamsLocale defines parameters for Get30StatsGetbyhour.
+type Get30StatsGetbyhourParamsLocale string
+
+// Get30StatsGetbyhourParamsOrderType defines parameters for Get30StatsGetbyhour.
+type Get30StatsGetbyhourParamsOrderType string
+
+// Get30StatsGetbyhourParamsFilterDateFrom defines parameters for Get30StatsGetbyhour.
+type Get30StatsGetbyhourParamsFilterDateFrom string
+
+// Get30StatsGetbyhourParamsFilterDateTo defines parameters for Get30StatsGetbyhour.
+type Get30StatsGetbyhourParamsFilterDateTo string
+
+// Get30StatsGetbylandingParams defines parameters for Get30StatsGetbylanding.
+type Get30StatsGetbylandingParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbylandingParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbylandingParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbylandingParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbylandingParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbylandingParamsLocale defines parameters for Get30StatsGetbylanding.
+type Get30StatsGetbylandingParamsLocale string
+
+// Get30StatsGetbylandingParamsOrderType defines parameters for Get30StatsGetbylanding.
+type Get30StatsGetbylandingParamsOrderType string
+
+// Get30StatsGetbylandingParamsFilterDateFrom defines parameters for Get30StatsGetbylanding.
+type Get30StatsGetbylandingParamsFilterDateFrom string
+
+// Get30StatsGetbylandingParamsFilterDateTo defines parameters for Get30StatsGetbylanding.
+type Get30StatsGetbylandingParamsFilterDateTo string
+
+// Get30StatsGetbymobilecarrierParams defines parameters for Get30StatsGetbymobilecarrier.
+type Get30StatsGetbymobilecarrierParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbymobilecarrierParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbymobilecarrierParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbymobilecarrierParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbymobilecarrierParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbymobilecarrierParamsLocale defines parameters for Get30StatsGetbymobilecarrier.
+type Get30StatsGetbymobilecarrierParamsLocale string
+
+// Get30StatsGetbymobilecarrierParamsOrderType defines parameters for Get30StatsGetbymobilecarrier.
+type Get30StatsGetbymobilecarrierParamsOrderType string
+
+// Get30StatsGetbymobilecarrierParamsFilterDateFrom defines parameters for Get30StatsGetbymobilecarrier.
+type Get30StatsGetbymobilecarrierParamsFilterDateFrom string
+
+// Get30StatsGetbymobilecarrierParamsFilterDateTo defines parameters for Get30StatsGetbymobilecarrier.
+type Get30StatsGetbymobilecarrierParamsFilterDateTo string
+
+// Get30StatsGetbyosParams defines parameters for Get30StatsGetbyos.
+type Get30StatsGetbyosParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyosParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyosParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyosParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyosParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyosParamsLocale defines parameters for Get30StatsGetbyos.
+type Get30StatsGetbyosParamsLocale string
+
+// Get30StatsGetbyosParamsOrderType defines parameters for Get30StatsGetbyos.
+type Get30StatsGetbyosParamsOrderType string
+
+// Get30StatsGetbyosParamsFilterDateFrom defines parameters for Get30StatsGetbyos.
+type Get30StatsGetbyosParamsFilterDateFrom string
+
+// Get30StatsGetbyosParamsFilterDateTo defines parameters for Get30StatsGetbyos.
+type Get30StatsGetbyosParamsFilterDateTo string
+
+// Get30StatsGetbypartnerParams defines parameters for Get30StatsGetbypartner.
+type Get30StatsGetbypartnerParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbypartnerParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbypartnerParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbypartnerParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbypartnerParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbypartnerParamsLocale defines parameters for Get30StatsGetbypartner.
+type Get30StatsGetbypartnerParamsLocale string
+
+// Get30StatsGetbypartnerParamsOrderType defines parameters for Get30StatsGetbypartner.
+type Get30StatsGetbypartnerParamsOrderType string
+
+// Get30StatsGetbypartnerParamsFilterDateFrom defines parameters for Get30StatsGetbypartner.
+type Get30StatsGetbypartnerParamsFilterDateFrom string
+
+// Get30StatsGetbypartnerParamsFilterDateTo defines parameters for Get30StatsGetbypartner.
+type Get30StatsGetbypartnerParamsFilterDateTo string
+
+// Get30StatsGetbypartnerbydateParams defines parameters for Get30StatsGetbypartnerbydate.
+type Get30StatsGetbypartnerbydateParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbypartnerbydateParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbypartnerbydateParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbypartnerbydateParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbypartnerbydateParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbypartnerbydateParamsLocale defines parameters for Get30StatsGetbypartnerbydate.
+type Get30StatsGetbypartnerbydateParamsLocale string
+
+// Get30StatsGetbypartnerbydateParamsOrderType defines parameters for Get30StatsGetbypartnerbydate.
+type Get30StatsGetbypartnerbydateParamsOrderType string
+
+// Get30StatsGetbypartnerbydateParamsFilterDateFrom defines parameters for Get30StatsGetbypartnerbydate.
+type Get30StatsGetbypartnerbydateParamsFilterDateFrom string
+
+// Get30StatsGetbypartnerbydateParamsFilterDateTo defines parameters for Get30StatsGetbypartnerbydate.
+type Get30StatsGetbypartnerbydateParamsFilterDateTo string
+
+// Get30StatsGetbyprelandingParams defines parameters for Get30StatsGetbyprelanding.
+type Get30StatsGetbyprelandingParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyprelandingParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyprelandingParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyprelandingParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyprelandingParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyprelandingParamsLocale defines parameters for Get30StatsGetbyprelanding.
+type Get30StatsGetbyprelandingParamsLocale string
+
+// Get30StatsGetbyprelandingParamsOrderType defines parameters for Get30StatsGetbyprelanding.
+type Get30StatsGetbyprelandingParamsOrderType string
+
+// Get30StatsGetbyprelandingParamsFilterDateFrom defines parameters for Get30StatsGetbyprelanding.
+type Get30StatsGetbyprelandingParamsFilterDateFrom string
+
+// Get30StatsGetbyprelandingParamsFilterDateTo defines parameters for Get30StatsGetbyprelanding.
+type Get30StatsGetbyprelandingParamsFilterDateTo string
+
+// Get30StatsGetbyprogramParams defines parameters for Get30StatsGetbyprogram.
+type Get30StatsGetbyprogramParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyprogramParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyprogramParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyprogramParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyprogramParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyprogramParamsLocale defines parameters for Get30StatsGetbyprogram.
+type Get30StatsGetbyprogramParamsLocale string
+
+// Get30StatsGetbyprogramParamsOrderType defines parameters for Get30StatsGetbyprogram.
+type Get30StatsGetbyprogramParamsOrderType string
+
+// Get30StatsGetbyprogramParamsFilterDateFrom defines parameters for Get30StatsGetbyprogram.
+type Get30StatsGetbyprogramParamsFilterDateFrom string
+
+// Get30StatsGetbyprogramParamsFilterDateTo defines parameters for Get30StatsGetbyprogram.
+type Get30StatsGetbyprogramParamsFilterDateTo string
+
+// Get30StatsGetbysubParams defines parameters for Get30StatsGetbysub.
+type Get30StatsGetbysubParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbysubParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbysubParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbysubParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbysubParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer REQUIRED Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbysubParamsLocale defines parameters for Get30StatsGetbysub.
+type Get30StatsGetbysubParamsLocale string
+
+// Get30StatsGetbysubParamsOrderType defines parameters for Get30StatsGetbysub.
+type Get30StatsGetbysubParamsOrderType string
+
+// Get30StatsGetbysubParamsFilterDateFrom defines parameters for Get30StatsGetbysub.
+type Get30StatsGetbysubParamsFilterDateFrom string
+
+// Get30StatsGetbysubParamsFilterDateTo defines parameters for Get30StatsGetbysub.
+type Get30StatsGetbysubParamsFilterDateTo string
+
+// Get30StatsGetbytrafficbackParams defines parameters for Get30StatsGetbytrafficback.
+type Get30StatsGetbytrafficbackParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbytrafficbackParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbytrafficbackParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbytrafficbackParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbytrafficbackParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbytrafficbackParamsLocale defines parameters for Get30StatsGetbytrafficback.
+type Get30StatsGetbytrafficbackParamsLocale string
+
+// Get30StatsGetbytrafficbackParamsOrderType defines parameters for Get30StatsGetbytrafficback.
+type Get30StatsGetbytrafficbackParamsOrderType string
+
+// Get30StatsGetbytrafficbackParamsFilterDateFrom defines parameters for Get30StatsGetbytrafficback.
+type Get30StatsGetbytrafficbackParamsFilterDateFrom string
+
+// Get30StatsGetbytrafficbackParamsFilterDateTo defines parameters for Get30StatsGetbytrafficback.
+type Get30StatsGetbytrafficbackParamsFilterDateTo string
+
+// Get30StatsGetbyversionsParams defines parameters for Get30StatsGetbyversions.
+type Get30StatsGetbyversionsParams struct {
+	// Locale Locale for output a cities data when you use the city slice
+	Locale *Get30StatsGetbyversionsParamsLocale `form:"locale,omitempty" json:"locale,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// OrderType Sorting order
+	OrderType *Get30StatsGetbyversionsParamsOrderType `form:"orderType,omitempty" json:"orderType,omitempty"`
+
+	// FilterDateFrom REQUIRED  Date from
+	FilterDateFrom *Get30StatsGetbyversionsParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED  Date to
+	FilterDateTo *Get30StatsGetbyversionsParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterCurrency The list of a currencies code you can get from API /3.0/admin/currency
+	FilterCurrency *[]string `form:"filter[currency],omitempty" json:"filter[currency],omitempty"`
+
+	// FilterAdvertiser Advertiser ID’s
+	FilterAdvertiser *string `form:"filter[advertiser],omitempty" json:"filter[advertiser],omitempty"`
+
+	// FilterOffer Offers ID’s
+	FilterOffer *[]int `form:"filter[offer],omitempty" json:"filter[offer],omitempty"`
+
+	// FilterManager Managers ID’s
+	FilterManager *string `form:"filter[manager],omitempty" json:"filter[manager],omitempty"`
+
+	// FilterAdvertiserManagerId Advertiser managers ID’s
+	FilterAdvertiserManagerId *string `form:"filter[advertiser_manager_id],omitempty" json:"filter[advertiser_manager_id],omitempty"`
+
+	// FilterPartner ONLY FOR ADMIN  Partners ID’s.
+	FilterPartner *string `form:"filter[partner],omitempty" json:"filter[partner],omitempty"`
+
+	// FilterCountry Countries codes. Example: “US”
+	FilterCountry *string `form:"filter[country],omitempty" json:"filter[country],omitempty"`
+
+	// FilterOs Os
+	FilterOs *string `form:"filter[os],omitempty" json:"filter[os],omitempty"`
+
+	// FilterGoal Goal
+	FilterGoal *string `form:"filter[goal],omitempty" json:"filter[goal],omitempty"`
+
+	// FilterSub1 Sub 1
+	FilterSub1 *string `form:"filter[sub1],omitempty" json:"filter[sub1],omitempty"`
+
+	// FilterSub2 Sub 2
+	FilterSub2 *string `form:"filter[sub2],omitempty" json:"filter[sub2],omitempty"`
+
+	// FilterSub3 Sub 3
+	FilterSub3 *string `form:"filter[sub3],omitempty" json:"filter[sub3],omitempty"`
+
+	// FilterSub4 Sub 4
+	FilterSub4 *string `form:"filter[sub4],omitempty" json:"filter[sub4],omitempty"`
+
+	// FilterSub5 Sub 5
+	FilterSub5 *string `form:"filter[sub5],omitempty" json:"filter[sub5],omitempty"`
+
+	// FilterSub6 Sub 6
+	FilterSub6 *string `form:"filter[sub6],omitempty" json:"filter[sub6],omitempty"`
+
+	// FilterSub7 Sub 7
+	FilterSub7 *string `form:"filter[sub7],omitempty" json:"filter[sub7],omitempty"`
+
+	// FilterSub8 Sub 8
+	FilterSub8 *string `form:"filter[sub8],omitempty" json:"filter[sub8],omitempty"`
+
+	// FilterDevice Device
+	FilterDevice *string `form:"filter[device],omitempty" json:"filter[device],omitempty"`
+
+	// FilterAdvertiserTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAdvertiserTag *string `form:"filter[advertiser_tag],omitempty" json:"filter[advertiser_tag],omitempty"`
+
+	// FilterAffiliateTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterAffiliateTag *string `form:"filter[affiliate_tag],omitempty" json:"filter[affiliate_tag],omitempty"`
+
+	// FilterOfferTag Comma separated array of strings. Example: tag1,tag2,tag3
+	FilterOfferTag *string `form:"filter[offer_tag],omitempty" json:"filter[offer_tag],omitempty"`
+}
+
+// Get30StatsGetbyversionsParamsLocale defines parameters for Get30StatsGetbyversions.
+type Get30StatsGetbyversionsParamsLocale string
+
+// Get30StatsGetbyversionsParamsOrderType defines parameters for Get30StatsGetbyversions.
+type Get30StatsGetbyversionsParamsOrderType string
+
+// Get30StatsGetbyversionsParamsFilterDateFrom defines parameters for Get30StatsGetbyversions.
+type Get30StatsGetbyversionsParamsFilterDateFrom string
+
+// Get30StatsGetbyversionsParamsFilterDateTo defines parameters for Get30StatsGetbyversions.
+type Get30StatsGetbyversionsParamsFilterDateTo string
+
+// Get30StatsGetreferralpaymentsParams defines parameters for Get30StatsGetreferralpayments.
+type Get30StatsGetreferralpaymentsParams struct {
+	// DateFrom REQUIRED  Date from
+	DateFrom *Get30StatsGetreferralpaymentsParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED  Date to
+	DateTo *Get30StatsGetreferralpaymentsParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Pid Partner ID
+	Pid *int64 `form:"pid,omitempty" json:"pid,omitempty"`
+
+	// Pids List of partner IDs
+	Pids *[]int `form:"pids,omitempty" json:"pids,omitempty"`
+
+	// Ref Referral partner ID
+	Ref *int64 `form:"ref,omitempty" json:"ref,omitempty"`
+
+	// Refs List of referral partner IDs
+	Refs *[]int `form:"refs,omitempty" json:"refs,omitempty"`
+
+	// IsPaid Status
+	IsPaid *int64 `form:"is_paid,omitempty" json:"is_paid,omitempty"`
+
+	// PaymentStatuses List of “is_paid” values
+	PaymentStatuses *[]int `form:"payment_statuses,omitempty" json:"payment_statuses,omitempty"`
+
+	// Status Active
+	Status *int64 `form:"status,omitempty" json:"status,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Currency ID currency
+	Currency *int64 `form:"currency,omitempty" json:"currency,omitempty"`
+
+	// Currencies List of currency IDs
+	Currencies *[]int `form:"currencies,omitempty" json:"currencies,omitempty"`
+}
+
+// Get30StatsGetreferralpaymentsParamsDateFrom defines parameters for Get30StatsGetreferralpayments.
+type Get30StatsGetreferralpaymentsParamsDateFrom string
+
+// Get30StatsGetreferralpaymentsParamsDateTo defines parameters for Get30StatsGetreferralpayments.
+type Get30StatsGetreferralpaymentsParamsDateTo string
+
+// Get30StatsRetentionrateParams defines parameters for Get30StatsRetentionrate.
+type Get30StatsRetentionrateParams struct {
+	// DateFrom REQUIRED  Date from
+	DateFrom *Get30StatsRetentionrateParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED  Date to
+	DateTo *Get30StatsRetentionrateParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// Offer REQUIRED
+	Offer *int64 `form:"offer,omitempty" json:"offer,omitempty"`
+
+	// BaseEvent REQUIRED Name based goal
+	BaseEvent *Get30StatsRetentionrateParamsBaseEvent `form:"base_event,omitempty" json:"base_event,omitempty"`
+
+	// Events REQUIRED events
+	Events *[]string `form:"events,omitempty" json:"events,omitempty"`
+
+	// AffiliateId Affiliates filter
+	AffiliateId *int64 `form:"affiliate_id,omitempty" json:"affiliate_id,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+}
+
+// Get30StatsRetentionrateParamsDateFrom defines parameters for Get30StatsRetentionrate.
+type Get30StatsRetentionrateParamsDateFrom string
+
+// Get30StatsRetentionrateParamsDateTo defines parameters for Get30StatsRetentionrate.
+type Get30StatsRetentionrateParamsDateTo string
+
+// Get30StatsRetentionrateParamsBaseEvent defines parameters for Get30StatsRetentionrate.
+type Get30StatsRetentionrateParamsBaseEvent string
+
+// Get30StatsServerpostbacksParams defines parameters for Get30StatsServerpostbacks.
+type Get30StatsServerpostbacksParams struct {
+	// DateFrom REQUIRED
+	DateFrom *Get30StatsServerpostbacksParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED
+	DateTo *Get30StatsServerpostbacksParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// OfferId Offers ID’s
+	OfferId *[]int `form:"offer_id,omitempty" json:"offer_id,omitempty"`
+
+	// Partner Partners ID’s.
+	Partner *[]int `form:"partner,omitempty" json:"partner,omitempty"`
+
+	// Supplier Advertiser ID’s.
+	Supplier *[]string `form:"supplier,omitempty" json:"supplier,omitempty"`
+
+	// ActionId Action id
+	ActionId *string `form:"action_id,omitempty" json:"action_id,omitempty"`
+
+	// ClickId Click id
+	ClickId *string `form:"click_id,omitempty" json:"click_id,omitempty"`
+
+	// Goal Goal
+	Goal *string `form:"goal,omitempty" json:"goal,omitempty"`
+
+	// IsSuccess Status
+	IsSuccess *Get30StatsServerpostbacksParamsIsSuccess `form:"is_success,omitempty" json:"is_success,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30StatsServerpostbacksParamsDateFrom defines parameters for Get30StatsServerpostbacks.
+type Get30StatsServerpostbacksParamsDateFrom string
+
+// Get30StatsServerpostbacksParamsDateTo defines parameters for Get30StatsServerpostbacks.
+type Get30StatsServerpostbacksParamsDateTo string
+
+// Get30StatsServerpostbacksParamsIsSuccess defines parameters for Get30StatsServerpostbacks.
+type Get30StatsServerpostbacksParamsIsSuccess string
+
+// Get30StatsTimeToActionParams defines parameters for Get30StatsTimeToAction.
+type Get30StatsTimeToActionParams struct {
+	// DateFrom REQUIRED  Date from
+	DateFrom *Get30StatsTimeToActionParamsDateFrom `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED  Date to
+	DateTo *Get30StatsTimeToActionParamsDateTo `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// OfferId REQUIRED An offer id
+	OfferId *int64 `form:"offer_id,omitempty" json:"offer_id,omitempty"`
+
+	// Timezone Timezone name. Example: “Europe/Berlin”
+	Timezone *string `form:"timezone,omitempty" json:"timezone,omitempty"`
+
+	// Goal Name based goal
+	Goal *string `form:"goal,omitempty" json:"goal,omitempty"`
+
+	// AffiliateIds Affiliates filter. Comma separated int values
+	AffiliateIds *int64 `form:"affiliate_ids,omitempty" json:"affiliate_ids,omitempty"`
+
+	// Page Page of stat entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of stat entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get30StatsTimeToActionParamsDateFrom defines parameters for Get30StatsTimeToAction.
+type Get30StatsTimeToActionParamsDateFrom string
+
+// Get30StatsTimeToActionParamsDateTo defines parameters for Get30StatsTimeToAction.
+type Get30StatsTimeToActionParamsDateTo string
+
+// Get31AdcostsParams defines parameters for Get31Adcosts.
+type Get31AdcostsParams struct {
+	// OfferId REQUIRED
+	OfferId *int64 `form:"offer_id,omitempty" json:"offer_id,omitempty"`
+
+	// Page page with results
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit results per page
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get31AutomationCrAndSubBlockLogsParams defines parameters for Get31AutomationCrAndSubBlockLogs.
+type Get31AutomationCrAndSubBlockLogsParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// FilterDateFrom REQUIRED
+	FilterDateFrom *Get31AutomationCrAndSubBlockLogsParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED
+	FilterDateTo *Get31AutomationCrAndSubBlockLogsParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterAdvertisers Advertisers ID’s
+	FilterAdvertisers *[]string `form:"filter[advertisers],omitempty" json:"filter[advertisers],omitempty"`
+
+	// FilterOffers Offers ID’s
+	FilterOffers *[]int `form:"filter[offers],omitempty" json:"filter[offers],omitempty"`
+
+	// FilterAffiliates Affiliates ID’s
+	FilterAffiliates *[]int `form:"filter[affiliates],omitempty" json:"filter[affiliates],omitempty"`
+}
+
+// Get31AutomationCrAndSubBlockLogsParamsFilterDateFrom defines parameters for Get31AutomationCrAndSubBlockLogs.
+type Get31AutomationCrAndSubBlockLogsParamsFilterDateFrom string
+
+// Get31AutomationCrAndSubBlockLogsParamsFilterDateTo defines parameters for Get31AutomationCrAndSubBlockLogs.
+type Get31AutomationCrAndSubBlockLogsParamsFilterDateTo string
+
+// Get31AutomationKpiParams defines parameters for Get31AutomationKpi.
+type Get31AutomationKpiParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get31AutomationKpiBlockLogsParams defines parameters for Get31AutomationKpiBlockLogs.
+type Get31AutomationKpiBlockLogsParams struct {
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// FilterDateFrom REQUIRED
+	FilterDateFrom *Get31AutomationKpiBlockLogsParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED
+	FilterDateTo *Get31AutomationKpiBlockLogsParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// FilterSubIndex Sub index
+	FilterSubIndex *string `form:"filter[sub_index],omitempty" json:"filter[sub_index],omitempty"`
+
+	// FilterSubValue Sub value
+	FilterSubValue *string `form:"filter[sub_value],omitempty" json:"filter[sub_value],omitempty"`
+
+	// FilterAction Action
+	FilterAction *string `form:"filter[action],omitempty" json:"filter[action],omitempty"`
+
+	// FilterOffers Offers ID’s
+	FilterOffers *[]int `form:"filter[offers],omitempty" json:"filter[offers],omitempty"`
+
+	// FilterAffiliates Affiliates ID’s
+	FilterAffiliates *[]int `form:"filter[affiliates],omitempty" json:"filter[affiliates],omitempty"`
+}
+
+// Get31AutomationKpiBlockLogsParamsFilterDateFrom defines parameters for Get31AutomationKpiBlockLogs.
+type Get31AutomationKpiBlockLogsParamsFilterDateFrom string
+
+// Get31AutomationKpiBlockLogsParamsFilterDateTo defines parameters for Get31AutomationKpiBlockLogs.
+type Get31AutomationKpiBlockLogsParamsFilterDateTo string
+
+// Get31AutomationKpiChangeLogsParams defines parameters for Get31AutomationKpiChangeLogs.
+type Get31AutomationKpiChangeLogsParams struct {
+	// FilterDateFrom REQUIRED
+	FilterDateFrom *Get31AutomationKpiChangeLogsParamsFilterDateFrom `form:"filter[date_from],omitempty" json:"filter[date_from],omitempty"`
+
+	// FilterDateTo REQUIRED
+	FilterDateTo *Get31AutomationKpiChangeLogsParamsFilterDateTo `form:"filter[date_to],omitempty" json:"filter[date_to],omitempty"`
+
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+
+	// Offers Offers ID’s
+	Offers *[]int `form:"offers,omitempty" json:"offers,omitempty"`
+
+	// Affiliates Affiliates ID’s
+	Affiliates *[]int `form:"affiliates,omitempty" json:"affiliates,omitempty"`
+
+	// Type Array of kpi automation types. See Types
+	Type *[]int `form:"type,omitempty" json:"type,omitempty"`
+}
+
+// Get31AutomationKpiChangeLogsParamsFilterDateFrom defines parameters for Get31AutomationKpiChangeLogs.
+type Get31AutomationKpiChangeLogsParamsFilterDateFrom string
+
+// Get31AutomationKpiChangeLogsParamsFilterDateTo defines parameters for Get31AutomationKpiChangeLogs.
+type Get31AutomationKpiChangeLogsParamsFilterDateTo string
+
+// Get31CitiesParams defines parameters for Get31Cities.
+type Get31CitiesParams struct {
+	// Country REQUIRED Country code. Example : US
+	Country *string `form:"country,omitempty" json:"country,omitempty"`
+
+	// Q Search query
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
+
+	// Code City codes for filter
+	Code *string `form:"code,omitempty" json:"code,omitempty"`
+}
+
+// Get31IspParams defines parameters for Get31Isp.
+type Get31IspParams struct {
+	// Country REQUIRED Country code. Example: “US”
+	Country *string `form:"country,omitempty" json:"country,omitempty"`
+
+	// Q Search query
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
+}
+
+// Get31PaymentsParams defines parameters for Get31Payments.
+type Get31PaymentsParams struct {
+	// DateFrom REQUIRED The date from (format YYYY-MM-DD)
+	DateFrom *string `form:"date_from,omitempty" json:"date_from,omitempty"`
+
+	// DateTo REQUIRED The date to (format YYYY-MM-DD)
+	DateTo *string `form:"date_to,omitempty" json:"date_to,omitempty"`
+
+	// Id Filter by payment invoice ids
+	Id *[]int `form:"id,omitempty" json:"id,omitempty"`
+
+	// Status Filter by payment invoice status. Possible values (1 - waiting , 2 - completed, 3 - paid partly, 4 - waiting, -1 - declined)
+	Status *[]int `form:"status,omitempty" json:"status,omitempty"`
+
+	// Aid Filter by affilaite ids
+	Aid *[]int `form:"aid,omitempty" json:"aid,omitempty"`
+
+	// ManagerId Filter by affilaite manager ids
+	ManagerId *[]string `form:"manager_id,omitempty" json:"manager_id,omitempty"`
+
+	// PaymentSystem Filter by payment systems
+	PaymentSystem *[]string `form:"payment_system,omitempty" json:"payment_system,omitempty"`
+
+	// PaymentAccount Filter by payment accounts
+	PaymentAccount *[]string `form:"payment_account,omitempty" json:"payment_account,omitempty"`
+
+	// UpdateFromDate The updated date from (format YYYY-MM-DD)
+	UpdateFromDate *string `form:"update_from_date,omitempty" json:"update_from_date,omitempty"`
+
+	// UpdateToDate The updated date to (format YYYY-MM-DD)
+	UpdateToDate *string `form:"update_to_date,omitempty" json:"update_to_date,omitempty"`
+
+	// UpdateFromHour The updated from hour (between 0 to 23)
+	UpdateFromHour *int64 `form:"update_from_hour,omitempty" json:"update_from_hour,omitempty"`
+
+	// UpdateToHour The updated to hour (between 0 to 23)
+	UpdateToHour *int64 `form:"update_to_hour,omitempty" json:"update_to_hour,omitempty"`
+
+	// Page Page of entities
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit Limit of entities. From 0 to 100
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get31PresetsParams defines parameters for Get31Presets.
+type Get31PresetsParams struct {
+	// Page page with results
+	Page *int64 `form:"page,omitempty" json:"page,omitempty"`
+
+	// Limit results per page
+	Limit *int64 `form:"limit,omitempty" json:"limit,omitempty"`
+}
+
+// Get31RegionsParams defines parameters for Get31Regions.
+type Get31RegionsParams struct {
+	// Country REQUIRED Country code. Example: “US”
+	Country *[]string `form:"country,omitempty" json:"country,omitempty"`
+
+	// Code Filter regions by id
+	Code *[]int `form:"code,omitempty" json:"code,omitempty"`
+}
+
+// Get31StatsCapsParams defines parameters for Get31StatsCaps.
+type Get31StatsCapsParams struct {
+	// OfferId REQUIRED  Offers ID’s
+	OfferId *[]int `form:"offer_id,omitempty" json:"offer_id,omitempty"`
+}
+
+// Get31VendorsParams defines parameters for Get31Vendors.
+type Get31VendorsParams struct {
+	// Q Search query
+	Q *string `form:"q,omitempty" json:"q,omitempty"`
 }
 
 // Getter for additional properties for Offer. Returns the specified
@@ -539,11 +4510,569 @@ func WithRequestEditorFn(fn RequestEditorFn) ClientOption {
 
 // The interface specification for the client above.
 type ClientInterface interface {
+	// Get30AdminAdvertiserInvoiceNumber request
+	Get30AdminAdvertiserInvoiceNumber(ctx context.Context, number string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminAdvertiserInvoices request
+	Get30AdminAdvertiserInvoices(ctx context.Context, params *Get30AdminAdvertiserInvoicesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminAdvertiserId request
+	Get30AdminAdvertiserId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminAdvertisers request
+	Get30AdminAdvertisers(ctx context.Context, params *Get30AdminAdvertisersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminCurrency request
+	Get30AdminCurrency(ctx context.Context, params *Get30AdminCurrencyParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminCurrencyExtended1 request
+	Get30AdminCurrencyExtended1(ctx context.Context, params *Get30AdminCurrencyExtended1Params, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminCustomFields request
+	Get30AdminCustomFields(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminDomains request
+	Get30AdminDomains(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminOfferSources request
+	Get30AdminOfferSources(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminPartnerId request
+	Get30AdminPartnerId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminPartnerIdReferrals request
+	Get30AdminPartnerIdReferrals(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminPartners request
+	Get30AdminPartners(ctx context.Context, params *Get30AdminPartnersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminPaymentSystems request
+	Get30AdminPaymentSystems(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminPostbacks request
+	Get30AdminPostbacks(ctx context.Context, params *Get30AdminPostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminSmartlinkCategories request
+	Get30AdminSmartlinkCategories(ctx context.Context, params *Get30AdminSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminSmartlinkCategoryIdOffersCount request
+	Get30AdminSmartlinkCategoryIdOffersCount(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminTicketId request
+	Get30AdminTicketId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminTickets request
+	Get30AdminTickets(ctx context.Context, params *Get30AdminTicketsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminUserID request
+	Get30AdminUserID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30AdminUsers request
+	Get30AdminUsers(ctx context.Context, params *Get30AdminUsersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30Balance request
+	Get30Balance(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30Goals request
+	Get30Goals(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30News request
+	Get30News(ctx context.Context, params *Get30NewsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30NewsID request
+	Get30NewsID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30OfferCategories request
+	Get30OfferCategories(ctx context.Context, params *Get30OfferCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
 	// Get30OfferID request
 	Get30OfferID(ctx context.Context, id int64, reqEditors ...RequestEditorFn) (*http.Response, error)
 
 	// Get30Offers request
 	Get30Offers(ctx context.Context, params *Get30OffersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30OffersCount request
+	Get30OffersCount(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30PartnerLiveOffers request
+	Get30PartnerLiveOffers(ctx context.Context, params *Get30PartnerLiveOffersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30PartnerOffers request
+	Get30PartnerOffers(ctx context.Context, params *Get30PartnerOffersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30PartnerPixels request
+	Get30PartnerPixels(ctx context.Context, params *Get30PartnerPixelsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30PartnerSmartlinkCategories request
+	Get30PartnerSmartlinkCategories(ctx context.Context, params *Get30PartnerSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30PartnerSmartlinkCategoryIdOffersCount request
+	Get30PartnerSmartlinkCategoryIdOffersCount(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsAffiliatepostbacks request
+	Get30StatsAffiliatepostbacks(ctx context.Context, params *Get30StatsAffiliatepostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsClicks request
+	Get30StatsClicks(ctx context.Context, params *Get30StatsClicksParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsConversions request
+	Get30StatsConversions(ctx context.Context, params *Get30StatsConversionsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsConversionsbyidIdId request
+	Get30StatsConversionsbyidIdId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsCustom request
+	Get30StatsCustom(ctx context.Context, params *Get30StatsCustomParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsFindSubs request
+	Get30StatsFindSubs(ctx context.Context, params *Get30StatsFindSubsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyaccountmanager request
+	Get30StatsGetbyaccountmanager(ctx context.Context, params *Get30StatsGetbyaccountmanagerParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyadvertiser request
+	Get30StatsGetbyadvertiser(ctx context.Context, params *Get30StatsGetbyadvertiserParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyaffiliatemanager request
+	Get30StatsGetbyaffiliatemanager(ctx context.Context, params *Get30StatsGetbyaffiliatemanagerParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbybrowsers request
+	Get30StatsGetbybrowsers(ctx context.Context, params *Get30StatsGetbybrowsersParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbybrowsersversion request
+	Get30StatsGetbybrowsersversion(ctx context.Context, params *Get30StatsGetbybrowsersversionParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbycities request
+	Get30StatsGetbycities(ctx context.Context, params *Get30StatsGetbycitiesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyconnectiontype request
+	Get30StatsGetbyconnectiontype(ctx context.Context, params *Get30StatsGetbyconnectiontypeParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbycountries request
+	Get30StatsGetbycountries(ctx context.Context, params *Get30StatsGetbycountriesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbydate request
+	Get30StatsGetbydate(ctx context.Context, params *Get30StatsGetbydateParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbydevicemodels request
+	Get30StatsGetbydevicemodels(ctx context.Context, params *Get30StatsGetbydevicemodelsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbydevices request
+	Get30StatsGetbydevices(ctx context.Context, params *Get30StatsGetbydevicesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbygoal request
+	Get30StatsGetbygoal(ctx context.Context, params *Get30StatsGetbygoalParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyhour request
+	Get30StatsGetbyhour(ctx context.Context, params *Get30StatsGetbyhourParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbylanding request
+	Get30StatsGetbylanding(ctx context.Context, params *Get30StatsGetbylandingParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbymobilecarrier request
+	Get30StatsGetbymobilecarrier(ctx context.Context, params *Get30StatsGetbymobilecarrierParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyos request
+	Get30StatsGetbyos(ctx context.Context, params *Get30StatsGetbyosParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbypartner request
+	Get30StatsGetbypartner(ctx context.Context, params *Get30StatsGetbypartnerParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbypartnerbydate request
+	Get30StatsGetbypartnerbydate(ctx context.Context, params *Get30StatsGetbypartnerbydateParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyprelanding request
+	Get30StatsGetbyprelanding(ctx context.Context, params *Get30StatsGetbyprelandingParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyprogram request
+	Get30StatsGetbyprogram(ctx context.Context, params *Get30StatsGetbyprogramParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbysub request
+	Get30StatsGetbysub(ctx context.Context, params *Get30StatsGetbysubParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbytrafficback request
+	Get30StatsGetbytrafficback(ctx context.Context, params *Get30StatsGetbytrafficbackParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetbyversions request
+	Get30StatsGetbyversions(ctx context.Context, params *Get30StatsGetbyversionsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsGetreferralpayments request
+	Get30StatsGetreferralpayments(ctx context.Context, params *Get30StatsGetreferralpaymentsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsRetentionrate request
+	Get30StatsRetentionrate(ctx context.Context, params *Get30StatsRetentionrateParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsServerpostbacks request
+	Get30StatsServerpostbacks(ctx context.Context, params *Get30StatsServerpostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get30StatsTimeToAction request
+	Get30StatsTimeToAction(ctx context.Context, params *Get30StatsTimeToActionParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Adcosts request
+	Get31Adcosts(ctx context.Context, params *Get31AdcostsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31AutomationCrAndSubBlockLogs request
+	Get31AutomationCrAndSubBlockLogs(ctx context.Context, params *Get31AutomationCrAndSubBlockLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31AutomationKpi request
+	Get31AutomationKpi(ctx context.Context, params *Get31AutomationKpiParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31AutomationKpiBlockLogs request
+	Get31AutomationKpiBlockLogs(ctx context.Context, params *Get31AutomationKpiBlockLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31AutomationKpiChangeLogs request
+	Get31AutomationKpiChangeLogs(ctx context.Context, params *Get31AutomationKpiChangeLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Browsers request
+	Get31Browsers(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Cities request
+	Get31Cities(ctx context.Context, params *Get31CitiesParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31ConnectionTypes request
+	Get31ConnectionTypes(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Countries request
+	Get31Countries(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Devices request
+	Get31Devices(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Isp request
+	Get31Isp(ctx context.Context, params *Get31IspParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31OffersIDPrivacy request
+	Get31OffersIDPrivacy(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Oses request
+	Get31Oses(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31OsesOS request
+	Get31OsesOS(ctx context.Context, os string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31PartnerMe request
+	Get31PartnerMe(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Payments request
+	Get31Payments(ctx context.Context, params *Get31PaymentsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31PaymentsID request
+	Get31PaymentsID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Presets request
+	Get31Presets(ctx context.Context, params *Get31PresetsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31ProductFeedProductFeedIdItems request
+	Get31ProductFeedProductFeedIdItems(ctx context.Context, productFeedId string, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Regions request
+	Get31Regions(ctx context.Context, params *Get31RegionsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31StatsCaps request
+	Get31StatsCaps(ctx context.Context, params *Get31StatsCapsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+
+	// Get31Vendors request
+	Get31Vendors(ctx context.Context, params *Get31VendorsParams, reqEditors ...RequestEditorFn) (*http.Response, error)
+}
+
+func (c *Client) Get30AdminAdvertiserInvoiceNumber(ctx context.Context, number string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminAdvertiserInvoiceNumberRequest(c.Server, number)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminAdvertiserInvoices(ctx context.Context, params *Get30AdminAdvertiserInvoicesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminAdvertiserInvoicesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminAdvertiserId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminAdvertiserIdRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminAdvertisers(ctx context.Context, params *Get30AdminAdvertisersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminAdvertisersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminCurrency(ctx context.Context, params *Get30AdminCurrencyParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminCurrencyRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminCurrencyExtended1(ctx context.Context, params *Get30AdminCurrencyExtended1Params, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminCurrencyExtended1Request(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminCustomFields(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminCustomFieldsRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminDomains(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminDomainsRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminOfferSources(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminOfferSourcesRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminPartnerId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminPartnerIdRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminPartnerIdReferrals(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminPartnerIdReferralsRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminPartners(ctx context.Context, params *Get30AdminPartnersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminPartnersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminPaymentSystems(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminPaymentSystemsRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminPostbacks(ctx context.Context, params *Get30AdminPostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminPostbacksRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminSmartlinkCategories(ctx context.Context, params *Get30AdminSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminSmartlinkCategoriesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminSmartlinkCategoryIdOffersCount(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminSmartlinkCategoryIdOffersCountRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminTicketId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminTicketIdRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminTickets(ctx context.Context, params *Get30AdminTicketsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminTicketsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminUserID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminUserIDRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30AdminUsers(ctx context.Context, params *Get30AdminUsersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30AdminUsersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30Balance(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30BalanceRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30Goals(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30GoalsRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30News(ctx context.Context, params *Get30NewsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30NewsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30NewsID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30NewsIDRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30OfferCategories(ctx context.Context, params *Get30OfferCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30OfferCategoriesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
 }
 
 func (c *Client) Get30OfferID(ctx context.Context, id int64, reqEditors ...RequestEditorFn) (*http.Response, error) {
@@ -568,6 +5097,2239 @@ func (c *Client) Get30Offers(ctx context.Context, params *Get30OffersParams, req
 		return nil, err
 	}
 	return c.Client.Do(req)
+}
+
+func (c *Client) Get30OffersCount(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30OffersCountRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30PartnerLiveOffers(ctx context.Context, params *Get30PartnerLiveOffersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30PartnerLiveOffersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30PartnerOffers(ctx context.Context, params *Get30PartnerOffersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30PartnerOffersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30PartnerPixels(ctx context.Context, params *Get30PartnerPixelsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30PartnerPixelsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30PartnerSmartlinkCategories(ctx context.Context, params *Get30PartnerSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30PartnerSmartlinkCategoriesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30PartnerSmartlinkCategoryIdOffersCount(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30PartnerSmartlinkCategoryIdOffersCountRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsAffiliatepostbacks(ctx context.Context, params *Get30StatsAffiliatepostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsAffiliatepostbacksRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsClicks(ctx context.Context, params *Get30StatsClicksParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsClicksRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsConversions(ctx context.Context, params *Get30StatsConversionsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsConversionsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsConversionsbyidIdId(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsConversionsbyidIdIdRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsCustom(ctx context.Context, params *Get30StatsCustomParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsCustomRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsFindSubs(ctx context.Context, params *Get30StatsFindSubsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsFindSubsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyaccountmanager(ctx context.Context, params *Get30StatsGetbyaccountmanagerParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyaccountmanagerRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyadvertiser(ctx context.Context, params *Get30StatsGetbyadvertiserParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyadvertiserRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyaffiliatemanager(ctx context.Context, params *Get30StatsGetbyaffiliatemanagerParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyaffiliatemanagerRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbybrowsers(ctx context.Context, params *Get30StatsGetbybrowsersParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbybrowsersRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbybrowsersversion(ctx context.Context, params *Get30StatsGetbybrowsersversionParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbybrowsersversionRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbycities(ctx context.Context, params *Get30StatsGetbycitiesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbycitiesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyconnectiontype(ctx context.Context, params *Get30StatsGetbyconnectiontypeParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyconnectiontypeRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbycountries(ctx context.Context, params *Get30StatsGetbycountriesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbycountriesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbydate(ctx context.Context, params *Get30StatsGetbydateParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbydateRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbydevicemodels(ctx context.Context, params *Get30StatsGetbydevicemodelsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbydevicemodelsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbydevices(ctx context.Context, params *Get30StatsGetbydevicesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbydevicesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbygoal(ctx context.Context, params *Get30StatsGetbygoalParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbygoalRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyhour(ctx context.Context, params *Get30StatsGetbyhourParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyhourRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbylanding(ctx context.Context, params *Get30StatsGetbylandingParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbylandingRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbymobilecarrier(ctx context.Context, params *Get30StatsGetbymobilecarrierParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbymobilecarrierRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyos(ctx context.Context, params *Get30StatsGetbyosParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyosRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbypartner(ctx context.Context, params *Get30StatsGetbypartnerParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbypartnerRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbypartnerbydate(ctx context.Context, params *Get30StatsGetbypartnerbydateParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbypartnerbydateRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyprelanding(ctx context.Context, params *Get30StatsGetbyprelandingParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyprelandingRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyprogram(ctx context.Context, params *Get30StatsGetbyprogramParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyprogramRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbysub(ctx context.Context, params *Get30StatsGetbysubParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbysubRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbytrafficback(ctx context.Context, params *Get30StatsGetbytrafficbackParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbytrafficbackRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetbyversions(ctx context.Context, params *Get30StatsGetbyversionsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetbyversionsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsGetreferralpayments(ctx context.Context, params *Get30StatsGetreferralpaymentsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsGetreferralpaymentsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsRetentionrate(ctx context.Context, params *Get30StatsRetentionrateParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsRetentionrateRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsServerpostbacks(ctx context.Context, params *Get30StatsServerpostbacksParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsServerpostbacksRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get30StatsTimeToAction(ctx context.Context, params *Get30StatsTimeToActionParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet30StatsTimeToActionRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Adcosts(ctx context.Context, params *Get31AdcostsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31AdcostsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31AutomationCrAndSubBlockLogs(ctx context.Context, params *Get31AutomationCrAndSubBlockLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31AutomationCrAndSubBlockLogsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31AutomationKpi(ctx context.Context, params *Get31AutomationKpiParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31AutomationKpiRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31AutomationKpiBlockLogs(ctx context.Context, params *Get31AutomationKpiBlockLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31AutomationKpiBlockLogsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31AutomationKpiChangeLogs(ctx context.Context, params *Get31AutomationKpiChangeLogsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31AutomationKpiChangeLogsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Browsers(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31BrowsersRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Cities(ctx context.Context, params *Get31CitiesParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31CitiesRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31ConnectionTypes(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31ConnectionTypesRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Countries(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31CountriesRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Devices(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31DevicesRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Isp(ctx context.Context, params *Get31IspParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31IspRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31OffersIDPrivacy(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31OffersIDPrivacyRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Oses(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31OsesRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31OsesOS(ctx context.Context, os string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31OsesOSRequest(c.Server, os)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31PartnerMe(ctx context.Context, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31PartnerMeRequest(c.Server)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Payments(ctx context.Context, params *Get31PaymentsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31PaymentsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31PaymentsID(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31PaymentsIDRequest(c.Server, id)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Presets(ctx context.Context, params *Get31PresetsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31PresetsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31ProductFeedProductFeedIdItems(ctx context.Context, productFeedId string, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31ProductFeedProductFeedIdItemsRequest(c.Server, productFeedId)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Regions(ctx context.Context, params *Get31RegionsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31RegionsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31StatsCaps(ctx context.Context, params *Get31StatsCapsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31StatsCapsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+func (c *Client) Get31Vendors(ctx context.Context, params *Get31VendorsParams, reqEditors ...RequestEditorFn) (*http.Response, error) {
+	req, err := NewGet31VendorsRequest(c.Server, params)
+	if err != nil {
+		return nil, err
+	}
+	req = req.WithContext(ctx)
+	if err := c.applyEditors(ctx, req, reqEditors); err != nil {
+		return nil, err
+	}
+	return c.Client.Do(req)
+}
+
+// NewGet30AdminAdvertiserInvoiceNumberRequest generates requests for Get30AdminAdvertiserInvoiceNumber
+func NewGet30AdminAdvertiserInvoiceNumberRequest(server string, number string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "number", runtime.ParamLocationPath, number)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/advertiser-invoice/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminAdvertiserInvoicesRequest generates requests for Get30AdminAdvertiserInvoices
+func NewGet30AdminAdvertiserInvoicesRequest(server string, params *Get30AdminAdvertiserInvoicesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/advertiser-invoices")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.StartDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "start_date", runtime.ParamLocationQuery, *params.StartDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.EndDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "end_date", runtime.ParamLocationQuery, *params.EndDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminAdvertiserIdRequest generates requests for Get30AdminAdvertiserId
+func NewGet30AdminAdvertiserIdRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/advertiser/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminAdvertisersRequest generates requests for Get30AdminAdvertisers
+func NewGet30AdminAdvertisersRequest(server string, params *Get30AdminAdvertisersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/advertisers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Order != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "order", runtime.ParamLocationQuery, *params.Order); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdatedAt != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "updated_at", runtime.ParamLocationQuery, *params.UpdatedAt); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.WithOffers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "with_offers", runtime.ParamLocationQuery, *params.WithOffers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Id != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "id", runtime.ParamLocationQuery, *params.Id); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Name != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "name", runtime.ParamLocationQuery, *params.Name); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Tags != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "tags", runtime.ParamLocationQuery, *params.Tags); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminCurrencyRequest generates requests for Get30AdminCurrency
+func NewGet30AdminCurrencyRequest(server string, params *Get30AdminCurrencyParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/currency")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.GetOnlyActive != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "get_only_active", runtime.ParamLocationQuery, *params.GetOnlyActive); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Extended != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "extended", runtime.ParamLocationQuery, *params.Extended); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminCurrencyExtended1Request generates requests for Get30AdminCurrencyExtended1
+func NewGet30AdminCurrencyExtended1Request(server string, params *Get30AdminCurrencyExtended1Params) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/currency?extended=1")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.GetOnlyActive != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "get_only_active", runtime.ParamLocationQuery, *params.GetOnlyActive); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Extended != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "extended", runtime.ParamLocationQuery, *params.Extended); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminCustomFieldsRequest generates requests for Get30AdminCustomFields
+func NewGet30AdminCustomFieldsRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/custom_fields")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminDomainsRequest generates requests for Get30AdminDomains
+func NewGet30AdminDomainsRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/domains")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminOfferSourcesRequest generates requests for Get30AdminOfferSources
+func NewGet30AdminOfferSourcesRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/offer/sources")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminPartnerIdRequest generates requests for Get30AdminPartnerId
+func NewGet30AdminPartnerIdRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/partner/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminPartnerIdReferralsRequest generates requests for Get30AdminPartnerIdReferrals
+func NewGet30AdminPartnerIdReferralsRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/partner/%s/referrals", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminPartnersRequest generates requests for Get30AdminPartners
+func NewGet30AdminPartnersRequest(server string, params *Get30AdminPartnersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/partners")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Id != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "id", runtime.ParamLocationQuery, *params.Id); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.WithBalance != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "with_balance", runtime.ParamLocationQuery, *params.WithBalance); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdatedAt != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "updated_at", runtime.ParamLocationQuery, *params.UpdatedAt); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminPaymentSystemsRequest generates requests for Get30AdminPaymentSystems
+func NewGet30AdminPaymentSystemsRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/payment_systems")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminPostbacksRequest generates requests for Get30AdminPostbacks
+func NewGet30AdminPostbacksRequest(server string, params *Get30AdminPostbacksParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/postbacks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.PartnerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "partner_id", runtime.ParamLocationQuery, *params.PartnerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminSmartlinkCategoriesRequest generates requests for Get30AdminSmartlinkCategories
+func NewGet30AdminSmartlinkCategoriesRequest(server string, params *Get30AdminSmartlinkCategoriesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/smartlink/categories")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Id != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "id", runtime.ParamLocationQuery, *params.Id); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Name != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "name", runtime.ParamLocationQuery, *params.Name); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminSmartlinkCategoryIdOffersCountRequest generates requests for Get30AdminSmartlinkCategoryIdOffersCount
+func NewGet30AdminSmartlinkCategoryIdOffersCountRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/smartlink/category/%s/offers-count", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminTicketIdRequest generates requests for Get30AdminTicketId
+func NewGet30AdminTicketIdRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/ticket/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminTicketsRequest generates requests for Get30AdminTickets
+func NewGet30AdminTicketsRequest(server string, params *Get30AdminTicketsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/tickets")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminUserIDRequest generates requests for Get30AdminUserID
+func NewGet30AdminUserIDRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "ID", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/user/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30AdminUsersRequest generates requests for Get30AdminUsers
+func NewGet30AdminUsersRequest(server string, params *Get30AdminUsersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/admin/users")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdatedAt != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "updated_at", runtime.ParamLocationQuery, *params.UpdatedAt); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30BalanceRequest generates requests for Get30Balance
+func NewGet30BalanceRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/balance")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30GoalsRequest generates requests for Get30Goals
+func NewGet30GoalsRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/goals")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30NewsRequest generates requests for Get30News
+func NewGet30NewsRequest(server string, params *Get30NewsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/news")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Skip != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "skip", runtime.ParamLocationQuery, *params.Skip); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Fixed != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "fixed", runtime.ParamLocationQuery, *params.Fixed); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30NewsIDRequest generates requests for Get30NewsID
+func NewGet30NewsIDRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "ID", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/news/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30OfferCategoriesRequest generates requests for Get30OfferCategories
+func NewGet30OfferCategoriesRequest(server string, params *Get30OfferCategoriesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/offer/categories")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Ids != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "ids", runtime.ParamLocationQuery, *params.Ids); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Order != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "order", runtime.ParamLocationQuery, *params.Order); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
 }
 
 // NewGet30OfferIDRequest generates requests for Get30OfferID
@@ -957,6 +7719,15615 @@ func NewGet30OffersRequest(server string, params *Get30OffersParams) (*http.Requ
 	return req, nil
 }
 
+// NewGet30OffersCountRequest generates requests for Get30OffersCount
+func NewGet30OffersCountRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/offers/count")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30PartnerLiveOffersRequest generates requests for Get30PartnerLiveOffers
+func NewGet30PartnerLiveOffersRequest(server string, params *Get30PartnerLiveOffersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/partner/live-offers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.IntId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "int_id", runtime.ParamLocationQuery, *params.IntId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Countries != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "countries", runtime.ParamLocationQuery, *params.Countries); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Categories != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "categories", runtime.ParamLocationQuery, *params.Categories); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CapsCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "caps_country", runtime.ParamLocationQuery, *params.CapsCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CapsType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "caps_type", runtime.ParamLocationQuery, *params.CapsType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sort != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sort", runtime.ParamLocationQuery, *params.Sort); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30PartnerOffersRequest generates requests for Get30PartnerOffers
+func NewGet30PartnerOffersRequest(server string, params *Get30PartnerOffersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/partner/offers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.IntId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "int_id", runtime.ParamLocationQuery, *params.IntId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Countries != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "countries", runtime.ParamLocationQuery, *params.Countries); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Categories != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "categories", runtime.ParamLocationQuery, *params.Categories); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CapsCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "caps_country", runtime.ParamLocationQuery, *params.CapsCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CapsType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "caps_type", runtime.ParamLocationQuery, *params.CapsType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sort != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sort", runtime.ParamLocationQuery, *params.Sort); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30PartnerPixelsRequest generates requests for Get30PartnerPixels
+func NewGet30PartnerPixelsRequest(server string, params *Get30PartnerPixelsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/partner/pixels")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Pid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "pid[]", runtime.ParamLocationQuery, *params.Pid); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ModerationStatus != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "moderation_status", runtime.ParamLocationQuery, *params.ModerationStatus); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30PartnerSmartlinkCategoriesRequest generates requests for Get30PartnerSmartlinkCategories
+func NewGet30PartnerSmartlinkCategoriesRequest(server string, params *Get30PartnerSmartlinkCategoriesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/partner/smartlink/categories")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Id != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "id", runtime.ParamLocationQuery, *params.Id); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30PartnerSmartlinkCategoryIdOffersCountRequest generates requests for Get30PartnerSmartlinkCategoryIdOffersCount
+func NewGet30PartnerSmartlinkCategoryIdOffersCountRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/partner/smartlink/category/%s/offers-count", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsAffiliatepostbacksRequest generates requests for Get30StatsAffiliatepostbacks
+func NewGet30StatsAffiliatepostbacksRequest(server string, params *Get30StatsAffiliatepostbacksParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/affiliatepostbacks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Offer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer", runtime.ParamLocationQuery, *params.Offer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Partner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "partner", runtime.ParamLocationQuery, *params.Partner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Goal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "goal", runtime.ParamLocationQuery, *params.Goal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.HttpCode != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "http_code", runtime.ParamLocationQuery, *params.HttpCode); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsClicksRequest generates requests for Get30StatsClicks
+func NewGet30StatsClicksRequest(server string, params *Get30StatsClicksParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/clicks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Hour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "hour", runtime.ParamLocationQuery, *params.Hour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Offer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer", runtime.ParamLocationQuery, *params.Offer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Partner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "partner", runtime.ParamLocationQuery, *params.Partner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Country != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "country", runtime.ParamLocationQuery, *params.Country); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Advertisers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "advertisers", runtime.ParamLocationQuery, *params.Advertisers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsConversionsRequest generates requests for Get30StatsConversions
+func NewGet30StatsConversionsRequest(server string, params *Get30StatsConversionsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/conversions")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateFromDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_from_date", runtime.ParamLocationQuery, *params.UpdateFromDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateFromHour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_from_hour", runtime.ParamLocationQuery, *params.UpdateFromHour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateToDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_to_date", runtime.ParamLocationQuery, *params.UpdateToDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateToHour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_to_hour", runtime.ParamLocationQuery, *params.UpdateToHour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Offer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer", runtime.ParamLocationQuery, *params.Offer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Advertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "advertiser", runtime.ParamLocationQuery, *params.Advertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Country != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "country", runtime.ParamLocationQuery, *params.Country); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Browser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "browser", runtime.ParamLocationQuery, *params.Browser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ActionId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "action_id", runtime.ParamLocationQuery, *params.ActionId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Clickid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "clickid", runtime.ParamLocationQuery, *params.Clickid); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Os != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "os", runtime.ParamLocationQuery, *params.Os); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Goal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "goal", runtime.ParamLocationQuery, *params.Goal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.GoalId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "goal_id", runtime.ParamLocationQuery, *params.GoalId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Device != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "device", runtime.ParamLocationQuery, *params.Device); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Payouts != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payouts", runtime.ParamLocationQuery, *params.Payouts); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PayoutsFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payouts_from", runtime.ParamLocationQuery, *params.PayoutsFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PayoutsTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payouts_to", runtime.ParamLocationQuery, *params.PayoutsTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Currency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "currency", runtime.ParamLocationQuery, *params.Currency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Hour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "hour", runtime.ParamLocationQuery, *params.Hour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_1", runtime.ParamLocationQuery, *params.CustomField1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_2", runtime.ParamLocationQuery, *params.CustomField2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_3", runtime.ParamLocationQuery, *params.CustomField3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_4", runtime.ParamLocationQuery, *params.CustomField4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_5", runtime.ParamLocationQuery, *params.CustomField5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_6", runtime.ParamLocationQuery, *params.CustomField6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.CustomField7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "custom_field_7", runtime.ParamLocationQuery, *params.CustomField7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Subid1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "subid1", runtime.ParamLocationQuery, *params.Subid1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Subid2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "subid2", runtime.ParamLocationQuery, *params.Subid2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Subid3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "subid3", runtime.ParamLocationQuery, *params.Subid3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Subid4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "subid4", runtime.ParamLocationQuery, *params.Subid4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Subid5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "subid5", runtime.ParamLocationQuery, *params.Subid5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.SmartId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "smart_id", runtime.ParamLocationQuery, *params.SmartId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Promocode != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "promocode", runtime.ParamLocationQuery, *params.Promocode); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ImpId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "imp_id", runtime.ParamLocationQuery, *params.ImpId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PaymentStatus != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payment_status", runtime.ParamLocationQuery, *params.PaymentStatus); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Partner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "partner", runtime.ParamLocationQuery, *params.Partner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Revenue != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "revenue", runtime.ParamLocationQuery, *params.Revenue); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.RevenueFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "revenue_from", runtime.ParamLocationQuery, *params.RevenueFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.RevenueTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "revenue_to", runtime.ParamLocationQuery, *params.RevenueTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.RawExport != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "raw_export", runtime.ParamLocationQuery, *params.RawExport); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DeclineReason != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "decline_reason", runtime.ParamLocationQuery, *params.DeclineReason); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FraudRiskLevel != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "fraud_risk_level", runtime.ParamLocationQuery, *params.FraudRiskLevel); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FraudType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "fraud_type", runtime.ParamLocationQuery, *params.FraudType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Comment != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "comment", runtime.ParamLocationQuery, *params.Comment); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsConversionsbyidIdIdRequest generates requests for Get30StatsConversionsbyidIdId
+func NewGet30StatsConversionsbyidIdIdRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "id", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/conversionsbyid?id=%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsCustomRequest generates requests for Get30StatsCustom
+func NewGet30StatsCustomRequest(server string, params *Get30StatsCustomParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/custom")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Slice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "slice", runtime.ParamLocationQuery, *params.Slice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSmartId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[smart_id]", runtime.ParamLocationQuery, *params.FilterSmartId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterNonzero != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[nonzero]", runtime.ParamLocationQuery, *params.FilterNonzero); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPaymentStatus != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[payment_status]", runtime.ParamLocationQuery, *params.FilterPaymentStatus); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ConversionTypes != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "conversionTypes", runtime.ParamLocationQuery, *params.ConversionTypes); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Order != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "order", runtime.ParamLocationQuery, *params.Order); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Fields != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "fields", runtime.ParamLocationQuery, *params.Fields); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsFindSubsRequest generates requests for Get30StatsFindSubs
+func NewGet30StatsFindSubsRequest(server string, params *Get30StatsFindSubsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/find-subs")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Sub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sub1", runtime.ParamLocationQuery, *params.Sub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sub2", runtime.ParamLocationQuery, *params.Sub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sub3", runtime.ParamLocationQuery, *params.Sub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sub4", runtime.ParamLocationQuery, *params.Sub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Sub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "sub5", runtime.ParamLocationQuery, *params.Sub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyaccountmanagerRequest generates requests for Get30StatsGetbyaccountmanager
+func NewGet30StatsGetbyaccountmanagerRequest(server string, params *Get30StatsGetbyaccountmanagerParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyaccountmanager")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyadvertiserRequest generates requests for Get30StatsGetbyadvertiser
+func NewGet30StatsGetbyadvertiserRequest(server string, params *Get30StatsGetbyadvertiserParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyadvertiser")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyaffiliatemanagerRequest generates requests for Get30StatsGetbyaffiliatemanager
+func NewGet30StatsGetbyaffiliatemanagerRequest(server string, params *Get30StatsGetbyaffiliatemanagerParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyaffiliatemanager")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbybrowsersRequest generates requests for Get30StatsGetbybrowsers
+func NewGet30StatsGetbybrowsersRequest(server string, params *Get30StatsGetbybrowsersParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbybrowsers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbybrowsersversionRequest generates requests for Get30StatsGetbybrowsersversion
+func NewGet30StatsGetbybrowsersversionRequest(server string, params *Get30StatsGetbybrowsersversionParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbybrowsersversion")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbycitiesRequest generates requests for Get30StatsGetbycities
+func NewGet30StatsGetbycitiesRequest(server string, params *Get30StatsGetbycitiesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbycities")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyconnectiontypeRequest generates requests for Get30StatsGetbyconnectiontype
+func NewGet30StatsGetbyconnectiontypeRequest(server string, params *Get30StatsGetbyconnectiontypeParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyconnectiontype")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbycountriesRequest generates requests for Get30StatsGetbycountries
+func NewGet30StatsGetbycountriesRequest(server string, params *Get30StatsGetbycountriesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbycountries")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbydateRequest generates requests for Get30StatsGetbydate
+func NewGet30StatsGetbydateRequest(server string, params *Get30StatsGetbydateParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbydate")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbydevicemodelsRequest generates requests for Get30StatsGetbydevicemodels
+func NewGet30StatsGetbydevicemodelsRequest(server string, params *Get30StatsGetbydevicemodelsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbydevicemodels")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbydevicesRequest generates requests for Get30StatsGetbydevices
+func NewGet30StatsGetbydevicesRequest(server string, params *Get30StatsGetbydevicesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbydevices")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbygoalRequest generates requests for Get30StatsGetbygoal
+func NewGet30StatsGetbygoalRequest(server string, params *Get30StatsGetbygoalParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbygoal")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyhourRequest generates requests for Get30StatsGetbyhour
+func NewGet30StatsGetbyhourRequest(server string, params *Get30StatsGetbyhourParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyhour")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbylandingRequest generates requests for Get30StatsGetbylanding
+func NewGet30StatsGetbylandingRequest(server string, params *Get30StatsGetbylandingParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbylanding")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbymobilecarrierRequest generates requests for Get30StatsGetbymobilecarrier
+func NewGet30StatsGetbymobilecarrierRequest(server string, params *Get30StatsGetbymobilecarrierParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbymobilecarrier")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyosRequest generates requests for Get30StatsGetbyos
+func NewGet30StatsGetbyosRequest(server string, params *Get30StatsGetbyosParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyos")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbypartnerRequest generates requests for Get30StatsGetbypartner
+func NewGet30StatsGetbypartnerRequest(server string, params *Get30StatsGetbypartnerParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbypartner")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbypartnerbydateRequest generates requests for Get30StatsGetbypartnerbydate
+func NewGet30StatsGetbypartnerbydateRequest(server string, params *Get30StatsGetbypartnerbydateParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbypartnerbydate")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyprelandingRequest generates requests for Get30StatsGetbyprelanding
+func NewGet30StatsGetbyprelandingRequest(server string, params *Get30StatsGetbyprelandingParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyprelanding")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyprogramRequest generates requests for Get30StatsGetbyprogram
+func NewGet30StatsGetbyprogramRequest(server string, params *Get30StatsGetbyprogramParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyprogram")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbysubRequest generates requests for Get30StatsGetbysub
+func NewGet30StatsGetbysubRequest(server string, params *Get30StatsGetbysubParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbysub")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbytrafficbackRequest generates requests for Get30StatsGetbytrafficback
+func NewGet30StatsGetbytrafficbackRequest(server string, params *Get30StatsGetbytrafficbackParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbytrafficback")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetbyversionsRequest generates requests for Get30StatsGetbyversions
+func NewGet30StatsGetbyversionsRequest(server string, params *Get30StatsGetbyversionsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getbyversions")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Locale != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "locale", runtime.ParamLocationQuery, *params.Locale); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OrderType != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "orderType", runtime.ParamLocationQuery, *params.OrderType); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCurrency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[currency]", runtime.ParamLocationQuery, *params.FilterCurrency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiser != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser]", runtime.ParamLocationQuery, *params.FilterAdvertiser); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer]", runtime.ParamLocationQuery, *params.FilterOffer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterManager != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[manager]", runtime.ParamLocationQuery, *params.FilterManager); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_manager_id]", runtime.ParamLocationQuery, *params.FilterAdvertiserManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterPartner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[partner]", runtime.ParamLocationQuery, *params.FilterPartner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterCountry != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[country]", runtime.ParamLocationQuery, *params.FilterCountry); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[os]", runtime.ParamLocationQuery, *params.FilterOs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterGoal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[goal]", runtime.ParamLocationQuery, *params.FilterGoal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub1 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub1]", runtime.ParamLocationQuery, *params.FilterSub1); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub2 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub2]", runtime.ParamLocationQuery, *params.FilterSub2); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub3 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub3]", runtime.ParamLocationQuery, *params.FilterSub3); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub4 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub4]", runtime.ParamLocationQuery, *params.FilterSub4); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub5 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub5]", runtime.ParamLocationQuery, *params.FilterSub5); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub6 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub6]", runtime.ParamLocationQuery, *params.FilterSub6); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub7 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub7]", runtime.ParamLocationQuery, *params.FilterSub7); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSub8 != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub8]", runtime.ParamLocationQuery, *params.FilterSub8); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDevice != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[device]", runtime.ParamLocationQuery, *params.FilterDevice); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertiserTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertiser_tag]", runtime.ParamLocationQuery, *params.FilterAdvertiserTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliateTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliate_tag]", runtime.ParamLocationQuery, *params.FilterAffiliateTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOfferTag != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offer_tag]", runtime.ParamLocationQuery, *params.FilterOfferTag); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsGetreferralpaymentsRequest generates requests for Get30StatsGetreferralpayments
+func NewGet30StatsGetreferralpaymentsRequest(server string, params *Get30StatsGetreferralpaymentsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/getreferralpayments")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Pid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "pid", runtime.ParamLocationQuery, *params.Pid); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Pids != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "pids", runtime.ParamLocationQuery, *params.Pids); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Ref != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "ref", runtime.ParamLocationQuery, *params.Ref); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Refs != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "refs", runtime.ParamLocationQuery, *params.Refs); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.IsPaid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "is_paid", runtime.ParamLocationQuery, *params.IsPaid); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PaymentStatuses != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payment_statuses", runtime.ParamLocationQuery, *params.PaymentStatuses); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Currency != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "currency", runtime.ParamLocationQuery, *params.Currency); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Currencies != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "currencies", runtime.ParamLocationQuery, *params.Currencies); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsRetentionrateRequest generates requests for Get30StatsRetentionrate
+func NewGet30StatsRetentionrateRequest(server string, params *Get30StatsRetentionrateParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/retentionrate")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Offer != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer", runtime.ParamLocationQuery, *params.Offer); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.BaseEvent != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "base_event", runtime.ParamLocationQuery, *params.BaseEvent); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Events != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "events", runtime.ParamLocationQuery, *params.Events); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.AffiliateId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "affiliate_id", runtime.ParamLocationQuery, *params.AffiliateId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsServerpostbacksRequest generates requests for Get30StatsServerpostbacks
+func NewGet30StatsServerpostbacksRequest(server string, params *Get30StatsServerpostbacksParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/serverpostbacks")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OfferId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer_id", runtime.ParamLocationQuery, *params.OfferId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Partner != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "partner", runtime.ParamLocationQuery, *params.Partner); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Supplier != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "supplier", runtime.ParamLocationQuery, *params.Supplier); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ActionId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "action_id", runtime.ParamLocationQuery, *params.ActionId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ClickId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "click_id", runtime.ParamLocationQuery, *params.ClickId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Goal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "goal", runtime.ParamLocationQuery, *params.Goal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.IsSuccess != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "is_success", runtime.ParamLocationQuery, *params.IsSuccess); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet30StatsTimeToActionRequest generates requests for Get30StatsTimeToAction
+func NewGet30StatsTimeToActionRequest(server string, params *Get30StatsTimeToActionParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.0/stats/time-to-action")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.OfferId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer_id", runtime.ParamLocationQuery, *params.OfferId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Timezone != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "timezone", runtime.ParamLocationQuery, *params.Timezone); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Goal != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "goal", runtime.ParamLocationQuery, *params.Goal); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.AffiliateIds != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "affiliate_ids", runtime.ParamLocationQuery, *params.AffiliateIds); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31AdcostsRequest generates requests for Get31Adcosts
+func NewGet31AdcostsRequest(server string, params *Get31AdcostsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/adcosts")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.OfferId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer_id", runtime.ParamLocationQuery, *params.OfferId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31AutomationCrAndSubBlockLogsRequest generates requests for Get31AutomationCrAndSubBlockLogs
+func NewGet31AutomationCrAndSubBlockLogsRequest(server string, params *Get31AutomationCrAndSubBlockLogsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/automation/cr-and-sub/block-logs")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAdvertisers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[advertisers]", runtime.ParamLocationQuery, *params.FilterAdvertisers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offers]", runtime.ParamLocationQuery, *params.FilterOffers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliates != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliates]", runtime.ParamLocationQuery, *params.FilterAffiliates); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31AutomationKpiRequest generates requests for Get31AutomationKpi
+func NewGet31AutomationKpiRequest(server string, params *Get31AutomationKpiParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/automation/kpi")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31AutomationKpiBlockLogsRequest generates requests for Get31AutomationKpiBlockLogs
+func NewGet31AutomationKpiBlockLogsRequest(server string, params *Get31AutomationKpiBlockLogsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/automation/kpi/block-logs")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSubIndex != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub_index]", runtime.ParamLocationQuery, *params.FilterSubIndex); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterSubValue != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[sub_value]", runtime.ParamLocationQuery, *params.FilterSubValue); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAction != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[action]", runtime.ParamLocationQuery, *params.FilterAction); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterOffers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[offers]", runtime.ParamLocationQuery, *params.FilterOffers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterAffiliates != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[affiliates]", runtime.ParamLocationQuery, *params.FilterAffiliates); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31AutomationKpiChangeLogsRequest generates requests for Get31AutomationKpiChangeLogs
+func NewGet31AutomationKpiChangeLogsRequest(server string, params *Get31AutomationKpiChangeLogsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/automation/kpi/change-logs")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.FilterDateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_from]", runtime.ParamLocationQuery, *params.FilterDateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.FilterDateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "filter[date_to]", runtime.ParamLocationQuery, *params.FilterDateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Offers != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offers", runtime.ParamLocationQuery, *params.Offers); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Affiliates != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "affiliates", runtime.ParamLocationQuery, *params.Affiliates); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Type != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "type", runtime.ParamLocationQuery, *params.Type); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31BrowsersRequest generates requests for Get31Browsers
+func NewGet31BrowsersRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/browsers")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31CitiesRequest generates requests for Get31Cities
+func NewGet31CitiesRequest(server string, params *Get31CitiesParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/cities")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Country != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "country", runtime.ParamLocationQuery, *params.Country); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Code != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "code", runtime.ParamLocationQuery, *params.Code); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31ConnectionTypesRequest generates requests for Get31ConnectionTypes
+func NewGet31ConnectionTypesRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/connection-types")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31CountriesRequest generates requests for Get31Countries
+func NewGet31CountriesRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/countries")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31DevicesRequest generates requests for Get31Devices
+func NewGet31DevicesRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/devices")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31IspRequest generates requests for Get31Isp
+func NewGet31IspRequest(server string, params *Get31IspParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/isp")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Country != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "country", runtime.ParamLocationQuery, *params.Country); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31OffersIDPrivacyRequest generates requests for Get31OffersIDPrivacy
+func NewGet31OffersIDPrivacyRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "ID", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/offers/%s/privacy", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31OsesRequest generates requests for Get31Oses
+func NewGet31OsesRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/oses")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31OsesOSRequest generates requests for Get31OsesOS
+func NewGet31OsesOSRequest(server string, os string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "OS", runtime.ParamLocationPath, os)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/oses/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31PartnerMeRequest generates requests for Get31PartnerMe
+func NewGet31PartnerMeRequest(server string) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/partner/me")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31PaymentsRequest generates requests for Get31Payments
+func NewGet31PaymentsRequest(server string, params *Get31PaymentsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/payments")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.DateFrom != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_from", runtime.ParamLocationQuery, *params.DateFrom); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.DateTo != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "date_to", runtime.ParamLocationQuery, *params.DateTo); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Id != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "id", runtime.ParamLocationQuery, *params.Id); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Status != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "status", runtime.ParamLocationQuery, *params.Status); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Aid != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "aid", runtime.ParamLocationQuery, *params.Aid); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.ManagerId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "manager_id", runtime.ParamLocationQuery, *params.ManagerId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PaymentSystem != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payment_system", runtime.ParamLocationQuery, *params.PaymentSystem); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.PaymentAccount != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "payment_account", runtime.ParamLocationQuery, *params.PaymentAccount); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateFromDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_from_date", runtime.ParamLocationQuery, *params.UpdateFromDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateToDate != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_to_date", runtime.ParamLocationQuery, *params.UpdateToDate); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateFromHour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_from_hour", runtime.ParamLocationQuery, *params.UpdateFromHour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.UpdateToHour != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "update_to_hour", runtime.ParamLocationQuery, *params.UpdateToHour); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31PaymentsIDRequest generates requests for Get31PaymentsID
+func NewGet31PaymentsIDRequest(server string, id string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "ID", runtime.ParamLocationPath, id)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/payments/%s", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31PresetsRequest generates requests for Get31Presets
+func NewGet31PresetsRequest(server string, params *Get31PresetsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/presets")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Page != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "page", runtime.ParamLocationQuery, *params.Page); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Limit != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "limit", runtime.ParamLocationQuery, *params.Limit); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31ProductFeedProductFeedIdItemsRequest generates requests for Get31ProductFeedProductFeedIdItems
+func NewGet31ProductFeedProductFeedIdItemsRequest(server string, productFeedId string) (*http.Request, error) {
+	var err error
+
+	var pathParam0 string
+
+	pathParam0, err = runtime.StyleParamWithLocation("simple", false, "product_feed_id", runtime.ParamLocationPath, productFeedId)
+	if err != nil {
+		return nil, err
+	}
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/product-feed/%s/items", pathParam0)
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31RegionsRequest generates requests for Get31Regions
+func NewGet31RegionsRequest(server string, params *Get31RegionsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/regions")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Country != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "country", runtime.ParamLocationQuery, *params.Country); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		if params.Code != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "code", runtime.ParamLocationQuery, *params.Code); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31StatsCapsRequest generates requests for Get31StatsCaps
+func NewGet31StatsCapsRequest(server string, params *Get31StatsCapsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/stats/caps")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.OfferId != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "offer_id", runtime.ParamLocationQuery, *params.OfferId); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
+// NewGet31VendorsRequest generates requests for Get31Vendors
+func NewGet31VendorsRequest(server string, params *Get31VendorsParams) (*http.Request, error) {
+	var err error
+
+	serverURL, err := url.Parse(server)
+	if err != nil {
+		return nil, err
+	}
+
+	operationPath := fmt.Sprintf("/3.1/vendors")
+	if operationPath[0] == '/' {
+		operationPath = "." + operationPath
+	}
+
+	queryURL, err := serverURL.Parse(operationPath)
+	if err != nil {
+		return nil, err
+	}
+
+	if params != nil {
+		queryValues := queryURL.Query()
+
+		if params.Q != nil {
+
+			if queryFrag, err := runtime.StyleParamWithLocation("form", true, "q", runtime.ParamLocationQuery, *params.Q); err != nil {
+				return nil, err
+			} else if parsed, err := url.ParseQuery(queryFrag); err != nil {
+				return nil, err
+			} else {
+				for k, v := range parsed {
+					for _, v2 := range v {
+						queryValues.Add(k, v2)
+					}
+				}
+			}
+
+		}
+
+		queryURL.RawQuery = queryValues.Encode()
+	}
+
+	req, err := http.NewRequest("GET", queryURL.String(), nil)
+	if err != nil {
+		return nil, err
+	}
+
+	return req, nil
+}
+
 func (c *Client) applyEditors(ctx context.Context, req *http.Request, additionalEditors []RequestEditorFn) error {
 	for _, r := range c.RequestEditors {
 		if err := r(ctx, req); err != nil {
@@ -1000,11 +23371,819 @@ func WithBaseURL(baseURL string) ClientOption {
 
 // ClientWithResponsesInterface is the interface specification for the client with responses above.
 type ClientWithResponsesInterface interface {
+	// Get30AdminAdvertiserInvoiceNumberWithResponse request
+	Get30AdminAdvertiserInvoiceNumberWithResponse(ctx context.Context, number string, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserInvoiceNumberResponse, error)
+
+	// Get30AdminAdvertiserInvoicesWithResponse request
+	Get30AdminAdvertiserInvoicesWithResponse(ctx context.Context, params *Get30AdminAdvertiserInvoicesParams, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserInvoicesResponse, error)
+
+	// Get30AdminAdvertiserIdWithResponse request
+	Get30AdminAdvertiserIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserIdResponse, error)
+
+	// Get30AdminAdvertisersWithResponse request
+	Get30AdminAdvertisersWithResponse(ctx context.Context, params *Get30AdminAdvertisersParams, reqEditors ...RequestEditorFn) (*Get30AdminAdvertisersResponse, error)
+
+	// Get30AdminCurrencyWithResponse request
+	Get30AdminCurrencyWithResponse(ctx context.Context, params *Get30AdminCurrencyParams, reqEditors ...RequestEditorFn) (*Get30AdminCurrencyResponse, error)
+
+	// Get30AdminCurrencyExtended1WithResponse request
+	Get30AdminCurrencyExtended1WithResponse(ctx context.Context, params *Get30AdminCurrencyExtended1Params, reqEditors ...RequestEditorFn) (*Get30AdminCurrencyExtended1Response, error)
+
+	// Get30AdminCustomFieldsWithResponse request
+	Get30AdminCustomFieldsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminCustomFieldsResponse, error)
+
+	// Get30AdminDomainsWithResponse request
+	Get30AdminDomainsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminDomainsResponse, error)
+
+	// Get30AdminOfferSourcesWithResponse request
+	Get30AdminOfferSourcesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminOfferSourcesResponse, error)
+
+	// Get30AdminPartnerIdWithResponse request
+	Get30AdminPartnerIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminPartnerIdResponse, error)
+
+	// Get30AdminPartnerIdReferralsWithResponse request
+	Get30AdminPartnerIdReferralsWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminPartnerIdReferralsResponse, error)
+
+	// Get30AdminPartnersWithResponse request
+	Get30AdminPartnersWithResponse(ctx context.Context, params *Get30AdminPartnersParams, reqEditors ...RequestEditorFn) (*Get30AdminPartnersResponse, error)
+
+	// Get30AdminPaymentSystemsWithResponse request
+	Get30AdminPaymentSystemsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminPaymentSystemsResponse, error)
+
+	// Get30AdminPostbacksWithResponse request
+	Get30AdminPostbacksWithResponse(ctx context.Context, params *Get30AdminPostbacksParams, reqEditors ...RequestEditorFn) (*Get30AdminPostbacksResponse, error)
+
+	// Get30AdminSmartlinkCategoriesWithResponse request
+	Get30AdminSmartlinkCategoriesWithResponse(ctx context.Context, params *Get30AdminSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*Get30AdminSmartlinkCategoriesResponse, error)
+
+	// Get30AdminSmartlinkCategoryIdOffersCountWithResponse request
+	Get30AdminSmartlinkCategoryIdOffersCountWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminSmartlinkCategoryIdOffersCountResponse, error)
+
+	// Get30AdminTicketIdWithResponse request
+	Get30AdminTicketIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminTicketIdResponse, error)
+
+	// Get30AdminTicketsWithResponse request
+	Get30AdminTicketsWithResponse(ctx context.Context, params *Get30AdminTicketsParams, reqEditors ...RequestEditorFn) (*Get30AdminTicketsResponse, error)
+
+	// Get30AdminUserIDWithResponse request
+	Get30AdminUserIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminUserIDResponse, error)
+
+	// Get30AdminUsersWithResponse request
+	Get30AdminUsersWithResponse(ctx context.Context, params *Get30AdminUsersParams, reqEditors ...RequestEditorFn) (*Get30AdminUsersResponse, error)
+
+	// Get30BalanceWithResponse request
+	Get30BalanceWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30BalanceResponse, error)
+
+	// Get30GoalsWithResponse request
+	Get30GoalsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30GoalsResponse, error)
+
+	// Get30NewsWithResponse request
+	Get30NewsWithResponse(ctx context.Context, params *Get30NewsParams, reqEditors ...RequestEditorFn) (*Get30NewsResponse, error)
+
+	// Get30NewsIDWithResponse request
+	Get30NewsIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30NewsIDResponse, error)
+
+	// Get30OfferCategoriesWithResponse request
+	Get30OfferCategoriesWithResponse(ctx context.Context, params *Get30OfferCategoriesParams, reqEditors ...RequestEditorFn) (*Get30OfferCategoriesResponse, error)
+
 	// Get30OfferIDWithResponse request
 	Get30OfferIDWithResponse(ctx context.Context, id int64, reqEditors ...RequestEditorFn) (*Get30OfferIDResponse, error)
 
 	// Get30OffersWithResponse request
 	Get30OffersWithResponse(ctx context.Context, params *Get30OffersParams, reqEditors ...RequestEditorFn) (*Get30OffersResponse, error)
+
+	// Get30OffersCountWithResponse request
+	Get30OffersCountWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30OffersCountResponse, error)
+
+	// Get30PartnerLiveOffersWithResponse request
+	Get30PartnerLiveOffersWithResponse(ctx context.Context, params *Get30PartnerLiveOffersParams, reqEditors ...RequestEditorFn) (*Get30PartnerLiveOffersResponse, error)
+
+	// Get30PartnerOffersWithResponse request
+	Get30PartnerOffersWithResponse(ctx context.Context, params *Get30PartnerOffersParams, reqEditors ...RequestEditorFn) (*Get30PartnerOffersResponse, error)
+
+	// Get30PartnerPixelsWithResponse request
+	Get30PartnerPixelsWithResponse(ctx context.Context, params *Get30PartnerPixelsParams, reqEditors ...RequestEditorFn) (*Get30PartnerPixelsResponse, error)
+
+	// Get30PartnerSmartlinkCategoriesWithResponse request
+	Get30PartnerSmartlinkCategoriesWithResponse(ctx context.Context, params *Get30PartnerSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*Get30PartnerSmartlinkCategoriesResponse, error)
+
+	// Get30PartnerSmartlinkCategoryIdOffersCountWithResponse request
+	Get30PartnerSmartlinkCategoryIdOffersCountWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30PartnerSmartlinkCategoryIdOffersCountResponse, error)
+
+	// Get30StatsAffiliatepostbacksWithResponse request
+	Get30StatsAffiliatepostbacksWithResponse(ctx context.Context, params *Get30StatsAffiliatepostbacksParams, reqEditors ...RequestEditorFn) (*Get30StatsAffiliatepostbacksResponse, error)
+
+	// Get30StatsClicksWithResponse request
+	Get30StatsClicksWithResponse(ctx context.Context, params *Get30StatsClicksParams, reqEditors ...RequestEditorFn) (*Get30StatsClicksResponse, error)
+
+	// Get30StatsConversionsWithResponse request
+	Get30StatsConversionsWithResponse(ctx context.Context, params *Get30StatsConversionsParams, reqEditors ...RequestEditorFn) (*Get30StatsConversionsResponse, error)
+
+	// Get30StatsConversionsbyidIdIdWithResponse request
+	Get30StatsConversionsbyidIdIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30StatsConversionsbyidIdIdResponse, error)
+
+	// Get30StatsCustomWithResponse request
+	Get30StatsCustomWithResponse(ctx context.Context, params *Get30StatsCustomParams, reqEditors ...RequestEditorFn) (*Get30StatsCustomResponse, error)
+
+	// Get30StatsFindSubsWithResponse request
+	Get30StatsFindSubsWithResponse(ctx context.Context, params *Get30StatsFindSubsParams, reqEditors ...RequestEditorFn) (*Get30StatsFindSubsResponse, error)
+
+	// Get30StatsGetbyaccountmanagerWithResponse request
+	Get30StatsGetbyaccountmanagerWithResponse(ctx context.Context, params *Get30StatsGetbyaccountmanagerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyaccountmanagerResponse, error)
+
+	// Get30StatsGetbyadvertiserWithResponse request
+	Get30StatsGetbyadvertiserWithResponse(ctx context.Context, params *Get30StatsGetbyadvertiserParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyadvertiserResponse, error)
+
+	// Get30StatsGetbyaffiliatemanagerWithResponse request
+	Get30StatsGetbyaffiliatemanagerWithResponse(ctx context.Context, params *Get30StatsGetbyaffiliatemanagerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyaffiliatemanagerResponse, error)
+
+	// Get30StatsGetbybrowsersWithResponse request
+	Get30StatsGetbybrowsersWithResponse(ctx context.Context, params *Get30StatsGetbybrowsersParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbybrowsersResponse, error)
+
+	// Get30StatsGetbybrowsersversionWithResponse request
+	Get30StatsGetbybrowsersversionWithResponse(ctx context.Context, params *Get30StatsGetbybrowsersversionParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbybrowsersversionResponse, error)
+
+	// Get30StatsGetbycitiesWithResponse request
+	Get30StatsGetbycitiesWithResponse(ctx context.Context, params *Get30StatsGetbycitiesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbycitiesResponse, error)
+
+	// Get30StatsGetbyconnectiontypeWithResponse request
+	Get30StatsGetbyconnectiontypeWithResponse(ctx context.Context, params *Get30StatsGetbyconnectiontypeParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyconnectiontypeResponse, error)
+
+	// Get30StatsGetbycountriesWithResponse request
+	Get30StatsGetbycountriesWithResponse(ctx context.Context, params *Get30StatsGetbycountriesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbycountriesResponse, error)
+
+	// Get30StatsGetbydateWithResponse request
+	Get30StatsGetbydateWithResponse(ctx context.Context, params *Get30StatsGetbydateParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydateResponse, error)
+
+	// Get30StatsGetbydevicemodelsWithResponse request
+	Get30StatsGetbydevicemodelsWithResponse(ctx context.Context, params *Get30StatsGetbydevicemodelsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydevicemodelsResponse, error)
+
+	// Get30StatsGetbydevicesWithResponse request
+	Get30StatsGetbydevicesWithResponse(ctx context.Context, params *Get30StatsGetbydevicesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydevicesResponse, error)
+
+	// Get30StatsGetbygoalWithResponse request
+	Get30StatsGetbygoalWithResponse(ctx context.Context, params *Get30StatsGetbygoalParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbygoalResponse, error)
+
+	// Get30StatsGetbyhourWithResponse request
+	Get30StatsGetbyhourWithResponse(ctx context.Context, params *Get30StatsGetbyhourParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyhourResponse, error)
+
+	// Get30StatsGetbylandingWithResponse request
+	Get30StatsGetbylandingWithResponse(ctx context.Context, params *Get30StatsGetbylandingParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbylandingResponse, error)
+
+	// Get30StatsGetbymobilecarrierWithResponse request
+	Get30StatsGetbymobilecarrierWithResponse(ctx context.Context, params *Get30StatsGetbymobilecarrierParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbymobilecarrierResponse, error)
+
+	// Get30StatsGetbyosWithResponse request
+	Get30StatsGetbyosWithResponse(ctx context.Context, params *Get30StatsGetbyosParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyosResponse, error)
+
+	// Get30StatsGetbypartnerWithResponse request
+	Get30StatsGetbypartnerWithResponse(ctx context.Context, params *Get30StatsGetbypartnerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbypartnerResponse, error)
+
+	// Get30StatsGetbypartnerbydateWithResponse request
+	Get30StatsGetbypartnerbydateWithResponse(ctx context.Context, params *Get30StatsGetbypartnerbydateParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbypartnerbydateResponse, error)
+
+	// Get30StatsGetbyprelandingWithResponse request
+	Get30StatsGetbyprelandingWithResponse(ctx context.Context, params *Get30StatsGetbyprelandingParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyprelandingResponse, error)
+
+	// Get30StatsGetbyprogramWithResponse request
+	Get30StatsGetbyprogramWithResponse(ctx context.Context, params *Get30StatsGetbyprogramParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyprogramResponse, error)
+
+	// Get30StatsGetbysubWithResponse request
+	Get30StatsGetbysubWithResponse(ctx context.Context, params *Get30StatsGetbysubParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbysubResponse, error)
+
+	// Get30StatsGetbytrafficbackWithResponse request
+	Get30StatsGetbytrafficbackWithResponse(ctx context.Context, params *Get30StatsGetbytrafficbackParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbytrafficbackResponse, error)
+
+	// Get30StatsGetbyversionsWithResponse request
+	Get30StatsGetbyversionsWithResponse(ctx context.Context, params *Get30StatsGetbyversionsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyversionsResponse, error)
+
+	// Get30StatsGetreferralpaymentsWithResponse request
+	Get30StatsGetreferralpaymentsWithResponse(ctx context.Context, params *Get30StatsGetreferralpaymentsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetreferralpaymentsResponse, error)
+
+	// Get30StatsRetentionrateWithResponse request
+	Get30StatsRetentionrateWithResponse(ctx context.Context, params *Get30StatsRetentionrateParams, reqEditors ...RequestEditorFn) (*Get30StatsRetentionrateResponse, error)
+
+	// Get30StatsServerpostbacksWithResponse request
+	Get30StatsServerpostbacksWithResponse(ctx context.Context, params *Get30StatsServerpostbacksParams, reqEditors ...RequestEditorFn) (*Get30StatsServerpostbacksResponse, error)
+
+	// Get30StatsTimeToActionWithResponse request
+	Get30StatsTimeToActionWithResponse(ctx context.Context, params *Get30StatsTimeToActionParams, reqEditors ...RequestEditorFn) (*Get30StatsTimeToActionResponse, error)
+
+	// Get31AdcostsWithResponse request
+	Get31AdcostsWithResponse(ctx context.Context, params *Get31AdcostsParams, reqEditors ...RequestEditorFn) (*Get31AdcostsResponse, error)
+
+	// Get31AutomationCrAndSubBlockLogsWithResponse request
+	Get31AutomationCrAndSubBlockLogsWithResponse(ctx context.Context, params *Get31AutomationCrAndSubBlockLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationCrAndSubBlockLogsResponse, error)
+
+	// Get31AutomationKpiWithResponse request
+	Get31AutomationKpiWithResponse(ctx context.Context, params *Get31AutomationKpiParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiResponse, error)
+
+	// Get31AutomationKpiBlockLogsWithResponse request
+	Get31AutomationKpiBlockLogsWithResponse(ctx context.Context, params *Get31AutomationKpiBlockLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiBlockLogsResponse, error)
+
+	// Get31AutomationKpiChangeLogsWithResponse request
+	Get31AutomationKpiChangeLogsWithResponse(ctx context.Context, params *Get31AutomationKpiChangeLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiChangeLogsResponse, error)
+
+	// Get31BrowsersWithResponse request
+	Get31BrowsersWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31BrowsersResponse, error)
+
+	// Get31CitiesWithResponse request
+	Get31CitiesWithResponse(ctx context.Context, params *Get31CitiesParams, reqEditors ...RequestEditorFn) (*Get31CitiesResponse, error)
+
+	// Get31ConnectionTypesWithResponse request
+	Get31ConnectionTypesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31ConnectionTypesResponse, error)
+
+	// Get31CountriesWithResponse request
+	Get31CountriesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31CountriesResponse, error)
+
+	// Get31DevicesWithResponse request
+	Get31DevicesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31DevicesResponse, error)
+
+	// Get31IspWithResponse request
+	Get31IspWithResponse(ctx context.Context, params *Get31IspParams, reqEditors ...RequestEditorFn) (*Get31IspResponse, error)
+
+	// Get31OffersIDPrivacyWithResponse request
+	Get31OffersIDPrivacyWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get31OffersIDPrivacyResponse, error)
+
+	// Get31OsesWithResponse request
+	Get31OsesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31OsesResponse, error)
+
+	// Get31OsesOSWithResponse request
+	Get31OsesOSWithResponse(ctx context.Context, os string, reqEditors ...RequestEditorFn) (*Get31OsesOSResponse, error)
+
+	// Get31PartnerMeWithResponse request
+	Get31PartnerMeWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31PartnerMeResponse, error)
+
+	// Get31PaymentsWithResponse request
+	Get31PaymentsWithResponse(ctx context.Context, params *Get31PaymentsParams, reqEditors ...RequestEditorFn) (*Get31PaymentsResponse, error)
+
+	// Get31PaymentsIDWithResponse request
+	Get31PaymentsIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get31PaymentsIDResponse, error)
+
+	// Get31PresetsWithResponse request
+	Get31PresetsWithResponse(ctx context.Context, params *Get31PresetsParams, reqEditors ...RequestEditorFn) (*Get31PresetsResponse, error)
+
+	// Get31ProductFeedProductFeedIdItemsWithResponse request
+	Get31ProductFeedProductFeedIdItemsWithResponse(ctx context.Context, productFeedId string, reqEditors ...RequestEditorFn) (*Get31ProductFeedProductFeedIdItemsResponse, error)
+
+	// Get31RegionsWithResponse request
+	Get31RegionsWithResponse(ctx context.Context, params *Get31RegionsParams, reqEditors ...RequestEditorFn) (*Get31RegionsResponse, error)
+
+	// Get31StatsCapsWithResponse request
+	Get31StatsCapsWithResponse(ctx context.Context, params *Get31StatsCapsParams, reqEditors ...RequestEditorFn) (*Get31StatsCapsResponse, error)
+
+	// Get31VendorsWithResponse request
+	Get31VendorsWithResponse(ctx context.Context, params *Get31VendorsParams, reqEditors ...RequestEditorFn) (*Get31VendorsResponse, error)
+}
+
+type Get30AdminAdvertiserInvoiceNumberResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminAdvertiserInvoiceNumberResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminAdvertiserInvoiceNumberResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminAdvertiserInvoicesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminAdvertiserInvoicesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminAdvertiserInvoicesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminAdvertiserIdResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminAdvertiserIdResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminAdvertiserIdResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminAdvertisersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminAdvertisersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminAdvertisersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminCurrencyResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminCurrencyResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminCurrencyResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminCurrencyExtended1Response struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminCurrencyExtended1Response) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminCurrencyExtended1Response) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminCustomFieldsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminCustomFieldsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminCustomFieldsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminDomainsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminDomainsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminDomainsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminOfferSourcesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminOfferSourcesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminOfferSourcesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminPartnerIdResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminPartnerIdResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminPartnerIdResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminPartnerIdReferralsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminPartnerIdReferralsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminPartnerIdReferralsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminPartnersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminPartnersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminPartnersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminPaymentSystemsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminPaymentSystemsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminPaymentSystemsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminPostbacksResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminPostbacksResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminPostbacksResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminSmartlinkCategoriesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminSmartlinkCategoriesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminSmartlinkCategoriesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminSmartlinkCategoryIdOffersCountResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminSmartlinkCategoryIdOffersCountResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminSmartlinkCategoryIdOffersCountResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminTicketIdResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminTicketIdResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminTicketIdResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminTicketsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminTicketsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminTicketsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminUserIDResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminUserIDResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminUserIDResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30AdminUsersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30AdminUsersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30AdminUsersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30BalanceResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30BalanceResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30BalanceResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30GoalsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30GoalsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30GoalsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30NewsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30NewsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30NewsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30NewsIDResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30NewsIDResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30NewsIDResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30OfferCategoriesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30OfferCategoriesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30OfferCategoriesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
 }
 
 type Get30OfferIDResponse struct {
@@ -1051,6 +24230,1573 @@ func (r Get30OffersResponse) StatusCode() int {
 	return 0
 }
 
+type Get30OffersCountResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30OffersCountResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30OffersCountResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30PartnerLiveOffersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30PartnerLiveOffersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30PartnerLiveOffersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30PartnerOffersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30PartnerOffersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30PartnerOffersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30PartnerPixelsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30PartnerPixelsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30PartnerPixelsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30PartnerSmartlinkCategoriesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30PartnerSmartlinkCategoriesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30PartnerSmartlinkCategoriesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30PartnerSmartlinkCategoryIdOffersCountResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30PartnerSmartlinkCategoryIdOffersCountResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30PartnerSmartlinkCategoryIdOffersCountResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsAffiliatepostbacksResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsAffiliatepostbacksResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsAffiliatepostbacksResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsClicksResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsClicksResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsClicksResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsConversionsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsConversionsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsConversionsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsConversionsbyidIdIdResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsConversionsbyidIdIdResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsConversionsbyidIdIdResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsCustomResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsCustomResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsCustomResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsFindSubsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsFindSubsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsFindSubsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyaccountmanagerResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyaccountmanagerResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyaccountmanagerResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyadvertiserResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyadvertiserResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyadvertiserResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyaffiliatemanagerResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyaffiliatemanagerResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyaffiliatemanagerResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbybrowsersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbybrowsersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbybrowsersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbybrowsersversionResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbybrowsersversionResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbybrowsersversionResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbycitiesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbycitiesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbycitiesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyconnectiontypeResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyconnectiontypeResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyconnectiontypeResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbycountriesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbycountriesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbycountriesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbydateResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbydateResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbydateResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbydevicemodelsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbydevicemodelsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbydevicemodelsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbydevicesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbydevicesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbydevicesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbygoalResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbygoalResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbygoalResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyhourResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyhourResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyhourResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbylandingResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbylandingResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbylandingResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbymobilecarrierResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbymobilecarrierResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbymobilecarrierResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyosResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyosResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyosResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbypartnerResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbypartnerResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbypartnerResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbypartnerbydateResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbypartnerbydateResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbypartnerbydateResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyprelandingResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyprelandingResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyprelandingResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyprogramResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyprogramResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyprogramResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbysubResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbysubResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbysubResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbytrafficbackResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbytrafficbackResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbytrafficbackResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetbyversionsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetbyversionsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetbyversionsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsGetreferralpaymentsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsGetreferralpaymentsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsGetreferralpaymentsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsRetentionrateResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsRetentionrateResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsRetentionrateResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsServerpostbacksResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsServerpostbacksResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsServerpostbacksResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get30StatsTimeToActionResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get30StatsTimeToActionResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get30StatsTimeToActionResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31AdcostsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31AdcostsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31AdcostsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31AutomationCrAndSubBlockLogsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31AutomationCrAndSubBlockLogsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31AutomationCrAndSubBlockLogsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31AutomationKpiResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31AutomationKpiResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31AutomationKpiResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31AutomationKpiBlockLogsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31AutomationKpiBlockLogsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31AutomationKpiBlockLogsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31AutomationKpiChangeLogsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31AutomationKpiChangeLogsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31AutomationKpiChangeLogsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31BrowsersResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31BrowsersResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31BrowsersResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31CitiesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31CitiesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31CitiesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31ConnectionTypesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31ConnectionTypesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31ConnectionTypesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31CountriesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31CountriesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31CountriesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31DevicesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31DevicesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31DevicesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31IspResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31IspResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31IspResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31OffersIDPrivacyResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31OffersIDPrivacyResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31OffersIDPrivacyResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31OsesResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31OsesResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31OsesResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31OsesOSResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31OsesOSResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31OsesOSResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31PartnerMeResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31PartnerMeResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31PartnerMeResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31PaymentsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31PaymentsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31PaymentsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31PaymentsIDResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31PaymentsIDResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31PaymentsIDResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31PresetsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31PresetsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31PresetsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31ProductFeedProductFeedIdItemsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31ProductFeedProductFeedIdItemsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31ProductFeedProductFeedIdItemsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31RegionsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31RegionsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31RegionsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31StatsCapsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31StatsCapsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31StatsCapsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+type Get31VendorsResponse struct {
+	Body         []byte
+	HTTPResponse *http.Response
+	JSON200      *AffiseObject
+}
+
+// Status returns HTTPResponse.Status
+func (r Get31VendorsResponse) Status() string {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.Status
+	}
+	return http.StatusText(0)
+}
+
+// StatusCode returns HTTPResponse.StatusCode
+func (r Get31VendorsResponse) StatusCode() int {
+	if r.HTTPResponse != nil {
+		return r.HTTPResponse.StatusCode
+	}
+	return 0
+}
+
+// Get30AdminAdvertiserInvoiceNumberWithResponse request returning *Get30AdminAdvertiserInvoiceNumberResponse
+func (c *ClientWithResponses) Get30AdminAdvertiserInvoiceNumberWithResponse(ctx context.Context, number string, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserInvoiceNumberResponse, error) {
+	rsp, err := c.Get30AdminAdvertiserInvoiceNumber(ctx, number, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminAdvertiserInvoiceNumberResponse(rsp)
+}
+
+// Get30AdminAdvertiserInvoicesWithResponse request returning *Get30AdminAdvertiserInvoicesResponse
+func (c *ClientWithResponses) Get30AdminAdvertiserInvoicesWithResponse(ctx context.Context, params *Get30AdminAdvertiserInvoicesParams, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserInvoicesResponse, error) {
+	rsp, err := c.Get30AdminAdvertiserInvoices(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminAdvertiserInvoicesResponse(rsp)
+}
+
+// Get30AdminAdvertiserIdWithResponse request returning *Get30AdminAdvertiserIdResponse
+func (c *ClientWithResponses) Get30AdminAdvertiserIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminAdvertiserIdResponse, error) {
+	rsp, err := c.Get30AdminAdvertiserId(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminAdvertiserIdResponse(rsp)
+}
+
+// Get30AdminAdvertisersWithResponse request returning *Get30AdminAdvertisersResponse
+func (c *ClientWithResponses) Get30AdminAdvertisersWithResponse(ctx context.Context, params *Get30AdminAdvertisersParams, reqEditors ...RequestEditorFn) (*Get30AdminAdvertisersResponse, error) {
+	rsp, err := c.Get30AdminAdvertisers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminAdvertisersResponse(rsp)
+}
+
+// Get30AdminCurrencyWithResponse request returning *Get30AdminCurrencyResponse
+func (c *ClientWithResponses) Get30AdminCurrencyWithResponse(ctx context.Context, params *Get30AdminCurrencyParams, reqEditors ...RequestEditorFn) (*Get30AdminCurrencyResponse, error) {
+	rsp, err := c.Get30AdminCurrency(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminCurrencyResponse(rsp)
+}
+
+// Get30AdminCurrencyExtended1WithResponse request returning *Get30AdminCurrencyExtended1Response
+func (c *ClientWithResponses) Get30AdminCurrencyExtended1WithResponse(ctx context.Context, params *Get30AdminCurrencyExtended1Params, reqEditors ...RequestEditorFn) (*Get30AdminCurrencyExtended1Response, error) {
+	rsp, err := c.Get30AdminCurrencyExtended1(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminCurrencyExtended1Response(rsp)
+}
+
+// Get30AdminCustomFieldsWithResponse request returning *Get30AdminCustomFieldsResponse
+func (c *ClientWithResponses) Get30AdminCustomFieldsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminCustomFieldsResponse, error) {
+	rsp, err := c.Get30AdminCustomFields(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminCustomFieldsResponse(rsp)
+}
+
+// Get30AdminDomainsWithResponse request returning *Get30AdminDomainsResponse
+func (c *ClientWithResponses) Get30AdminDomainsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminDomainsResponse, error) {
+	rsp, err := c.Get30AdminDomains(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminDomainsResponse(rsp)
+}
+
+// Get30AdminOfferSourcesWithResponse request returning *Get30AdminOfferSourcesResponse
+func (c *ClientWithResponses) Get30AdminOfferSourcesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminOfferSourcesResponse, error) {
+	rsp, err := c.Get30AdminOfferSources(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminOfferSourcesResponse(rsp)
+}
+
+// Get30AdminPartnerIdWithResponse request returning *Get30AdminPartnerIdResponse
+func (c *ClientWithResponses) Get30AdminPartnerIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminPartnerIdResponse, error) {
+	rsp, err := c.Get30AdminPartnerId(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminPartnerIdResponse(rsp)
+}
+
+// Get30AdminPartnerIdReferralsWithResponse request returning *Get30AdminPartnerIdReferralsResponse
+func (c *ClientWithResponses) Get30AdminPartnerIdReferralsWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminPartnerIdReferralsResponse, error) {
+	rsp, err := c.Get30AdminPartnerIdReferrals(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminPartnerIdReferralsResponse(rsp)
+}
+
+// Get30AdminPartnersWithResponse request returning *Get30AdminPartnersResponse
+func (c *ClientWithResponses) Get30AdminPartnersWithResponse(ctx context.Context, params *Get30AdminPartnersParams, reqEditors ...RequestEditorFn) (*Get30AdminPartnersResponse, error) {
+	rsp, err := c.Get30AdminPartners(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminPartnersResponse(rsp)
+}
+
+// Get30AdminPaymentSystemsWithResponse request returning *Get30AdminPaymentSystemsResponse
+func (c *ClientWithResponses) Get30AdminPaymentSystemsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30AdminPaymentSystemsResponse, error) {
+	rsp, err := c.Get30AdminPaymentSystems(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminPaymentSystemsResponse(rsp)
+}
+
+// Get30AdminPostbacksWithResponse request returning *Get30AdminPostbacksResponse
+func (c *ClientWithResponses) Get30AdminPostbacksWithResponse(ctx context.Context, params *Get30AdminPostbacksParams, reqEditors ...RequestEditorFn) (*Get30AdminPostbacksResponse, error) {
+	rsp, err := c.Get30AdminPostbacks(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminPostbacksResponse(rsp)
+}
+
+// Get30AdminSmartlinkCategoriesWithResponse request returning *Get30AdminSmartlinkCategoriesResponse
+func (c *ClientWithResponses) Get30AdminSmartlinkCategoriesWithResponse(ctx context.Context, params *Get30AdminSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*Get30AdminSmartlinkCategoriesResponse, error) {
+	rsp, err := c.Get30AdminSmartlinkCategories(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminSmartlinkCategoriesResponse(rsp)
+}
+
+// Get30AdminSmartlinkCategoryIdOffersCountWithResponse request returning *Get30AdminSmartlinkCategoryIdOffersCountResponse
+func (c *ClientWithResponses) Get30AdminSmartlinkCategoryIdOffersCountWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminSmartlinkCategoryIdOffersCountResponse, error) {
+	rsp, err := c.Get30AdminSmartlinkCategoryIdOffersCount(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminSmartlinkCategoryIdOffersCountResponse(rsp)
+}
+
+// Get30AdminTicketIdWithResponse request returning *Get30AdminTicketIdResponse
+func (c *ClientWithResponses) Get30AdminTicketIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminTicketIdResponse, error) {
+	rsp, err := c.Get30AdminTicketId(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminTicketIdResponse(rsp)
+}
+
+// Get30AdminTicketsWithResponse request returning *Get30AdminTicketsResponse
+func (c *ClientWithResponses) Get30AdminTicketsWithResponse(ctx context.Context, params *Get30AdminTicketsParams, reqEditors ...RequestEditorFn) (*Get30AdminTicketsResponse, error) {
+	rsp, err := c.Get30AdminTickets(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminTicketsResponse(rsp)
+}
+
+// Get30AdminUserIDWithResponse request returning *Get30AdminUserIDResponse
+func (c *ClientWithResponses) Get30AdminUserIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30AdminUserIDResponse, error) {
+	rsp, err := c.Get30AdminUserID(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminUserIDResponse(rsp)
+}
+
+// Get30AdminUsersWithResponse request returning *Get30AdminUsersResponse
+func (c *ClientWithResponses) Get30AdminUsersWithResponse(ctx context.Context, params *Get30AdminUsersParams, reqEditors ...RequestEditorFn) (*Get30AdminUsersResponse, error) {
+	rsp, err := c.Get30AdminUsers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30AdminUsersResponse(rsp)
+}
+
+// Get30BalanceWithResponse request returning *Get30BalanceResponse
+func (c *ClientWithResponses) Get30BalanceWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30BalanceResponse, error) {
+	rsp, err := c.Get30Balance(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30BalanceResponse(rsp)
+}
+
+// Get30GoalsWithResponse request returning *Get30GoalsResponse
+func (c *ClientWithResponses) Get30GoalsWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30GoalsResponse, error) {
+	rsp, err := c.Get30Goals(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30GoalsResponse(rsp)
+}
+
+// Get30NewsWithResponse request returning *Get30NewsResponse
+func (c *ClientWithResponses) Get30NewsWithResponse(ctx context.Context, params *Get30NewsParams, reqEditors ...RequestEditorFn) (*Get30NewsResponse, error) {
+	rsp, err := c.Get30News(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30NewsResponse(rsp)
+}
+
+// Get30NewsIDWithResponse request returning *Get30NewsIDResponse
+func (c *ClientWithResponses) Get30NewsIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30NewsIDResponse, error) {
+	rsp, err := c.Get30NewsID(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30NewsIDResponse(rsp)
+}
+
+// Get30OfferCategoriesWithResponse request returning *Get30OfferCategoriesResponse
+func (c *ClientWithResponses) Get30OfferCategoriesWithResponse(ctx context.Context, params *Get30OfferCategoriesParams, reqEditors ...RequestEditorFn) (*Get30OfferCategoriesResponse, error) {
+	rsp, err := c.Get30OfferCategories(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30OfferCategoriesResponse(rsp)
+}
+
 // Get30OfferIDWithResponse request returning *Get30OfferIDResponse
 func (c *ClientWithResponses) Get30OfferIDWithResponse(ctx context.Context, id int64, reqEditors ...RequestEditorFn) (*Get30OfferIDResponse, error) {
 	rsp, err := c.Get30OfferID(ctx, id, reqEditors...)
@@ -1067,6 +25813,1205 @@ func (c *ClientWithResponses) Get30OffersWithResponse(ctx context.Context, param
 		return nil, err
 	}
 	return ParseGet30OffersResponse(rsp)
+}
+
+// Get30OffersCountWithResponse request returning *Get30OffersCountResponse
+func (c *ClientWithResponses) Get30OffersCountWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get30OffersCountResponse, error) {
+	rsp, err := c.Get30OffersCount(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30OffersCountResponse(rsp)
+}
+
+// Get30PartnerLiveOffersWithResponse request returning *Get30PartnerLiveOffersResponse
+func (c *ClientWithResponses) Get30PartnerLiveOffersWithResponse(ctx context.Context, params *Get30PartnerLiveOffersParams, reqEditors ...RequestEditorFn) (*Get30PartnerLiveOffersResponse, error) {
+	rsp, err := c.Get30PartnerLiveOffers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30PartnerLiveOffersResponse(rsp)
+}
+
+// Get30PartnerOffersWithResponse request returning *Get30PartnerOffersResponse
+func (c *ClientWithResponses) Get30PartnerOffersWithResponse(ctx context.Context, params *Get30PartnerOffersParams, reqEditors ...RequestEditorFn) (*Get30PartnerOffersResponse, error) {
+	rsp, err := c.Get30PartnerOffers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30PartnerOffersResponse(rsp)
+}
+
+// Get30PartnerPixelsWithResponse request returning *Get30PartnerPixelsResponse
+func (c *ClientWithResponses) Get30PartnerPixelsWithResponse(ctx context.Context, params *Get30PartnerPixelsParams, reqEditors ...RequestEditorFn) (*Get30PartnerPixelsResponse, error) {
+	rsp, err := c.Get30PartnerPixels(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30PartnerPixelsResponse(rsp)
+}
+
+// Get30PartnerSmartlinkCategoriesWithResponse request returning *Get30PartnerSmartlinkCategoriesResponse
+func (c *ClientWithResponses) Get30PartnerSmartlinkCategoriesWithResponse(ctx context.Context, params *Get30PartnerSmartlinkCategoriesParams, reqEditors ...RequestEditorFn) (*Get30PartnerSmartlinkCategoriesResponse, error) {
+	rsp, err := c.Get30PartnerSmartlinkCategories(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30PartnerSmartlinkCategoriesResponse(rsp)
+}
+
+// Get30PartnerSmartlinkCategoryIdOffersCountWithResponse request returning *Get30PartnerSmartlinkCategoryIdOffersCountResponse
+func (c *ClientWithResponses) Get30PartnerSmartlinkCategoryIdOffersCountWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30PartnerSmartlinkCategoryIdOffersCountResponse, error) {
+	rsp, err := c.Get30PartnerSmartlinkCategoryIdOffersCount(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30PartnerSmartlinkCategoryIdOffersCountResponse(rsp)
+}
+
+// Get30StatsAffiliatepostbacksWithResponse request returning *Get30StatsAffiliatepostbacksResponse
+func (c *ClientWithResponses) Get30StatsAffiliatepostbacksWithResponse(ctx context.Context, params *Get30StatsAffiliatepostbacksParams, reqEditors ...RequestEditorFn) (*Get30StatsAffiliatepostbacksResponse, error) {
+	rsp, err := c.Get30StatsAffiliatepostbacks(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsAffiliatepostbacksResponse(rsp)
+}
+
+// Get30StatsClicksWithResponse request returning *Get30StatsClicksResponse
+func (c *ClientWithResponses) Get30StatsClicksWithResponse(ctx context.Context, params *Get30StatsClicksParams, reqEditors ...RequestEditorFn) (*Get30StatsClicksResponse, error) {
+	rsp, err := c.Get30StatsClicks(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsClicksResponse(rsp)
+}
+
+// Get30StatsConversionsWithResponse request returning *Get30StatsConversionsResponse
+func (c *ClientWithResponses) Get30StatsConversionsWithResponse(ctx context.Context, params *Get30StatsConversionsParams, reqEditors ...RequestEditorFn) (*Get30StatsConversionsResponse, error) {
+	rsp, err := c.Get30StatsConversions(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsConversionsResponse(rsp)
+}
+
+// Get30StatsConversionsbyidIdIdWithResponse request returning *Get30StatsConversionsbyidIdIdResponse
+func (c *ClientWithResponses) Get30StatsConversionsbyidIdIdWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get30StatsConversionsbyidIdIdResponse, error) {
+	rsp, err := c.Get30StatsConversionsbyidIdId(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsConversionsbyidIdIdResponse(rsp)
+}
+
+// Get30StatsCustomWithResponse request returning *Get30StatsCustomResponse
+func (c *ClientWithResponses) Get30StatsCustomWithResponse(ctx context.Context, params *Get30StatsCustomParams, reqEditors ...RequestEditorFn) (*Get30StatsCustomResponse, error) {
+	rsp, err := c.Get30StatsCustom(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsCustomResponse(rsp)
+}
+
+// Get30StatsFindSubsWithResponse request returning *Get30StatsFindSubsResponse
+func (c *ClientWithResponses) Get30StatsFindSubsWithResponse(ctx context.Context, params *Get30StatsFindSubsParams, reqEditors ...RequestEditorFn) (*Get30StatsFindSubsResponse, error) {
+	rsp, err := c.Get30StatsFindSubs(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsFindSubsResponse(rsp)
+}
+
+// Get30StatsGetbyaccountmanagerWithResponse request returning *Get30StatsGetbyaccountmanagerResponse
+func (c *ClientWithResponses) Get30StatsGetbyaccountmanagerWithResponse(ctx context.Context, params *Get30StatsGetbyaccountmanagerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyaccountmanagerResponse, error) {
+	rsp, err := c.Get30StatsGetbyaccountmanager(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyaccountmanagerResponse(rsp)
+}
+
+// Get30StatsGetbyadvertiserWithResponse request returning *Get30StatsGetbyadvertiserResponse
+func (c *ClientWithResponses) Get30StatsGetbyadvertiserWithResponse(ctx context.Context, params *Get30StatsGetbyadvertiserParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyadvertiserResponse, error) {
+	rsp, err := c.Get30StatsGetbyadvertiser(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyadvertiserResponse(rsp)
+}
+
+// Get30StatsGetbyaffiliatemanagerWithResponse request returning *Get30StatsGetbyaffiliatemanagerResponse
+func (c *ClientWithResponses) Get30StatsGetbyaffiliatemanagerWithResponse(ctx context.Context, params *Get30StatsGetbyaffiliatemanagerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyaffiliatemanagerResponse, error) {
+	rsp, err := c.Get30StatsGetbyaffiliatemanager(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyaffiliatemanagerResponse(rsp)
+}
+
+// Get30StatsGetbybrowsersWithResponse request returning *Get30StatsGetbybrowsersResponse
+func (c *ClientWithResponses) Get30StatsGetbybrowsersWithResponse(ctx context.Context, params *Get30StatsGetbybrowsersParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbybrowsersResponse, error) {
+	rsp, err := c.Get30StatsGetbybrowsers(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbybrowsersResponse(rsp)
+}
+
+// Get30StatsGetbybrowsersversionWithResponse request returning *Get30StatsGetbybrowsersversionResponse
+func (c *ClientWithResponses) Get30StatsGetbybrowsersversionWithResponse(ctx context.Context, params *Get30StatsGetbybrowsersversionParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbybrowsersversionResponse, error) {
+	rsp, err := c.Get30StatsGetbybrowsersversion(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbybrowsersversionResponse(rsp)
+}
+
+// Get30StatsGetbycitiesWithResponse request returning *Get30StatsGetbycitiesResponse
+func (c *ClientWithResponses) Get30StatsGetbycitiesWithResponse(ctx context.Context, params *Get30StatsGetbycitiesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbycitiesResponse, error) {
+	rsp, err := c.Get30StatsGetbycities(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbycitiesResponse(rsp)
+}
+
+// Get30StatsGetbyconnectiontypeWithResponse request returning *Get30StatsGetbyconnectiontypeResponse
+func (c *ClientWithResponses) Get30StatsGetbyconnectiontypeWithResponse(ctx context.Context, params *Get30StatsGetbyconnectiontypeParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyconnectiontypeResponse, error) {
+	rsp, err := c.Get30StatsGetbyconnectiontype(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyconnectiontypeResponse(rsp)
+}
+
+// Get30StatsGetbycountriesWithResponse request returning *Get30StatsGetbycountriesResponse
+func (c *ClientWithResponses) Get30StatsGetbycountriesWithResponse(ctx context.Context, params *Get30StatsGetbycountriesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbycountriesResponse, error) {
+	rsp, err := c.Get30StatsGetbycountries(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbycountriesResponse(rsp)
+}
+
+// Get30StatsGetbydateWithResponse request returning *Get30StatsGetbydateResponse
+func (c *ClientWithResponses) Get30StatsGetbydateWithResponse(ctx context.Context, params *Get30StatsGetbydateParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydateResponse, error) {
+	rsp, err := c.Get30StatsGetbydate(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbydateResponse(rsp)
+}
+
+// Get30StatsGetbydevicemodelsWithResponse request returning *Get30StatsGetbydevicemodelsResponse
+func (c *ClientWithResponses) Get30StatsGetbydevicemodelsWithResponse(ctx context.Context, params *Get30StatsGetbydevicemodelsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydevicemodelsResponse, error) {
+	rsp, err := c.Get30StatsGetbydevicemodels(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbydevicemodelsResponse(rsp)
+}
+
+// Get30StatsGetbydevicesWithResponse request returning *Get30StatsGetbydevicesResponse
+func (c *ClientWithResponses) Get30StatsGetbydevicesWithResponse(ctx context.Context, params *Get30StatsGetbydevicesParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbydevicesResponse, error) {
+	rsp, err := c.Get30StatsGetbydevices(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbydevicesResponse(rsp)
+}
+
+// Get30StatsGetbygoalWithResponse request returning *Get30StatsGetbygoalResponse
+func (c *ClientWithResponses) Get30StatsGetbygoalWithResponse(ctx context.Context, params *Get30StatsGetbygoalParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbygoalResponse, error) {
+	rsp, err := c.Get30StatsGetbygoal(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbygoalResponse(rsp)
+}
+
+// Get30StatsGetbyhourWithResponse request returning *Get30StatsGetbyhourResponse
+func (c *ClientWithResponses) Get30StatsGetbyhourWithResponse(ctx context.Context, params *Get30StatsGetbyhourParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyhourResponse, error) {
+	rsp, err := c.Get30StatsGetbyhour(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyhourResponse(rsp)
+}
+
+// Get30StatsGetbylandingWithResponse request returning *Get30StatsGetbylandingResponse
+func (c *ClientWithResponses) Get30StatsGetbylandingWithResponse(ctx context.Context, params *Get30StatsGetbylandingParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbylandingResponse, error) {
+	rsp, err := c.Get30StatsGetbylanding(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbylandingResponse(rsp)
+}
+
+// Get30StatsGetbymobilecarrierWithResponse request returning *Get30StatsGetbymobilecarrierResponse
+func (c *ClientWithResponses) Get30StatsGetbymobilecarrierWithResponse(ctx context.Context, params *Get30StatsGetbymobilecarrierParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbymobilecarrierResponse, error) {
+	rsp, err := c.Get30StatsGetbymobilecarrier(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbymobilecarrierResponse(rsp)
+}
+
+// Get30StatsGetbyosWithResponse request returning *Get30StatsGetbyosResponse
+func (c *ClientWithResponses) Get30StatsGetbyosWithResponse(ctx context.Context, params *Get30StatsGetbyosParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyosResponse, error) {
+	rsp, err := c.Get30StatsGetbyos(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyosResponse(rsp)
+}
+
+// Get30StatsGetbypartnerWithResponse request returning *Get30StatsGetbypartnerResponse
+func (c *ClientWithResponses) Get30StatsGetbypartnerWithResponse(ctx context.Context, params *Get30StatsGetbypartnerParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbypartnerResponse, error) {
+	rsp, err := c.Get30StatsGetbypartner(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbypartnerResponse(rsp)
+}
+
+// Get30StatsGetbypartnerbydateWithResponse request returning *Get30StatsGetbypartnerbydateResponse
+func (c *ClientWithResponses) Get30StatsGetbypartnerbydateWithResponse(ctx context.Context, params *Get30StatsGetbypartnerbydateParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbypartnerbydateResponse, error) {
+	rsp, err := c.Get30StatsGetbypartnerbydate(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbypartnerbydateResponse(rsp)
+}
+
+// Get30StatsGetbyprelandingWithResponse request returning *Get30StatsGetbyprelandingResponse
+func (c *ClientWithResponses) Get30StatsGetbyprelandingWithResponse(ctx context.Context, params *Get30StatsGetbyprelandingParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyprelandingResponse, error) {
+	rsp, err := c.Get30StatsGetbyprelanding(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyprelandingResponse(rsp)
+}
+
+// Get30StatsGetbyprogramWithResponse request returning *Get30StatsGetbyprogramResponse
+func (c *ClientWithResponses) Get30StatsGetbyprogramWithResponse(ctx context.Context, params *Get30StatsGetbyprogramParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyprogramResponse, error) {
+	rsp, err := c.Get30StatsGetbyprogram(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyprogramResponse(rsp)
+}
+
+// Get30StatsGetbysubWithResponse request returning *Get30StatsGetbysubResponse
+func (c *ClientWithResponses) Get30StatsGetbysubWithResponse(ctx context.Context, params *Get30StatsGetbysubParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbysubResponse, error) {
+	rsp, err := c.Get30StatsGetbysub(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbysubResponse(rsp)
+}
+
+// Get30StatsGetbytrafficbackWithResponse request returning *Get30StatsGetbytrafficbackResponse
+func (c *ClientWithResponses) Get30StatsGetbytrafficbackWithResponse(ctx context.Context, params *Get30StatsGetbytrafficbackParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbytrafficbackResponse, error) {
+	rsp, err := c.Get30StatsGetbytrafficback(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbytrafficbackResponse(rsp)
+}
+
+// Get30StatsGetbyversionsWithResponse request returning *Get30StatsGetbyversionsResponse
+func (c *ClientWithResponses) Get30StatsGetbyversionsWithResponse(ctx context.Context, params *Get30StatsGetbyversionsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetbyversionsResponse, error) {
+	rsp, err := c.Get30StatsGetbyversions(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetbyversionsResponse(rsp)
+}
+
+// Get30StatsGetreferralpaymentsWithResponse request returning *Get30StatsGetreferralpaymentsResponse
+func (c *ClientWithResponses) Get30StatsGetreferralpaymentsWithResponse(ctx context.Context, params *Get30StatsGetreferralpaymentsParams, reqEditors ...RequestEditorFn) (*Get30StatsGetreferralpaymentsResponse, error) {
+	rsp, err := c.Get30StatsGetreferralpayments(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsGetreferralpaymentsResponse(rsp)
+}
+
+// Get30StatsRetentionrateWithResponse request returning *Get30StatsRetentionrateResponse
+func (c *ClientWithResponses) Get30StatsRetentionrateWithResponse(ctx context.Context, params *Get30StatsRetentionrateParams, reqEditors ...RequestEditorFn) (*Get30StatsRetentionrateResponse, error) {
+	rsp, err := c.Get30StatsRetentionrate(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsRetentionrateResponse(rsp)
+}
+
+// Get30StatsServerpostbacksWithResponse request returning *Get30StatsServerpostbacksResponse
+func (c *ClientWithResponses) Get30StatsServerpostbacksWithResponse(ctx context.Context, params *Get30StatsServerpostbacksParams, reqEditors ...RequestEditorFn) (*Get30StatsServerpostbacksResponse, error) {
+	rsp, err := c.Get30StatsServerpostbacks(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsServerpostbacksResponse(rsp)
+}
+
+// Get30StatsTimeToActionWithResponse request returning *Get30StatsTimeToActionResponse
+func (c *ClientWithResponses) Get30StatsTimeToActionWithResponse(ctx context.Context, params *Get30StatsTimeToActionParams, reqEditors ...RequestEditorFn) (*Get30StatsTimeToActionResponse, error) {
+	rsp, err := c.Get30StatsTimeToAction(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet30StatsTimeToActionResponse(rsp)
+}
+
+// Get31AdcostsWithResponse request returning *Get31AdcostsResponse
+func (c *ClientWithResponses) Get31AdcostsWithResponse(ctx context.Context, params *Get31AdcostsParams, reqEditors ...RequestEditorFn) (*Get31AdcostsResponse, error) {
+	rsp, err := c.Get31Adcosts(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31AdcostsResponse(rsp)
+}
+
+// Get31AutomationCrAndSubBlockLogsWithResponse request returning *Get31AutomationCrAndSubBlockLogsResponse
+func (c *ClientWithResponses) Get31AutomationCrAndSubBlockLogsWithResponse(ctx context.Context, params *Get31AutomationCrAndSubBlockLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationCrAndSubBlockLogsResponse, error) {
+	rsp, err := c.Get31AutomationCrAndSubBlockLogs(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31AutomationCrAndSubBlockLogsResponse(rsp)
+}
+
+// Get31AutomationKpiWithResponse request returning *Get31AutomationKpiResponse
+func (c *ClientWithResponses) Get31AutomationKpiWithResponse(ctx context.Context, params *Get31AutomationKpiParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiResponse, error) {
+	rsp, err := c.Get31AutomationKpi(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31AutomationKpiResponse(rsp)
+}
+
+// Get31AutomationKpiBlockLogsWithResponse request returning *Get31AutomationKpiBlockLogsResponse
+func (c *ClientWithResponses) Get31AutomationKpiBlockLogsWithResponse(ctx context.Context, params *Get31AutomationKpiBlockLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiBlockLogsResponse, error) {
+	rsp, err := c.Get31AutomationKpiBlockLogs(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31AutomationKpiBlockLogsResponse(rsp)
+}
+
+// Get31AutomationKpiChangeLogsWithResponse request returning *Get31AutomationKpiChangeLogsResponse
+func (c *ClientWithResponses) Get31AutomationKpiChangeLogsWithResponse(ctx context.Context, params *Get31AutomationKpiChangeLogsParams, reqEditors ...RequestEditorFn) (*Get31AutomationKpiChangeLogsResponse, error) {
+	rsp, err := c.Get31AutomationKpiChangeLogs(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31AutomationKpiChangeLogsResponse(rsp)
+}
+
+// Get31BrowsersWithResponse request returning *Get31BrowsersResponse
+func (c *ClientWithResponses) Get31BrowsersWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31BrowsersResponse, error) {
+	rsp, err := c.Get31Browsers(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31BrowsersResponse(rsp)
+}
+
+// Get31CitiesWithResponse request returning *Get31CitiesResponse
+func (c *ClientWithResponses) Get31CitiesWithResponse(ctx context.Context, params *Get31CitiesParams, reqEditors ...RequestEditorFn) (*Get31CitiesResponse, error) {
+	rsp, err := c.Get31Cities(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31CitiesResponse(rsp)
+}
+
+// Get31ConnectionTypesWithResponse request returning *Get31ConnectionTypesResponse
+func (c *ClientWithResponses) Get31ConnectionTypesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31ConnectionTypesResponse, error) {
+	rsp, err := c.Get31ConnectionTypes(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31ConnectionTypesResponse(rsp)
+}
+
+// Get31CountriesWithResponse request returning *Get31CountriesResponse
+func (c *ClientWithResponses) Get31CountriesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31CountriesResponse, error) {
+	rsp, err := c.Get31Countries(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31CountriesResponse(rsp)
+}
+
+// Get31DevicesWithResponse request returning *Get31DevicesResponse
+func (c *ClientWithResponses) Get31DevicesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31DevicesResponse, error) {
+	rsp, err := c.Get31Devices(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31DevicesResponse(rsp)
+}
+
+// Get31IspWithResponse request returning *Get31IspResponse
+func (c *ClientWithResponses) Get31IspWithResponse(ctx context.Context, params *Get31IspParams, reqEditors ...RequestEditorFn) (*Get31IspResponse, error) {
+	rsp, err := c.Get31Isp(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31IspResponse(rsp)
+}
+
+// Get31OffersIDPrivacyWithResponse request returning *Get31OffersIDPrivacyResponse
+func (c *ClientWithResponses) Get31OffersIDPrivacyWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get31OffersIDPrivacyResponse, error) {
+	rsp, err := c.Get31OffersIDPrivacy(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31OffersIDPrivacyResponse(rsp)
+}
+
+// Get31OsesWithResponse request returning *Get31OsesResponse
+func (c *ClientWithResponses) Get31OsesWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31OsesResponse, error) {
+	rsp, err := c.Get31Oses(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31OsesResponse(rsp)
+}
+
+// Get31OsesOSWithResponse request returning *Get31OsesOSResponse
+func (c *ClientWithResponses) Get31OsesOSWithResponse(ctx context.Context, os string, reqEditors ...RequestEditorFn) (*Get31OsesOSResponse, error) {
+	rsp, err := c.Get31OsesOS(ctx, os, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31OsesOSResponse(rsp)
+}
+
+// Get31PartnerMeWithResponse request returning *Get31PartnerMeResponse
+func (c *ClientWithResponses) Get31PartnerMeWithResponse(ctx context.Context, reqEditors ...RequestEditorFn) (*Get31PartnerMeResponse, error) {
+	rsp, err := c.Get31PartnerMe(ctx, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31PartnerMeResponse(rsp)
+}
+
+// Get31PaymentsWithResponse request returning *Get31PaymentsResponse
+func (c *ClientWithResponses) Get31PaymentsWithResponse(ctx context.Context, params *Get31PaymentsParams, reqEditors ...RequestEditorFn) (*Get31PaymentsResponse, error) {
+	rsp, err := c.Get31Payments(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31PaymentsResponse(rsp)
+}
+
+// Get31PaymentsIDWithResponse request returning *Get31PaymentsIDResponse
+func (c *ClientWithResponses) Get31PaymentsIDWithResponse(ctx context.Context, id string, reqEditors ...RequestEditorFn) (*Get31PaymentsIDResponse, error) {
+	rsp, err := c.Get31PaymentsID(ctx, id, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31PaymentsIDResponse(rsp)
+}
+
+// Get31PresetsWithResponse request returning *Get31PresetsResponse
+func (c *ClientWithResponses) Get31PresetsWithResponse(ctx context.Context, params *Get31PresetsParams, reqEditors ...RequestEditorFn) (*Get31PresetsResponse, error) {
+	rsp, err := c.Get31Presets(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31PresetsResponse(rsp)
+}
+
+// Get31ProductFeedProductFeedIdItemsWithResponse request returning *Get31ProductFeedProductFeedIdItemsResponse
+func (c *ClientWithResponses) Get31ProductFeedProductFeedIdItemsWithResponse(ctx context.Context, productFeedId string, reqEditors ...RequestEditorFn) (*Get31ProductFeedProductFeedIdItemsResponse, error) {
+	rsp, err := c.Get31ProductFeedProductFeedIdItems(ctx, productFeedId, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31ProductFeedProductFeedIdItemsResponse(rsp)
+}
+
+// Get31RegionsWithResponse request returning *Get31RegionsResponse
+func (c *ClientWithResponses) Get31RegionsWithResponse(ctx context.Context, params *Get31RegionsParams, reqEditors ...RequestEditorFn) (*Get31RegionsResponse, error) {
+	rsp, err := c.Get31Regions(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31RegionsResponse(rsp)
+}
+
+// Get31StatsCapsWithResponse request returning *Get31StatsCapsResponse
+func (c *ClientWithResponses) Get31StatsCapsWithResponse(ctx context.Context, params *Get31StatsCapsParams, reqEditors ...RequestEditorFn) (*Get31StatsCapsResponse, error) {
+	rsp, err := c.Get31StatsCaps(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31StatsCapsResponse(rsp)
+}
+
+// Get31VendorsWithResponse request returning *Get31VendorsResponse
+func (c *ClientWithResponses) Get31VendorsWithResponse(ctx context.Context, params *Get31VendorsParams, reqEditors ...RequestEditorFn) (*Get31VendorsResponse, error) {
+	rsp, err := c.Get31Vendors(ctx, params, reqEditors...)
+	if err != nil {
+		return nil, err
+	}
+	return ParseGet31VendorsResponse(rsp)
+}
+
+// ParseGet30AdminAdvertiserInvoiceNumberResponse parses an HTTP response from a Get30AdminAdvertiserInvoiceNumberWithResponse call
+func ParseGet30AdminAdvertiserInvoiceNumberResponse(rsp *http.Response) (*Get30AdminAdvertiserInvoiceNumberResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminAdvertiserInvoiceNumberResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminAdvertiserInvoicesResponse parses an HTTP response from a Get30AdminAdvertiserInvoicesWithResponse call
+func ParseGet30AdminAdvertiserInvoicesResponse(rsp *http.Response) (*Get30AdminAdvertiserInvoicesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminAdvertiserInvoicesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminAdvertiserIdResponse parses an HTTP response from a Get30AdminAdvertiserIdWithResponse call
+func ParseGet30AdminAdvertiserIdResponse(rsp *http.Response) (*Get30AdminAdvertiserIdResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminAdvertiserIdResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminAdvertisersResponse parses an HTTP response from a Get30AdminAdvertisersWithResponse call
+func ParseGet30AdminAdvertisersResponse(rsp *http.Response) (*Get30AdminAdvertisersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminAdvertisersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminCurrencyResponse parses an HTTP response from a Get30AdminCurrencyWithResponse call
+func ParseGet30AdminCurrencyResponse(rsp *http.Response) (*Get30AdminCurrencyResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminCurrencyResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminCurrencyExtended1Response parses an HTTP response from a Get30AdminCurrencyExtended1WithResponse call
+func ParseGet30AdminCurrencyExtended1Response(rsp *http.Response) (*Get30AdminCurrencyExtended1Response, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminCurrencyExtended1Response{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminCustomFieldsResponse parses an HTTP response from a Get30AdminCustomFieldsWithResponse call
+func ParseGet30AdminCustomFieldsResponse(rsp *http.Response) (*Get30AdminCustomFieldsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminCustomFieldsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminDomainsResponse parses an HTTP response from a Get30AdminDomainsWithResponse call
+func ParseGet30AdminDomainsResponse(rsp *http.Response) (*Get30AdminDomainsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminDomainsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminOfferSourcesResponse parses an HTTP response from a Get30AdminOfferSourcesWithResponse call
+func ParseGet30AdminOfferSourcesResponse(rsp *http.Response) (*Get30AdminOfferSourcesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminOfferSourcesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminPartnerIdResponse parses an HTTP response from a Get30AdminPartnerIdWithResponse call
+func ParseGet30AdminPartnerIdResponse(rsp *http.Response) (*Get30AdminPartnerIdResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminPartnerIdResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminPartnerIdReferralsResponse parses an HTTP response from a Get30AdminPartnerIdReferralsWithResponse call
+func ParseGet30AdminPartnerIdReferralsResponse(rsp *http.Response) (*Get30AdminPartnerIdReferralsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminPartnerIdReferralsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminPartnersResponse parses an HTTP response from a Get30AdminPartnersWithResponse call
+func ParseGet30AdminPartnersResponse(rsp *http.Response) (*Get30AdminPartnersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminPartnersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminPaymentSystemsResponse parses an HTTP response from a Get30AdminPaymentSystemsWithResponse call
+func ParseGet30AdminPaymentSystemsResponse(rsp *http.Response) (*Get30AdminPaymentSystemsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminPaymentSystemsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminPostbacksResponse parses an HTTP response from a Get30AdminPostbacksWithResponse call
+func ParseGet30AdminPostbacksResponse(rsp *http.Response) (*Get30AdminPostbacksResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminPostbacksResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminSmartlinkCategoriesResponse parses an HTTP response from a Get30AdminSmartlinkCategoriesWithResponse call
+func ParseGet30AdminSmartlinkCategoriesResponse(rsp *http.Response) (*Get30AdminSmartlinkCategoriesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminSmartlinkCategoriesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminSmartlinkCategoryIdOffersCountResponse parses an HTTP response from a Get30AdminSmartlinkCategoryIdOffersCountWithResponse call
+func ParseGet30AdminSmartlinkCategoryIdOffersCountResponse(rsp *http.Response) (*Get30AdminSmartlinkCategoryIdOffersCountResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminSmartlinkCategoryIdOffersCountResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminTicketIdResponse parses an HTTP response from a Get30AdminTicketIdWithResponse call
+func ParseGet30AdminTicketIdResponse(rsp *http.Response) (*Get30AdminTicketIdResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminTicketIdResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminTicketsResponse parses an HTTP response from a Get30AdminTicketsWithResponse call
+func ParseGet30AdminTicketsResponse(rsp *http.Response) (*Get30AdminTicketsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminTicketsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminUserIDResponse parses an HTTP response from a Get30AdminUserIDWithResponse call
+func ParseGet30AdminUserIDResponse(rsp *http.Response) (*Get30AdminUserIDResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminUserIDResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30AdminUsersResponse parses an HTTP response from a Get30AdminUsersWithResponse call
+func ParseGet30AdminUsersResponse(rsp *http.Response) (*Get30AdminUsersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30AdminUsersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30BalanceResponse parses an HTTP response from a Get30BalanceWithResponse call
+func ParseGet30BalanceResponse(rsp *http.Response) (*Get30BalanceResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30BalanceResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30GoalsResponse parses an HTTP response from a Get30GoalsWithResponse call
+func ParseGet30GoalsResponse(rsp *http.Response) (*Get30GoalsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30GoalsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30NewsResponse parses an HTTP response from a Get30NewsWithResponse call
+func ParseGet30NewsResponse(rsp *http.Response) (*Get30NewsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30NewsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30NewsIDResponse parses an HTTP response from a Get30NewsIDWithResponse call
+func ParseGet30NewsIDResponse(rsp *http.Response) (*Get30NewsIDResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30NewsIDResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30OfferCategoriesResponse parses an HTTP response from a Get30OfferCategoriesWithResponse call
+func ParseGet30OfferCategoriesResponse(rsp *http.Response) (*Get30OfferCategoriesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30OfferCategoriesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
 }
 
 // ParseGet30OfferIDResponse parses an HTTP response from a Get30OfferIDWithResponse call
@@ -1111,6 +27056,1592 @@ func ParseGet30OffersResponse(rsp *http.Response) (*Get30OffersResponse, error) 
 	switch {
 	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
 		var dest OffersListResponse
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30OffersCountResponse parses an HTTP response from a Get30OffersCountWithResponse call
+func ParseGet30OffersCountResponse(rsp *http.Response) (*Get30OffersCountResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30OffersCountResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30PartnerLiveOffersResponse parses an HTTP response from a Get30PartnerLiveOffersWithResponse call
+func ParseGet30PartnerLiveOffersResponse(rsp *http.Response) (*Get30PartnerLiveOffersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30PartnerLiveOffersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30PartnerOffersResponse parses an HTTP response from a Get30PartnerOffersWithResponse call
+func ParseGet30PartnerOffersResponse(rsp *http.Response) (*Get30PartnerOffersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30PartnerOffersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30PartnerPixelsResponse parses an HTTP response from a Get30PartnerPixelsWithResponse call
+func ParseGet30PartnerPixelsResponse(rsp *http.Response) (*Get30PartnerPixelsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30PartnerPixelsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30PartnerSmartlinkCategoriesResponse parses an HTTP response from a Get30PartnerSmartlinkCategoriesWithResponse call
+func ParseGet30PartnerSmartlinkCategoriesResponse(rsp *http.Response) (*Get30PartnerSmartlinkCategoriesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30PartnerSmartlinkCategoriesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30PartnerSmartlinkCategoryIdOffersCountResponse parses an HTTP response from a Get30PartnerSmartlinkCategoryIdOffersCountWithResponse call
+func ParseGet30PartnerSmartlinkCategoryIdOffersCountResponse(rsp *http.Response) (*Get30PartnerSmartlinkCategoryIdOffersCountResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30PartnerSmartlinkCategoryIdOffersCountResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsAffiliatepostbacksResponse parses an HTTP response from a Get30StatsAffiliatepostbacksWithResponse call
+func ParseGet30StatsAffiliatepostbacksResponse(rsp *http.Response) (*Get30StatsAffiliatepostbacksResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsAffiliatepostbacksResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsClicksResponse parses an HTTP response from a Get30StatsClicksWithResponse call
+func ParseGet30StatsClicksResponse(rsp *http.Response) (*Get30StatsClicksResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsClicksResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsConversionsResponse parses an HTTP response from a Get30StatsConversionsWithResponse call
+func ParseGet30StatsConversionsResponse(rsp *http.Response) (*Get30StatsConversionsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsConversionsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsConversionsbyidIdIdResponse parses an HTTP response from a Get30StatsConversionsbyidIdIdWithResponse call
+func ParseGet30StatsConversionsbyidIdIdResponse(rsp *http.Response) (*Get30StatsConversionsbyidIdIdResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsConversionsbyidIdIdResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsCustomResponse parses an HTTP response from a Get30StatsCustomWithResponse call
+func ParseGet30StatsCustomResponse(rsp *http.Response) (*Get30StatsCustomResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsCustomResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsFindSubsResponse parses an HTTP response from a Get30StatsFindSubsWithResponse call
+func ParseGet30StatsFindSubsResponse(rsp *http.Response) (*Get30StatsFindSubsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsFindSubsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyaccountmanagerResponse parses an HTTP response from a Get30StatsGetbyaccountmanagerWithResponse call
+func ParseGet30StatsGetbyaccountmanagerResponse(rsp *http.Response) (*Get30StatsGetbyaccountmanagerResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyaccountmanagerResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyadvertiserResponse parses an HTTP response from a Get30StatsGetbyadvertiserWithResponse call
+func ParseGet30StatsGetbyadvertiserResponse(rsp *http.Response) (*Get30StatsGetbyadvertiserResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyadvertiserResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyaffiliatemanagerResponse parses an HTTP response from a Get30StatsGetbyaffiliatemanagerWithResponse call
+func ParseGet30StatsGetbyaffiliatemanagerResponse(rsp *http.Response) (*Get30StatsGetbyaffiliatemanagerResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyaffiliatemanagerResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbybrowsersResponse parses an HTTP response from a Get30StatsGetbybrowsersWithResponse call
+func ParseGet30StatsGetbybrowsersResponse(rsp *http.Response) (*Get30StatsGetbybrowsersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbybrowsersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbybrowsersversionResponse parses an HTTP response from a Get30StatsGetbybrowsersversionWithResponse call
+func ParseGet30StatsGetbybrowsersversionResponse(rsp *http.Response) (*Get30StatsGetbybrowsersversionResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbybrowsersversionResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbycitiesResponse parses an HTTP response from a Get30StatsGetbycitiesWithResponse call
+func ParseGet30StatsGetbycitiesResponse(rsp *http.Response) (*Get30StatsGetbycitiesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbycitiesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyconnectiontypeResponse parses an HTTP response from a Get30StatsGetbyconnectiontypeWithResponse call
+func ParseGet30StatsGetbyconnectiontypeResponse(rsp *http.Response) (*Get30StatsGetbyconnectiontypeResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyconnectiontypeResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbycountriesResponse parses an HTTP response from a Get30StatsGetbycountriesWithResponse call
+func ParseGet30StatsGetbycountriesResponse(rsp *http.Response) (*Get30StatsGetbycountriesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbycountriesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbydateResponse parses an HTTP response from a Get30StatsGetbydateWithResponse call
+func ParseGet30StatsGetbydateResponse(rsp *http.Response) (*Get30StatsGetbydateResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbydateResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbydevicemodelsResponse parses an HTTP response from a Get30StatsGetbydevicemodelsWithResponse call
+func ParseGet30StatsGetbydevicemodelsResponse(rsp *http.Response) (*Get30StatsGetbydevicemodelsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbydevicemodelsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbydevicesResponse parses an HTTP response from a Get30StatsGetbydevicesWithResponse call
+func ParseGet30StatsGetbydevicesResponse(rsp *http.Response) (*Get30StatsGetbydevicesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbydevicesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbygoalResponse parses an HTTP response from a Get30StatsGetbygoalWithResponse call
+func ParseGet30StatsGetbygoalResponse(rsp *http.Response) (*Get30StatsGetbygoalResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbygoalResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyhourResponse parses an HTTP response from a Get30StatsGetbyhourWithResponse call
+func ParseGet30StatsGetbyhourResponse(rsp *http.Response) (*Get30StatsGetbyhourResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyhourResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbylandingResponse parses an HTTP response from a Get30StatsGetbylandingWithResponse call
+func ParseGet30StatsGetbylandingResponse(rsp *http.Response) (*Get30StatsGetbylandingResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbylandingResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbymobilecarrierResponse parses an HTTP response from a Get30StatsGetbymobilecarrierWithResponse call
+func ParseGet30StatsGetbymobilecarrierResponse(rsp *http.Response) (*Get30StatsGetbymobilecarrierResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbymobilecarrierResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyosResponse parses an HTTP response from a Get30StatsGetbyosWithResponse call
+func ParseGet30StatsGetbyosResponse(rsp *http.Response) (*Get30StatsGetbyosResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyosResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbypartnerResponse parses an HTTP response from a Get30StatsGetbypartnerWithResponse call
+func ParseGet30StatsGetbypartnerResponse(rsp *http.Response) (*Get30StatsGetbypartnerResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbypartnerResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbypartnerbydateResponse parses an HTTP response from a Get30StatsGetbypartnerbydateWithResponse call
+func ParseGet30StatsGetbypartnerbydateResponse(rsp *http.Response) (*Get30StatsGetbypartnerbydateResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbypartnerbydateResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyprelandingResponse parses an HTTP response from a Get30StatsGetbyprelandingWithResponse call
+func ParseGet30StatsGetbyprelandingResponse(rsp *http.Response) (*Get30StatsGetbyprelandingResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyprelandingResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyprogramResponse parses an HTTP response from a Get30StatsGetbyprogramWithResponse call
+func ParseGet30StatsGetbyprogramResponse(rsp *http.Response) (*Get30StatsGetbyprogramResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyprogramResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbysubResponse parses an HTTP response from a Get30StatsGetbysubWithResponse call
+func ParseGet30StatsGetbysubResponse(rsp *http.Response) (*Get30StatsGetbysubResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbysubResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbytrafficbackResponse parses an HTTP response from a Get30StatsGetbytrafficbackWithResponse call
+func ParseGet30StatsGetbytrafficbackResponse(rsp *http.Response) (*Get30StatsGetbytrafficbackResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbytrafficbackResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetbyversionsResponse parses an HTTP response from a Get30StatsGetbyversionsWithResponse call
+func ParseGet30StatsGetbyversionsResponse(rsp *http.Response) (*Get30StatsGetbyversionsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetbyversionsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsGetreferralpaymentsResponse parses an HTTP response from a Get30StatsGetreferralpaymentsWithResponse call
+func ParseGet30StatsGetreferralpaymentsResponse(rsp *http.Response) (*Get30StatsGetreferralpaymentsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsGetreferralpaymentsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsRetentionrateResponse parses an HTTP response from a Get30StatsRetentionrateWithResponse call
+func ParseGet30StatsRetentionrateResponse(rsp *http.Response) (*Get30StatsRetentionrateResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsRetentionrateResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsServerpostbacksResponse parses an HTTP response from a Get30StatsServerpostbacksWithResponse call
+func ParseGet30StatsServerpostbacksResponse(rsp *http.Response) (*Get30StatsServerpostbacksResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsServerpostbacksResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet30StatsTimeToActionResponse parses an HTTP response from a Get30StatsTimeToActionWithResponse call
+func ParseGet30StatsTimeToActionResponse(rsp *http.Response) (*Get30StatsTimeToActionResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get30StatsTimeToActionResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31AdcostsResponse parses an HTTP response from a Get31AdcostsWithResponse call
+func ParseGet31AdcostsResponse(rsp *http.Response) (*Get31AdcostsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31AdcostsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31AutomationCrAndSubBlockLogsResponse parses an HTTP response from a Get31AutomationCrAndSubBlockLogsWithResponse call
+func ParseGet31AutomationCrAndSubBlockLogsResponse(rsp *http.Response) (*Get31AutomationCrAndSubBlockLogsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31AutomationCrAndSubBlockLogsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31AutomationKpiResponse parses an HTTP response from a Get31AutomationKpiWithResponse call
+func ParseGet31AutomationKpiResponse(rsp *http.Response) (*Get31AutomationKpiResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31AutomationKpiResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31AutomationKpiBlockLogsResponse parses an HTTP response from a Get31AutomationKpiBlockLogsWithResponse call
+func ParseGet31AutomationKpiBlockLogsResponse(rsp *http.Response) (*Get31AutomationKpiBlockLogsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31AutomationKpiBlockLogsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31AutomationKpiChangeLogsResponse parses an HTTP response from a Get31AutomationKpiChangeLogsWithResponse call
+func ParseGet31AutomationKpiChangeLogsResponse(rsp *http.Response) (*Get31AutomationKpiChangeLogsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31AutomationKpiChangeLogsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31BrowsersResponse parses an HTTP response from a Get31BrowsersWithResponse call
+func ParseGet31BrowsersResponse(rsp *http.Response) (*Get31BrowsersResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31BrowsersResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31CitiesResponse parses an HTTP response from a Get31CitiesWithResponse call
+func ParseGet31CitiesResponse(rsp *http.Response) (*Get31CitiesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31CitiesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31ConnectionTypesResponse parses an HTTP response from a Get31ConnectionTypesWithResponse call
+func ParseGet31ConnectionTypesResponse(rsp *http.Response) (*Get31ConnectionTypesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31ConnectionTypesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31CountriesResponse parses an HTTP response from a Get31CountriesWithResponse call
+func ParseGet31CountriesResponse(rsp *http.Response) (*Get31CountriesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31CountriesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31DevicesResponse parses an HTTP response from a Get31DevicesWithResponse call
+func ParseGet31DevicesResponse(rsp *http.Response) (*Get31DevicesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31DevicesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31IspResponse parses an HTTP response from a Get31IspWithResponse call
+func ParseGet31IspResponse(rsp *http.Response) (*Get31IspResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31IspResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31OffersIDPrivacyResponse parses an HTTP response from a Get31OffersIDPrivacyWithResponse call
+func ParseGet31OffersIDPrivacyResponse(rsp *http.Response) (*Get31OffersIDPrivacyResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31OffersIDPrivacyResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31OsesResponse parses an HTTP response from a Get31OsesWithResponse call
+func ParseGet31OsesResponse(rsp *http.Response) (*Get31OsesResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31OsesResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31OsesOSResponse parses an HTTP response from a Get31OsesOSWithResponse call
+func ParseGet31OsesOSResponse(rsp *http.Response) (*Get31OsesOSResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31OsesOSResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31PartnerMeResponse parses an HTTP response from a Get31PartnerMeWithResponse call
+func ParseGet31PartnerMeResponse(rsp *http.Response) (*Get31PartnerMeResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31PartnerMeResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31PaymentsResponse parses an HTTP response from a Get31PaymentsWithResponse call
+func ParseGet31PaymentsResponse(rsp *http.Response) (*Get31PaymentsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31PaymentsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31PaymentsIDResponse parses an HTTP response from a Get31PaymentsIDWithResponse call
+func ParseGet31PaymentsIDResponse(rsp *http.Response) (*Get31PaymentsIDResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31PaymentsIDResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31PresetsResponse parses an HTTP response from a Get31PresetsWithResponse call
+func ParseGet31PresetsResponse(rsp *http.Response) (*Get31PresetsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31PresetsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31ProductFeedProductFeedIdItemsResponse parses an HTTP response from a Get31ProductFeedProductFeedIdItemsWithResponse call
+func ParseGet31ProductFeedProductFeedIdItemsResponse(rsp *http.Response) (*Get31ProductFeedProductFeedIdItemsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31ProductFeedProductFeedIdItemsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31RegionsResponse parses an HTTP response from a Get31RegionsWithResponse call
+func ParseGet31RegionsResponse(rsp *http.Response) (*Get31RegionsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31RegionsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31StatsCapsResponse parses an HTTP response from a Get31StatsCapsWithResponse call
+func ParseGet31StatsCapsResponse(rsp *http.Response) (*Get31StatsCapsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31StatsCapsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
+		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
+			return nil, err
+		}
+		response.JSON200 = &dest
+
+	}
+
+	return response, nil
+}
+
+// ParseGet31VendorsResponse parses an HTTP response from a Get31VendorsWithResponse call
+func ParseGet31VendorsResponse(rsp *http.Response) (*Get31VendorsResponse, error) {
+	bodyBytes, err := io.ReadAll(rsp.Body)
+	defer func() { _ = rsp.Body.Close() }()
+	if err != nil {
+		return nil, err
+	}
+
+	response := &Get31VendorsResponse{
+		Body:         bodyBytes,
+		HTTPResponse: rsp,
+	}
+
+	switch {
+	case strings.Contains(rsp.Header.Get("Content-Type"), "json") && rsp.StatusCode == 200:
+		var dest AffiseObject
 		if err := json.Unmarshal(bodyBytes, &dest); err != nil {
 			return nil, err
 		}

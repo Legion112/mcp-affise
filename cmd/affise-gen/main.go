@@ -56,7 +56,8 @@ func cmdOpenAPI(args []string) error {
 	out := fs.String("o", "openapi/affise.gen.yaml", "generated OpenAPI (docs only)")
 	overlayPath := fs.String("overlay", "openapi/overlays.yaml", "overlay file")
 	finalPath := fs.String("final", "openapi/affise.yaml", "final OpenAPI after overlay")
-	paths := fs.String("paths", "", "comma-separated path prefixes allowlist")
+	paths := fs.String("paths", "", "comma-separated path allowlist (exact, or prefix if ends with /)")
+	methods := fs.String("methods", "GET", "comma-separated HTTP methods (default GET = read-only)")
 	title := fs.String("title", "Affise API", "OpenAPI info.title")
 	if err := fs.Parse(args); err != nil {
 		return err
@@ -71,6 +72,19 @@ func cmdOpenAPI(args []string) error {
 	ops, err := docsgen.ParseHTML(string(raw))
 	if err != nil {
 		return err
+	}
+	var methodAllow []string
+	for _, m := range strings.Split(*methods, ",") {
+		m = strings.TrimSpace(m)
+		if m != "" {
+			methodAllow = append(methodAllow, m)
+		}
+	}
+	if len(methodAllow) > 0 {
+		ops = docsgen.FilterMethods(ops, methodAllow)
+		if len(ops) == 0 {
+			return fmt.Errorf("no operations left after --methods filter")
+		}
 	}
 	var allow []string
 	for _, p := range strings.Split(*paths, ",") {

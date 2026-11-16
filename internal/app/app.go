@@ -12,7 +12,7 @@ import (
 	"github.com/Legion112/mcp-affise/internal/tools"
 )
 
-const version = "v0.1.0"
+const version = "v0.2.0"
 
 // Run loads config and serves MCP over stdio.
 func Run(ctx context.Context) error {

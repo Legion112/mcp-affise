@@ -9,10 +9,11 @@ import (
 	"github.com/Legion112/mcp-affise/internal/config"
 )
 
-// Clients maps tenant id → generated Affise API client.
+// Clients maps tenant id → Affise access (typed client + raw HTTP).
 type Clients struct {
 	byID map[string]*affiseapi.ClientWithResponses
 	meta map[string]config.Tenant
+	http *http.Client
 }
 
 // NewClients builds HTTP clients for each configured tenant.
@@ -20,6 +21,7 @@ func NewClients(cfg *config.Config) (*Clients, error) {
 	c := &Clients{
 		byID: make(map[string]*affiseapi.ClientWithResponses, len(cfg.Tenants)),
 		meta: make(map[string]config.Tenant, len(cfg.Tenants)),
+		http: newHTTPClient(),
 	}
 	for _, t := range cfg.Tenants {
 		server := "https://" + t.Host

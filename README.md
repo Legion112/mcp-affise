@@ -11,24 +11,30 @@ Requires **Go 1.27+**. MIT licensed.
 
 ## Tools
 
+Read-only (codegen includes **GET** endpoints only; no POST/PUT/DELETE tools).
+
 | Tool | Description |
 |------|-------------|
 | `list_tenants` | Configured tenants (id/host/description; no tokens) |
-| `list_offers` | `GET /3.0/offers` (optional `q`, `status`, `page`, `limit`) |
-| `get_offer` | `GET /3.0/offer/{ID}` |
-| `get_offers_by_ids` | Batch via `int_id` filter |
+| `list_read_endpoints` | Catalog of all Affise GET paths from OpenAPI (`q` filter) |
+| `affise_get` | Call any catalogued GET (`path`, optional `path_params` / `query`) |
+| `list_offers` | Convenience: `GET /3.0/offers` |
+| `get_offer` | Convenience: `GET /3.0/offer/{ID}` |
+| `get_offers_by_ids` | Convenience: batch via `int_id` |
 
 ## Codegen pipeline
 
 ```text
-HTML docs3.1 → affise.gen.yaml → overlays.yaml → affise.yaml → oapi-codegen → internal/affiseapi
+HTML docs3.1 → (GET only) → affise.gen.yaml → overlays.yaml → affise.yaml
+  → oapi-codegen → internal/affiseapi
+  → copy → internal/apispec/affise.yaml (MCP catalog)
 ```
 
 | Make target | What it does |
 |-------------|--------------|
 | `make fetch-docs` | Download Affise HTML docs fixture |
-| `make openapi` | Parse HTML → gen → apply overlay → final YAML |
-| `make generate` | `openapi` + `oapi-codegen` |
+| `make openapi` | Parse HTML → gen → apply overlay → final YAML (`METHODS=GET`) |
+| `make generate` | `openapi` + `oapi-codegen` + embeddable catalog copy |
 | `make generate-check` | Fail if generated files are dirty |
 | `make capture-sample TENANT=… PATH=/3.0/offers` | Dump live JSON for drafting overlays |
 

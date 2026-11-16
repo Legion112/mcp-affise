@@ -51,6 +51,28 @@ func ParseHTML(raw string) ([]Operation, error) {
 	return ops, nil
 }
 
+// FilterMethods keeps operations whose HTTP method is in allowlist (case-insensitive).
+// Empty allowlist keeps all.
+func FilterMethods(ops []Operation, allowlist []string) []Operation {
+	if len(allowlist) == 0 {
+		return ops
+	}
+	allow := map[string]bool{}
+	for _, m := range allowlist {
+		m = strings.ToUpper(strings.TrimSpace(m))
+		if m != "" {
+			allow[m] = true
+		}
+	}
+	var out []Operation
+	for _, op := range ops {
+		if allow[strings.ToUpper(op.Method)] {
+			out = append(out, op)
+		}
+	}
+	return out
+}
+
 // FilterPaths keeps operations matching the allowlist.
 // Empty allowlist keeps all.
 // Entries ending with "/" are prefix matches; others are exact path matches.
