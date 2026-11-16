@@ -1,0 +1,67 @@
+# Hand-edited OpenAPI Overlay (https://spec.openapis.org/overlay/latest.html)
+# Applied onto openapi/affise.gen.yaml → openapi/affise.yaml
+# Use this to fix Affise HTML docs ↔ live API drift. Never edit *.gen.yaml / affise.yaml.
+
+overlay: 1.0.0
+info:
+  title: Affise docs corrections
+  version: 0.1.0
+actions:
+  - description: Typed Offer schema with logo (docs examples omit or leave empty; live API returns URL)
+    target: "$.components.schemas"
+    update:
+      Offer:
+        type: object
+        additionalProperties: true
+        properties:
+          id:
+            type: integer
+            format: int64
+          offer_id:
+            type: string
+          title:
+            type: string
+          status:
+            type: string
+          logo:
+            type: string
+            description: Public URL of the offer logo/poster image (may be empty)
+          logo_source:
+            type: string
+          url:
+            type: string
+          advertiser:
+            type: string
+      OffersListResponse:
+        type: object
+        additionalProperties: true
+        properties:
+          status:
+            type: integer
+          offers:
+            type: array
+            items:
+              $ref: "#/components/schemas/Offer"
+          pagination:
+            type: object
+            additionalProperties: true
+      OfferResponse:
+        type: object
+        additionalProperties: true
+        properties:
+          status:
+            type: integer
+          offer:
+            $ref: "#/components/schemas/Offer"
+
+  - description: list offers 200 → OffersListResponse
+    target: "$.paths['/3.0/offers'].get.responses['200'].content['application/json']"
+    update:
+      schema:
+        $ref: "#/components/schemas/OffersListResponse"
+
+  - description: get offer 200 → OfferResponse
+    target: "$.paths['/3.0/offer/{ID}'].get.responses['200'].content['application/json']"
+    update:
+      schema:
+        $ref: "#/components/schemas/OfferResponse"

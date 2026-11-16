@@ -1,0 +1,11 @@
+bin/
+coverage.out
+coverage.html
+.env
+tenants.yaml
+openapi/captures/*
+!openapi/captures/.gitkeep
+*.exe
+.DS_Store
+.idea/
+.vscode/
