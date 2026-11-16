@@ -6,7 +6,7 @@ require (
 	github.com/joho/godotenv v1.5.1
 	github.com/modelcontextprotocol/go-sdk v1.8.0
 	github.com/oapi-codegen/runtime v1.9.0
-	github.com/ohler55/ojg v1.26.10
+	github.com/ohler55/ojg v1.28.9
 	golang.org/x/net v0.62.0
 	gopkg.in/yaml.v3 v3.0.1
 )
