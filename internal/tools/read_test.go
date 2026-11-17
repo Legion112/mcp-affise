@@ -28,3 +28,17 @@ func TestEncodeQuery(t *testing.T) {
 		t.Fatalf("%v", v)
 	}
 }
+
+func TestParseJSONObject(t *testing.T) {
+	m, err := parseJSONObject(`{"ID":"12","n":1}`)
+	if err != nil || m["ID"] != "12" {
+		t.Fatalf("%v %v", m, err)
+	}
+	m, err = parseJSONObject("")
+	if err != nil || m != nil {
+		t.Fatalf("%v %v", m, err)
+	}
+	if _, err := parseJSONObject("{"); err == nil {
+		t.Fatal("expected error")
+	}
+}

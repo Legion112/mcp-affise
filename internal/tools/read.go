@@ -19,10 +19,23 @@ type listReadEndpointsIn struct {
 }
 
 type affiseGetIn struct {
-	Tenant     string         `json:"tenant" jsonschema:"Tenant id from list_tenants"`
-	Path       string         `json:"path" jsonschema:"Affise path template or concrete path, e.g. /3.0/offers or /3.0/offer/123"`
-	PathParams map[string]any `json:"path_params,omitempty" jsonschema:"Path parameter values when path is a template with {param}"`
-	Query      map[string]any `json:"query,omitempty" jsonschema:"Query string parameters (strings, numbers, bools, or arrays)"`
+	Tenant         string `json:"tenant" jsonschema:"Tenant id from list_tenants"`
+	Path           string `json:"path" jsonschema:"Affise path template or concrete path, e.g. /3.0/offers or /3.0/offer/123"`
+	PathParamsJSON string `json:"path_params_json,omitempty" jsonschema:"Optional JSON object of path params, e.g. {\"ID\":\"2\"}"`
+	QueryJSON      string `json:"query_json,omitempty" jsonschema:"Optional JSON object of query params, e.g. {\"partner_id\":2,\"limit\":10}"`
+}
+
+type getOfferPrivacyIn struct {
+	Tenant  string `json:"tenant" jsonschema:"Tenant id from list_tenants"`
+	OfferID int64  `json:"offer_id" jsonschema:"Numeric Affise offer id"`
+}
+
+type listPartnerPostbacksIn struct {
+	Tenant    string `json:"tenant" jsonschema:"Tenant id from list_tenants"`
+	PartnerID int64  `json:"partner_id,omitempty" jsonschema:"Affise partner id (required unless offer_id is set)"`
+	OfferID   int64  `json:"offer_id,omitempty" jsonschema:"Affise offer id filter (offer_ids); required unless partner_id is set"`
+	Page      int    `json:"page,omitempty" jsonschema:"Page number"`
+	Limit     int    `json:"limit,omitempty" jsonschema:"Page size (default 100)"`
 }
 
 func (d *Deps) listReadEndpoints(ctx context.Context, _ *mcp.CallToolRequest, in listReadEndpointsIn) (*mcp.CallToolResult, any, error) {
@@ -54,14 +67,22 @@ func (d *Deps) affiseGet(ctx context.Context, _ *mcp.CallToolRequest, in affiseG
 	if err != nil {
 		return textResult(err.Error()), nil, nil
 	}
-	concrete, err := buildConcretePath(in.Path, in.PathParams)
+	pathParams, err := parseJSONObject(in.PathParamsJSON)
+	if err != nil {
+		return textResult(fmt.Sprintf("path_params_json: %v", err)), nil, nil
+	}
+	query, err := parseJSONObject(in.QueryJSON)
+	if err != nil {
+		return textResult(fmt.Sprintf("query_json: %v", err)), nil, nil
+	}
+	concrete, err := buildConcretePath(in.Path, pathParams)
 	if err != nil {
 		return textResult(err.Error()), nil, nil
 	}
 	if _, _, err := cat.Resolve(concrete); err != nil {
 		return textResult(err.Error()), nil, nil
 	}
-	qv, err := encodeQuery(in.Query)
+	qv, err := encodeQuery(query)
 	if err != nil {
 		return textResult(err.Error()), nil, nil
 	}
@@ -81,6 +102,76 @@ func (d *Deps) affiseGet(ctx context.Context, _ *mcp.CallToolRequest, in affiseG
 		return textResult(string(body)), nil, nil
 	}
 	return textResult(text), nil, nil
+}
+
+func (d *Deps) getOfferPrivacy(ctx context.Context, _ *mcp.CallToolRequest, in getOfferPrivacyIn) (*mcp.CallToolResult, any, error) {
+	if in.OfferID == 0 {
+		return textResult("offer_id is required"), nil, nil
+	}
+	path := fmt.Sprintf("/3.1/offers/%d/privacy", in.OfferID)
+	status, body, err := d.Clients.GET(ctx, in.Tenant, path, nil)
+	if err != nil {
+		return textResult(fmt.Sprintf("get_offer_privacy: %v", err)), nil, nil
+	}
+	if status >= 400 {
+		return textResult(fmt.Sprintf("get_offer_privacy: HTTP %d: %s", status, string(body))), nil, nil
+	}
+	var parsed any
+	if err := json.Unmarshal(body, &parsed); err != nil {
+		return textResult(string(body)), nil, nil
+	}
+	text, err := jsonText(parsed)
+	if err != nil {
+		return textResult(string(body)), nil, nil
+	}
+	return textResult(text), nil, nil
+}
+
+func (d *Deps) listPartnerPostbacks(ctx context.Context, _ *mcp.CallToolRequest, in listPartnerPostbacksIn) (*mcp.CallToolResult, any, error) {
+	if in.PartnerID <= 0 && in.OfferID <= 0 {
+		return textResult("partner_id or offer_id is required"), nil, nil
+	}
+	q := url.Values{}
+	if in.PartnerID > 0 {
+		q.Set("partner_id", strconv.FormatInt(in.PartnerID, 10))
+	}
+	if in.OfferID > 0 {
+		q.Set("offer_ids", strconv.FormatInt(in.OfferID, 10))
+	}
+	if in.Page > 0 {
+		q.Set("page", strconv.Itoa(in.Page))
+	}
+	if in.Limit > 0 {
+		q.Set("limit", strconv.Itoa(in.Limit))
+	}
+	status, body, err := d.Clients.GET(ctx, in.Tenant, "/3.0/admin/postbacks", q)
+	if err != nil {
+		return textResult(fmt.Sprintf("list_partner_postbacks: %v", err)), nil, nil
+	}
+	if status >= 400 {
+		return textResult(fmt.Sprintf("list_partner_postbacks: HTTP %d: %s", status, string(body))), nil, nil
+	}
+	var parsed any
+	if err := json.Unmarshal(body, &parsed); err != nil {
+		return textResult(string(body)), nil, nil
+	}
+	text, err := jsonText(parsed)
+	if err != nil {
+		return textResult(string(body)), nil, nil
+	}
+	return textResult(text), nil, nil
+}
+
+func parseJSONObject(raw string) (map[string]any, error) {
+	raw = strings.TrimSpace(raw)
+	if raw == "" {
+		return nil, nil
+	}
+	var out map[string]any
+	if err := json.Unmarshal([]byte(raw), &out); err != nil {
+		return nil, err
+	}
+	return out, nil
 }
 
 func buildConcretePath(path string, pathParams map[string]any) (string, error) {

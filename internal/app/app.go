@@ -12,7 +12,7 @@ import (
 	"github.com/Legion112/mcp-affise/internal/tools"
 )
 
-const version = "v0.2.0"
+const version = "v0.3.0"
 
 // Run loads config and serves MCP over stdio.
 func Run(ctx context.Context) error {
@@ -34,5 +34,17 @@ func Run(ctx context.Context) error {
 	}, nil)
 
 	tools.Register(server, &tools.Deps{Clients: clients})
+	logger.Info("mcp-affise tools registered",
+		"tools", []string{
+			"list_tenants",
+			"list_read_endpoints",
+			"affise_get",
+			"list_offers",
+			"get_offer",
+			"get_offers_by_ids",
+			"get_offer_privacy",
+			"list_partner_postbacks",
+		},
+	)
 	return server.Run(ctx, &mcp.StdioTransport{})
 }

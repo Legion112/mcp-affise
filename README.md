@@ -17,10 +17,12 @@ Read-only (codegen includes **GET** endpoints only; no POST/PUT/DELETE tools).
 |------|-------------|
 | `list_tenants` | Configured tenants (id/host/description; no tokens) |
 | `list_read_endpoints` | Catalog of all Affise GET paths from OpenAPI (`q` filter) |
-| `affise_get` | Call any catalogued GET (`path`, optional `path_params` / `query`) |
-| `list_offers` | Convenience: `GET /3.0/offers` |
-| `get_offer` | Convenience: `GET /3.0/offer/{ID}` |
-| `get_offers_by_ids` | Convenience: batch via `int_id` |
+| `affise_get` | Call any catalogued GET (`path`, optional `path_params_json` / `query_json`) |
+| `list_offers` | `GET /3.0/offers` |
+| `get_offer` | `GET /3.0/offer/{ID}` (includes `partner_payments`) |
+| `get_offers_by_ids` | Batch via `int_id` |
+| `get_offer_privacy` | `GET /3.1/offers/{ID}/privacy` |
+| `list_partner_postbacks` | `GET /3.0/admin/postbacks` (requires `partner_id` and/or `offer_id`) |
 
 ## Codegen pipeline
 

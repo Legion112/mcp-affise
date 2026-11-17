@@ -25,21 +25,31 @@ func Register(server *mcp.Server, deps *Deps) {
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "affise_get",
-		Description: "Call any Affise GET endpoint (read-only). Path may be concrete (/3.0/offer/123) or a template with path_params. Rejects unknown/non-GET paths.",
+		Description: "Call any Affise GET endpoint (read-only). Path may be concrete (/3.0/offer/123) or a template with path_params_json. Rejects unknown/non-GET paths.",
 	}, deps.affiseGet)
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "list_offers",
-		Description: "Convenience: list Affise offers (GET /3.0/offers). Includes logo URL when present.",
+		Description: "List Affise offers (GET /3.0/offers). Includes logo URL when present.",
 	}, deps.listOffers)
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "get_offer",
-		Description: "Convenience: get one Affise offer by numeric id (GET /3.0/offer/{ID}).",
+		Description: "Get one Affise offer by numeric id (GET /3.0/offer/{ID}). Includes partner_payments when present.",
 	}, deps.getOffer)
 
 	mcp.AddTool(server, &mcp.Tool{
 		Name:        "get_offers_by_ids",
-		Description: "Convenience: fetch multiple Affise offers by int ids (int_id on GET /3.0/offers).",
+		Description: "Fetch multiple Affise offers by int ids (int_id on GET /3.0/offers).",
 	}, deps.getOffersByIDs)
+
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "get_offer_privacy",
+		Description: "Get offer privacy / enabled-disabled affiliates (GET /3.1/offers/{ID}/privacy).",
+	}, deps.getOfferPrivacy)
+
+	mcp.AddTool(server, &mcp.Tool{
+		Name:        "list_partner_postbacks",
+		Description: "List partner postbacks (GET /3.0/admin/postbacks). Requires partner_id and/or offer_id.",
+	}, deps.listPartnerPostbacks)
 }
